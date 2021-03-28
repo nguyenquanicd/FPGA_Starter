@@ -1,0 +1,13 @@
+
+
+/***************************** Include Files *******************************/
+#include "PwmIp_Demo.h"
+#include "xparameters.h"
+/************************** Function Definitions ***************************/
+void PWMIP_DEMO_writePwmPeriod(uint32_t pwmPeriod){
+	PWMIP_DEMO_mWriteReg(XPAR_PWMIP_DEMO_0_S00_AXI_BASEADDR,PWMIP_DEMO_S00_AXI_SLV_REG0_OFFSET,pwmPeriod);
+}
+
+uint32_t PWMIP_DEMO_readPwmPeriod(){
+	return (PWMIP_DEMO_mReadReg(XPAR_PWMIP_DEMO_0_S00_AXI_BASEADDR,PWMIP_DEMO_S00_AXI_SLV_REG0_OFFSET));
+}

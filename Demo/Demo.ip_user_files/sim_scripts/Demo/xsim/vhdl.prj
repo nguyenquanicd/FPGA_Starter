@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../Demo.srcs/sources_1/bd/Demo/ip/Demo_rst_ps7_0_50M_2/sim/Demo_rst_ps7_0_50M_2.vhd" \
+
+nosort

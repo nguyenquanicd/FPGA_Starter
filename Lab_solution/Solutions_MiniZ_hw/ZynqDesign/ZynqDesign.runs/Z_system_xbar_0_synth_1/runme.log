@@ -1,0 +1,133 @@
+
+*** Running vivado
+    with args -log Z_system_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Z_system_xbar_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Z_system_xbar_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 388.254 ; gain = 86.992
+INFO: [Synth 8-638] synthesizing module 'Z_system_xbar_0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ip/Z_system_xbar_0/synth/Z_system_xbar_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_axi_crossbar' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_crossbar' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_si_transactor' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_addr_decoder' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_addr_decoder' (3#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_axic_srl_fifo' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_ndeep_srl' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:43823]
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (4#1) [C:/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:43823]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_ndeep_srl' (5#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_axic_srl_fifo' (6#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_si_transactor' (8#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_si_transactor__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (8#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_si_transactor__parameterized0' (8#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_splitter' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_splitter' (9#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_wdata_router' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:4734]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_axic_reg_srl_fifo' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_ndeep_srl__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_ndeep_srl__parameterized0' (9#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_axic_reg_srl_fifo' (10#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_wdata_router' (11#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:4734]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_si_transactor__parameterized1' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_axic_srl_fifo__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_ndeep_srl__parameterized1' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_ndeep_srl__parameterized1' (11#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_axic_srl_fifo__parameterized0' (11#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_si_transactor__parameterized1' (11#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_si_transactor__parameterized2' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_si_transactor__parameterized2' (11#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_wdata_router__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:4734]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_axic_reg_srl_fifo__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_axic_reg_srl_fifo__parameterized0' (11#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_wdata_router__parameterized0' (11#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:4734]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_addr_decoder__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_addr_decoder__parameterized0' (11#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_axic_srl_fifo__parameterized1' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_axic_srl_fifo__parameterized1' (11#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_wdata_mux' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_axic_reg_srl_fifo__parameterized1' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_axic_reg_srl_fifo__parameterized1' (11#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (11#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_wdata_mux' (12#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axi_register_slice' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (13#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice' (14#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized0' (14#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized1' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized1' (14#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized2' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized2' (14#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (15#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axi_register_slice' (16#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_axic_srl_fifo__parameterized2' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_axic_srl_fifo__parameterized2' (16#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_wdata_mux__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_axic_reg_srl_fifo__parameterized2' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_axic_reg_srl_fifo__parameterized2' (16#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_wdata_mux__parameterized0' (16#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_decerr_slave' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_decerr_slave' (17#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_13_addr_arbiter' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:423]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (17#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (17#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_addr_arbiter' (18#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:423]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_crossbar' (19#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_13_axi_crossbar' (20#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/78eb/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-256] done synthesizing module 'Z_system_xbar_0' (21#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ip/Z_system_xbar_0/synth/Z_system_xbar_0.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 516.281 ; gain = 215.020
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 516.281 ; gain = 215.020
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.180 . Memory (MB): peak = 747.848 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 747.848 ; gain = 446.586
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 747.848 ; gain = 446.586
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 747.848 ; gain = 446.586
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:48 ; elapsed = 00:01:08 . Memory (MB): peak = 747.848 ; gain = 446.586
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:15 . Memory (MB): peak = 747.848 ; gain = 446.586
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:36 . Memory (MB): peak = 747.848 ; gain = 446.586
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:41 . Memory (MB): peak = 780.996 ; gain = 479.734
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:43 . Memory (MB): peak = 780.996 ; gain = 479.734
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:44 . Memory (MB): peak = 780.996 ; gain = 479.734
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:44 . Memory (MB): peak = 780.996 ; gain = 479.734
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:01:44 . Memory (MB): peak = 780.996 ; gain = 479.734
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:20 ; elapsed = 00:01:44 . Memory (MB): peak = 780.996 ; gain = 479.734
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:01:44 . Memory (MB): peak = 780.996 ; gain = 479.734
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:20 ; elapsed = 00:01:44 . Memory (MB): peak = 780.996 ; gain = 479.734
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |    16|
+|2     |LUT2    |    24|
+|3     |LUT3    |   457|
+|4     |LUT4    |   203|
+|5     |LUT5    |    78|
+|6     |LUT6    |   135|
+|7     |SRLC32E |     7|
+|8     |FDRE    |   536|
+|9     |FDSE    |    20|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:20 ; elapsed = 00:01:44 . Memory (MB): peak = 780.996 ; gain = 479.734
+synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:49 . Memory (MB): peak = 780.996 ; gain = 483.141

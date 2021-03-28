@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Mar 28 20:55:57 2021
+# Process ID: 14880
+# Current directory: F:/Demo/Demo.runs/impl_1
+# Command line: vivado.exe -log Demo_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Demo_wrapper.tcl -notrace
+# Log file: F:/Demo/Demo.runs/impl_1/Demo_wrapper.vdi
+# Journal file: F:/Demo/Demo.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Demo_wrapper.tcl -notrace

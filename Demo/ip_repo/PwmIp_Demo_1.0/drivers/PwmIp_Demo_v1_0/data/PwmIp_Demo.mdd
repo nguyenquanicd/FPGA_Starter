@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER PwmIp_Demo
+	OPTION supported_peripherals = (PwmIp_Demo);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = PwmIp_Demo;
+END DRIVER

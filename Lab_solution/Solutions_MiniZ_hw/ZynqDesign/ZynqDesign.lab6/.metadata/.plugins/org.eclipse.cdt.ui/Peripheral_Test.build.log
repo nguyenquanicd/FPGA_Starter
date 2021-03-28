@@ -1,0 +1,58 @@
+14:19:51 **** Build of configuration Debug for project Peripheral_Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/testperiph.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building file: ../src/xdevcfg_selftest_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_selftest_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_selftest_example.d" -MT"src/xdevcfg_selftest_example.o" -o "src/xdevcfg_selftest_example.o" "../src/xdevcfg_selftest_example.c"
+'Finished building: ../src/xdevcfg_selftest_example.c'
+' '
+'Building file: ../src/xdmaps_example_w_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdmaps_example_w_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdmaps_example_w_intr.d" -MT"src/xdmaps_example_w_intr.o" -o "src/xdmaps_example_w_intr.o" "../src/xdmaps_example_w_intr.c"
+'Finished building: ../src/xdmaps_example_w_intr.c'
+' '
+'Building file: ../src/xqspips_selftest_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xqspips_selftest_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xqspips_selftest_example.d" -MT"src/xqspips_selftest_example.o" -o "src/xqspips_selftest_example.o" "../src/xqspips_selftest_example.c"
+'Finished building: ../src/xqspips_selftest_example.c'
+' '
+'Building file: ../src/xscugic_tapp_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xscugic_tapp_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xscugic_tapp_example.d" -MT"src/xscugic_tapp_example.o" -o "src/xscugic_tapp_example.o" "../src/xscugic_tapp_example.c"
+'Finished building: ../src/xscugic_tapp_example.c'
+' '
+'Building file: ../src/xscutimer_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xscutimer_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xscutimer_intr_example.d" -MT"src/xscutimer_intr_example.o" -o "src/xscutimer_intr_example.o" "../src/xscutimer_intr_example.c"
+'Finished building: ../src/xscutimer_intr_example.c'
+' '
+'Building file: ../src/xscutimer_polled_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xscutimer_polled_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xscutimer_polled_example.d" -MT"src/xscutimer_polled_example.o" -o "src/xscutimer_polled_example.o" "../src/xscutimer_polled_example.c"
+'Finished building: ../src/xscutimer_polled_example.c'
+' '
+'Building file: ../src/xscuwdt_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xscuwdt_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xscuwdt_intr_example.d" -MT"src/xscuwdt_intr_example.o" -o "src/xscuwdt_intr_example.o" "../src/xscuwdt_intr_example.c"
+'Finished building: ../src/xscuwdt_intr_example.c'
+' '
+'Building target: Peripheral_Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Peripheral_Test.elf"  ./src/testperiph.o ./src/xdevcfg_selftest_example.o ./src/xdmaps_example_w_intr.o ./src/xqspips_selftest_example.o ./src/xscugic_tapp_example.o ./src/xscutimer_intr_example.o ./src/xscutimer_polled_example.o ./src/xscuwdt_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Peripheral_Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Peripheral_Test.elf  |tee "Peripheral_Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52592	   2860	  33456	  88908	  15b4c	Peripheral_Test.elf
+'Finished building: Peripheral_Test.elf.size'
+' '
+
+14:19:59 Build Finished (took 7s.626ms)
+

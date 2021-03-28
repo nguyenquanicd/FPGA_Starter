@@ -1,0 +1,89 @@
+
+*** Running vivado
+    with args -log Z_system_auto_us_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Z_system_auto_us_1.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Z_system_auto_us_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 383.180 ; gain = 88.707
+INFO: [Synth 8-638] synthesizing module 'Z_system_auto_us_1' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ip/Z_system_auto_us_1/synth/Z_system_auto_us_1.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_12_top' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14450]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_12_axi_upsizer' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7038]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_12_w_upsizer' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5563]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_12_w_upsizer' (1#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5563]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_12_a_upsizer' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' (2#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_command_fifo__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_command_fifo__parameterized0' (2#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_12_a_upsizer' (3#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_12_r_upsizer' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:4653]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_12_r_upsizer' (4#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:4653]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axi_register_slice' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (5#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice' (6#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized0' (6#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized1' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized1' (6#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized2' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized2' (6#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (7#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axi_register_slice' (8#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_12_a_upsizer__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_12_a_upsizer__parameterized0' (8#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axi_register_slice__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (8#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized3' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized3' (8#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized4' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized4' (8#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (8#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axi_register_slice__parameterized0' (8#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_12_axi_upsizer' (9#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7038]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_12_top' (10#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14450]
+INFO: [Synth 8-256] done synthesizing module 'Z_system_auto_us_1' (11#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ip/Z_system_auto_us_1/synth/Z_system_auto_us_1.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:02:27 ; elapsed = 00:02:46 . Memory (MB): peak = 509.133 ; gain = 214.660
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:27 ; elapsed = 00:02:46 . Memory (MB): peak = 509.133 ; gain = 214.660
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 735.855 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:02:42 ; elapsed = 00:03:02 . Memory (MB): peak = 735.855 ; gain = 441.383
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:43 ; elapsed = 00:03:02 . Memory (MB): peak = 735.855 ; gain = 441.383
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:43 ; elapsed = 00:03:02 . Memory (MB): peak = 735.855 ; gain = 441.383
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:44 ; elapsed = 00:03:04 . Memory (MB): peak = 735.855 ; gain = 441.383
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:51 ; elapsed = 00:03:11 . Memory (MB): peak = 735.855 ; gain = 441.383
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:05 ; elapsed = 00:03:25 . Memory (MB): peak = 735.855 ; gain = 441.383
+Finished Timing Optimization : Time (s): cpu = 00:03:06 ; elapsed = 00:03:26 . Memory (MB): peak = 741.246 ; gain = 446.773
+Finished Technology Mapping : Time (s): cpu = 00:03:07 ; elapsed = 00:03:27 . Memory (MB): peak = 753.277 ; gain = 458.805
+Finished IO Insertion : Time (s): cpu = 00:03:08 ; elapsed = 00:03:28 . Memory (MB): peak = 753.277 ; gain = 458.805
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:08 ; elapsed = 00:03:28 . Memory (MB): peak = 753.277 ; gain = 458.805
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:08 ; elapsed = 00:03:28 . Memory (MB): peak = 753.277 ; gain = 458.805
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:08 ; elapsed = 00:03:28 . Memory (MB): peak = 753.277 ; gain = 458.805
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:08 ; elapsed = 00:03:28 . Memory (MB): peak = 753.277 ; gain = 458.805
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:08 ; elapsed = 00:03:28 . Memory (MB): peak = 753.277 ; gain = 458.805
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |     9|
+|2     |LUT2    |    33|
+|3     |LUT3    |   103|
+|4     |LUT4    |    61|
+|5     |LUT5    |   147|
+|6     |LUT6    |   189|
+|7     |SRLC32E |    58|
+|8     |FDRE    |   601|
+|9     |FDSE    |     4|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:08 ; elapsed = 00:03:28 . Memory (MB): peak = 753.277 ; gain = 458.805
+synth_design: Time (s): cpu = 00:03:11 ; elapsed = 00:03:32 . Memory (MB): peak = 753.277 ; gain = 465.273

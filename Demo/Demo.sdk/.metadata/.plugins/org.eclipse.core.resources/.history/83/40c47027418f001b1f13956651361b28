@@ -1,0 +1,28 @@
+/*
+ * Empty C++ Application
+ */
+#include "PwmIp_Demo.h"
+#include "xscugic.h"
+#include "xil_exception.h"
+#include "xparameters.h"
+#include "xil_io.h"
+
+static XScuGic Intc;
+
+// Interrupt handler
+void PWMIsr(void *InstancePtr)
+{
+	/* Inform the user that an invalid value was detected by the PWM
+	* controller. */
+	print("PWM Value exceeded, brightness reset to 888888. \r\n");
+	/* Set the brightness value to a safe value and write it to the
+	* PWM controller in order to clear the pending interrupt. */
+	Xil_Out32(XPAR_PWMIP_DEMO_0_S00_AXI_BASEADDR, 888888);
+}
+
+int main()
+{
+	// Write duty cycle to the pwm IP
+	PWMIP_DEMO_writePwmPeriod(XPAR_PWMIP_DEMO_0_S00_AXI_BASEADDR,900000);
+	return 0;
+}

@@ -1,0 +1,9 @@
+
+
+/***************************** Include Files *******************************/
+#include "PwmIp_Demo.h"
+
+/************************** Function Definitions ***************************/
+void PWMIP_DEMO_writePwmPeriod(uint32_t pwmPeriod);
+
+uint32_t PWMIP_DEMO_readPwmPeriod();

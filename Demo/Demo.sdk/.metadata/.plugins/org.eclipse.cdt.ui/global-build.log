@@ -1,0 +1,543 @@
+04:49:04 **** Incremental Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:49:50 **** Incremental Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:52:04 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: Demo.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Demo.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Demo.elf  |tee "Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31136	   2960	   8320	  42416	   a5b0	Demo.elf
+'Finished building: Demo.elf.size'
+' '
+04:52:07 **** Incremental Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:54:34 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:95:45: error: too many arguments to function 'void print(const char8*)'
+   print("Counting times: %d \n\r",valueInput);
+                                             ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xscugic.h:197,
+                 from ../src/main.cc:5:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+04:55:01 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:95:3: error: 'printf' was not declared in this scope
+   printf("Counting times: %d \n\r",valueInput);
+   ^~~~~~
+../src/main.cc:95:3: note: 'printf' is defined in header '<cstdio>'; did you forget to '#include <cstdio>'?
+../src/main.cc:9:1:
++#include <cstdio>
+ 
+../src/main.cc:95:3:
+   printf("Counting times: %d \n\r",valueInput);
+   ^~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+04:55:06 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:95:45: error: too many arguments to function 'void print(const char8*)'
+   print("Counting times: %d \n\r",valueInput);
+                                             ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xscugic.h:197,
+                 from ../src/main.cc:5:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+04:57:10 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:96:3: error: 'sprintf' was not declared in this scope
+   sprintf();
+   ^~~~~~~
+../src/main.cc:96:3: note: 'sprintf' is defined in header '<cstdio>'; did you forget to '#include <cstdio>'?
+../src/main.cc:9:1:
++#include <cstdio>
+ 
+../src/main.cc:96:3:
+   sprintf();
+   ^~~~~~~
+../src/main.cc:97:9: error: too few arguments to function 'void print(const char8*)'
+   print();
+         ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xscugic.h:197,
+                 from ../src/main.cc:5:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/main.cc:95:9: warning: unused variable 'string' [-Wunused-variable]
+   char8 string[100];
+         ^~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+04:57:39 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:96:3: error: 'sprintf' was not declared in this scope
+   sprintf(string);
+   ^~~~~~~
+../src/main.cc:96:3: note: 'sprintf' is defined in header '<cstdio>'; did you forget to '#include <cstdio>'?
+../src/main.cc:9:1:
++#include <cstdio>
+ #include <string.h>
+../src/main.cc:96:3:
+   sprintf(string);
+   ^~~~~~~
+../src/main.cc:97:9: error: too few arguments to function 'void print(const char8*)'
+   print();
+         ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xscugic.h:197,
+                 from ../src/main.cc:5:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+04:57:41 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:3: error: 'sprintf' was not declared in this scope
+   sprintf(string);
+   ^~~~~~~
+../src/main.cc:97:3: note: 'sprintf' is defined in header '<cstdio>'; did you forget to '#include <cstdio>'?
+../src/main.cc:9:1:
++#include <cstdio>
+ #include <string.h>
+../src/main.cc:97:3:
+   sprintf(string);
+   ^~~~~~~
+../src/main.cc:98:9: error: too few arguments to function 'void print(const char8*)'
+   print();
+         ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xscugic.h:197,
+                 from ../src/main.cc:5:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+04:58:39 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:9: error: expected ';' before 'strPrintOut'
+   string strPrintOut = "Counting times: ";
+         ^~~~~~~~~~~~
+         ;
+../src/main.cc:97:42: warning: statement has no effect [-Wunused-value]
+   string strPrintOut = "Counting times: ";
+                                          ^
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+04:58:55 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:9: error: expected ';' before 'strPrintOut'
+   string strPrintOut
+         ^~~~~~~~~~~~
+         ;
+../src/main.cc:98:35: warning: statement has no effect [-Wunused-value]
+   strPrintOut = "Counting times: ";
+                                   ^
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+04:59:02 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:9: error: expected ';' before 'strPrintOut'
+   string strPrintOut;
+         ^~~~~~~~~~~~
+         ;
+../src/main.cc:97:21: warning: statement has no effect [-Wunused-value]
+   string strPrintOut;
+                     ^
+../src/main.cc:98:3: error: 'strPrintOut' was not declared in this scope
+   strPrintOut = "Counting times: ";
+   ^~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+04:59:15 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:9: error: expected ';' before 'strPrintOut'
+   string strPrintOut;
+         ^~~~~~~~~~~~
+         ;
+../src/main.cc:97:21: warning: statement has no effect [-Wunused-value]
+   string strPrintOut;
+                     ^
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+04:59:22 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:8: error: 'string' is not a member of 'std'
+   std::string strPrintOut;
+        ^~~~~~
+../src/main.cc:97:8: note: 'std::string' is defined in header '<string>'; did you forget to '#include <string>'?
+../src/main.cc:9:1:
++#include <string>
+ #include <string.h>
+../src/main.cc:97:8:
+   std::string strPrintOut;
+        ^~~~~~
+../src/main.cc:96:9: warning: unused variable 'string' [-Wunused-variable]
+   char8 string[100];
+         ^~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+04:59:27 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:3: error: 'sstring' was not declared in this scope
+   sstring strPrintOut;
+   ^~~~~~~
+../src/main.cc:97:3: note: suggested alternative: 'string'
+   sstring strPrintOut;
+   ^~~~~~~
+   string
+../src/main.cc:96:9: warning: unused variable 'string' [-Wunused-variable]
+   char8 string[100];
+         ^~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+04:59:28 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:9: error: expected ';' before 'strPrintOut'
+   string strPrintOut;
+         ^~~~~~~~~~~~
+         ;
+../src/main.cc:97:21: warning: statement has no effect [-Wunused-value]
+   string strPrintOut;
+                     ^
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+05:01:15 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:8: error: 'string' is not a member of 'std'
+   std::string strPrintOut;
+        ^~~~~~
+../src/main.cc:97:8: note: 'std::string' is defined in header '<string>'; did you forget to '#include <string>'?
+../src/main.cc:9:1:
++#include <string>
+ #include <string.h>
+../src/main.cc:97:8:
+   std::string strPrintOut;
+        ^~~~~~
+../src/main.cc:96:9: warning: unused variable 'string' [-Wunused-variable]
+   char8 string[100];
+         ^~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+05:01:22 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:3: error: 'string' was not declared in this scope
+   string strPrintOut;
+   ^~~~~~
+../src/main.cc:97:3: note: suggested alternative: 'tostring'
+   string strPrintOut;
+   ^~~~~~
+   tostring
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+05:01:30 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:3: error: 'string' was not declared in this scope
+   string strPrintOut;
+   ^~~~~~
+../src/main.cc:97:3: note: suggested alternative: 'tostring'
+   string strPrintOut;
+   ^~~~~~
+   tostring
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+05:01:44 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:8: error: 'string' is not a member of 'std'
+   std::string strPrintOut;
+        ^~~~~~
+../src/main.cc:97:8: note: 'std::string' is defined in header '<string>'; did you forget to '#include <string>'?
+../src/main.cc:9:1:
++#include <string>
+ #include <string.h>
+../src/main.cc:97:8:
+   std::string strPrintOut;
+        ^~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+05:04:06 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:18: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   sprintf(string,"Counting times: %d\r\n",valueInput);
+                  ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: Demo.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Demo.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Demo.elf  |tee "Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  59656	   3360	   9008	  72024	  11958	Demo.elf
+'Finished building: Demo.elf.size'
+' '
+05:04:27 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:18: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   sprintf(string,"Counting times: %d\r\n",valueInput);
+                  ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: Demo.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Demo.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Demo.elf  |tee "Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  59656	   3360	   9008	  72024	  11958	Demo.elf
+'Finished building: Demo.elf.size'
+' '
+05:04:31 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:18: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   sprintf(string,"Counting times: %d \r\n",valueInput);
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: Demo.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Demo.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Demo.elf  |tee "Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  59656	   3360	   9008	  72024	  11958	Demo.elf
+'Finished building: Demo.elf.size'
+' '
+05:04:55 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:18: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   sprintf(string,"Counting times: %d \r\n",valueInput);
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: Demo.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Demo.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Demo.elf  |tee "Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  59656	   3360	   9008	  72024	  11958	Demo.elf
+'Finished building: Demo.elf.size'
+' '
+05:05:27 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:18: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   sprintf(string,"Counting times: %d \r\n",valueInput);
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: Demo.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Demo.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Demo.elf  |tee "Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  59656	   3360	   9008	  72024	  11958	Demo.elf
+'Finished building: Demo.elf.size'
+' '
+05:07:17 **** Auto Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:104:18: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   sprintf(string,"Counting times: %d \r\n",valueInput);
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: Demo.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Demo.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Demo.elf  |tee "Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  59752	   3360	   9008	  72120	  119b8	Demo.elf
+'Finished building: Demo.elf.size'
+' '
+05:07:21 **** Incremental Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:23:51 **** Incremental Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:30:46 **** Incremental Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:31:46 **** Incremental Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:33:27 **** Incremental Build of configuration Debug for project Demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

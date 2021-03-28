@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Mar 28 12:23:18 2021
+# Process ID: 8904
+# Current directory: f:/Demo/Demo.tmp/pwmip_demo_v1_0_project/PwmIp_Demo_v1_0_project.runs/impl_1
+# Command line: vivado.exe -log PwmIp_Demo_v1_0.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source PwmIp_Demo_v1_0.tcl -notrace
+# Log file: f:/Demo/Demo.tmp/pwmip_demo_v1_0_project/PwmIp_Demo_v1_0_project.runs/impl_1/PwmIp_Demo_v1_0.vdi
+# Journal file: f:/Demo/Demo.tmp/pwmip_demo_v1_0_project/PwmIp_Demo_v1_0_project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source PwmIp_Demo_v1_0.tcl -notrace

@@ -1,0 +1,109 @@
+
+*** Running vivado
+    with args -log Z_system_auto_pc_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Z_system_auto_pc_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Z_system_auto_pc_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 379.637 ; gain = 86.141
+INFO: [Synth 8-638] synthesizing module 'Z_system_auto_pc_0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ip/Z_system_auto_pc_0/synth/Z_system_auto_pc_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_axi_protocol_converter' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4229]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s_aw_channel' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3974]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s_cmd_translator' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s_incr_cmd' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s_incr_cmd' (1#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s_wrap_cmd' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s_wrap_cmd' (2#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s_cmd_translator' (3#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s_wr_cmd_fsm' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s_wr_cmd_fsm' (4#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s_aw_channel' (5#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3974]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s_b_channel' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s_simple_fifo' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s_simple_fifo' (6#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s_simple_fifo__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s_simple_fifo__parameterized0' (6#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s_b_channel' (7#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s_ar_channel' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4085]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s_rd_cmd_fsm' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s_rd_cmd_fsm' (8#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s_ar_channel' (9#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4085]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s_r_channel' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3814]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s_simple_fifo__parameterized1' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s_simple_fifo__parameterized1' (9#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b2s_simple_fifo__parameterized2' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s_simple_fifo__parameterized2' (9#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s_r_channel' (10#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3814]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axi_register_slice' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (11#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice' (12#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized0' (12#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized1' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized1' (12#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized2' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized2' (12#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (13#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axi_register_slice' (14#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axi_register_slice__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (14#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized3' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized3' (14#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized4' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized4' (14#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized5' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized5' (14#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized6' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axic_register_slice__parameterized6' (14#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (14#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_12_axi_register_slice__parameterized0' (14#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/0e33/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b2s' (15#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4229]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_axi_protocol_converter' (16#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
+INFO: [Synth 8-256] done synthesizing module 'Z_system_auto_pc_0' (17#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ip/Z_system_auto_pc_0/synth/Z_system_auto_pc_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:01:14 ; elapsed = 00:01:35 . Memory (MB): peak = 500.211 ; gain = 206.715
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:15 ; elapsed = 00:01:35 . Memory (MB): peak = 500.211 ; gain = 206.715
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 730.531 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:01:33 ; elapsed = 00:01:56 . Memory (MB): peak = 730.531 ; gain = 437.035
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:33 ; elapsed = 00:01:56 . Memory (MB): peak = 730.531 ; gain = 437.035
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:56 . Memory (MB): peak = 730.531 ; gain = 437.035
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:34 ; elapsed = 00:01:57 . Memory (MB): peak = 730.531 ; gain = 437.035
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:02:00 . Memory (MB): peak = 730.531 ; gain = 437.035
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:53 ; elapsed = 00:02:16 . Memory (MB): peak = 730.531 ; gain = 437.035
+Finished Timing Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:02:19 . Memory (MB): peak = 743.539 ; gain = 450.043
+Finished Technology Mapping : Time (s): cpu = 00:01:56 ; elapsed = 00:02:20 . Memory (MB): peak = 744.664 ; gain = 451.168
+Finished IO Insertion : Time (s): cpu = 00:01:57 ; elapsed = 00:02:21 . Memory (MB): peak = 744.664 ; gain = 451.168
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:57 ; elapsed = 00:02:21 . Memory (MB): peak = 744.664 ; gain = 451.168
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:57 ; elapsed = 00:02:21 . Memory (MB): peak = 744.664 ; gain = 451.168
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:57 ; elapsed = 00:02:21 . Memory (MB): peak = 744.664 ; gain = 451.168
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:57 ; elapsed = 00:02:21 . Memory (MB): peak = 744.664 ; gain = 451.168
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:57 ; elapsed = 00:02:21 . Memory (MB): peak = 744.664 ; gain = 451.168
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    18|
+|2     |LUT1    |    37|
+|3     |LUT2    |    19|
+|4     |LUT3    |   200|
+|5     |LUT4    |    47|
+|6     |LUT5    |    68|
+|7     |LUT6    |   112|
+|8     |SRL16E  |    11|
+|9     |SRLC32E |    36|
+|10    |FDRE    |   447|
+|11    |FDSE    |    37|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:57 ; elapsed = 00:02:21 . Memory (MB): peak = 744.664 ; gain = 451.168
+synth_design: Time (s): cpu = 00:02:01 ; elapsed = 00:02:25 . Memory (MB): peak = 744.664 ; gain = 456.938

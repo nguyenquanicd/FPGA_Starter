@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# 
+# Start of session at: Fri Jun 16 09:55:39 2017
+# Process ID: 37904
+# Current directory: C:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.sdk/webtalk/webtalk.log
+# Journal file: C:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,0 +1,8 @@
+11:06:07 **** Incremental Build of configuration Debug for project Peripheral_Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+
+11:06:08 Build Finished (took 950ms)
+

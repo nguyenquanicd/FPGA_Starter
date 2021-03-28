@@ -1,0 +1,91 @@
+
+*** Running vivado
+    with args -log Z_system_auto_ds_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Z_system_auto_ds_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Z_system_auto_ds_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 382.965 ; gain = 88.488
+INFO: [Synth 8-638] synthesizing module 'Z_system_auto_ds_0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ip/Z_system_auto_ds_0/synth/Z_system_auto_ds_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_12_top' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14450]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_12_axi_downsizer' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2380]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_12_b_downsizer' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1251]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_12_b_downsizer' (1#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1251]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_12_a_downsizer' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_axic_fifo' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_fifo_gen' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_fifo_gen' (20#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_axic_fifo' (21#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_axic_fifo__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_fifo_gen__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_fifo_gen__parameterized0' (21#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_axic_fifo__parameterized0' (21#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_12_a_downsizer' (22#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_12_w_downsizer' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2016]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_12_w_downsizer' (23#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2016]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_12_a_downsizer__parameterized0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_12_a_downsizer__parameterized0' (23#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_12_r_downsizer' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1533]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_12_r_downsizer' (24#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1533]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_12_axi_downsizer' (25#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2380]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_12_top' (26#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/fef9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14450]
+INFO: [Synth 8-256] done synthesizing module 'Z_system_auto_ds_0' (27#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ip/Z_system_auto_ds_0/synth/Z_system_auto_ds_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:02:30 ; elapsed = 00:02:51 . Memory (MB): peak = 511.922 ; gain = 217.445
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:30 ; elapsed = 00:02:51 . Memory (MB): peak = 511.922 ; gain = 217.445
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 737.496 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:02:45 ; elapsed = 00:03:06 . Memory (MB): peak = 737.496 ; gain = 443.020
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:45 ; elapsed = 00:03:06 . Memory (MB): peak = 737.496 ; gain = 443.020
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:45 ; elapsed = 00:03:06 . Memory (MB): peak = 737.496 ; gain = 443.020
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:46 ; elapsed = 00:03:08 . Memory (MB): peak = 737.496 ; gain = 443.020
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:51 ; elapsed = 00:03:13 . Memory (MB): peak = 737.496 ; gain = 443.020
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name                                                                                                                         | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives   | 
++------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst  | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 9               | RAM32M x 2   | 
+|inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst                  | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 26              | RAM32M x 5   | 
+|inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst                    | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 26              | RAM32M x 5   | 
++------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:05 ; elapsed = 00:03:27 . Memory (MB): peak = 737.496 ; gain = 443.020
+Finished Timing Optimization : Time (s): cpu = 00:03:08 ; elapsed = 00:03:31 . Memory (MB): peak = 788.043 ; gain = 493.566
+Finished Technology Mapping : Time (s): cpu = 00:03:09 ; elapsed = 00:03:32 . Memory (MB): peak = 788.043 ; gain = 493.566
+Finished IO Insertion : Time (s): cpu = 00:03:10 ; elapsed = 00:03:33 . Memory (MB): peak = 788.043 ; gain = 493.566
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:10 ; elapsed = 00:03:33 . Memory (MB): peak = 788.043 ; gain = 493.566
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:10 ; elapsed = 00:03:33 . Memory (MB): peak = 788.043 ; gain = 493.566
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:10 ; elapsed = 00:03:33 . Memory (MB): peak = 788.043 ; gain = 493.566
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:10 ; elapsed = 00:03:33 . Memory (MB): peak = 788.043 ; gain = 493.566
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:10 ; elapsed = 00:03:33 . Memory (MB): peak = 788.043 ; gain = 493.566
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    18|
+|2     |LUT1   |    22|
+|3     |LUT2   |    92|
+|4     |LUT3   |   105|
+|5     |LUT4   |   157|
+|6     |LUT5   |   108|
+|7     |LUT6   |   281|
+|8     |RAM32M |    12|
+|9     |FDCE   |    69|
+|10    |FDPE   |    63|
+|11    |FDRE   |   639|
+|12    |FDSE   |     5|
++------+-------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:10 ; elapsed = 00:03:33 . Memory (MB): peak = 788.043 ; gain = 493.566
+synth_design: Time (s): cpu = 00:03:13 ; elapsed = 00:03:37 . Memory (MB): peak = 788.043 ; gain = 499.820

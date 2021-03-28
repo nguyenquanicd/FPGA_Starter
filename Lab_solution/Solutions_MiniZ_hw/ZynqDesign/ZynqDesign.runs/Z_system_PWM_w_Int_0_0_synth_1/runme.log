@@ -1,0 +1,329 @@
+
+*** Running vivado
+    with args -log Z_system_PWM_w_Int_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Z_system_PWM_w_Int_0_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Z_system_PWM_w_Int_0_0.tcl -notrace
+Command: synth_design -top Z_system_PWM_w_Int_0_0 -part xc7z007sclg225-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s-clg225'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s-clg225'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12284 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 372.699 ; gain = 83.027
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Z_system_PWM_w_Int_0_0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ip/Z_system_PWM_w_Int_0_0/synth/Z_system_PWM_w_Int_0_0.vhd:89]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter PWM_PERIOD bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'PWM_w_Int_v1_0' declared at 'c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0.vhd:5' bound to instance 'U0' of component 'PWM_w_Int_v1_0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ip/Z_system_PWM_w_Int_0_0/synth/Z_system_PWM_w_Int_0_0.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'PWM_w_Int_v1_0' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0.vhd:52]
+	Parameter PWM_PERIOD bound to: 20 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'PWM_w_Int_v1_0_S00_AXI' declared at 'c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0_S00_AXI.vhd:5' bound to instance 'PWM_w_Int_v1_0_S00_AXI_inst' of component 'PWM_w_Int_v1_0_S00_AXI' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'PWM_w_Int_v1_0_S00_AXI' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0_S00_AXI.vhd:223]
+INFO: [Synth 8-226] default block is never used [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0_S00_AXI.vhd:353]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0_S00_AXI.vhd:221]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0_S00_AXI.vhd:352]
+INFO: [Synth 8-256] done synthesizing module 'PWM_w_Int_v1_0_S00_AXI' (1#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0_S00_AXI.vhd:86]
+	Parameter period bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'PWM_Controller_Int' declared at 'c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_Controller_Int.v:24' bound to instance 'PWM_Controller_Int_Inst' of component 'PWM_Controller_Int' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'PWM_Controller_Int' [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_Controller_Int.v:24]
+	Parameter period bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PWM_Controller_Int' (2#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_Controller_Int.v:24]
+INFO: [Synth 8-256] done synthesizing module 'PWM_w_Int_v1_0' (3#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'Z_system_PWM_w_Int_0_0' (4#1) [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ip/Z_system_PWM_w_Int_0_0/synth/Z_system_PWM_w_Int_0_0.vhd:89]
+WARNING: [Synth 8-3331] design PWM_w_Int_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design PWM_w_Int_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design PWM_w_Int_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design PWM_w_Int_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design PWM_w_Int_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design PWM_w_Int_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 413.781 ; gain = 124.109
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 413.781 ; gain = 124.109
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 705.930 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_Controller_Int.v:43]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PWM_w_Int_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+Module PWM_Controller_Int 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element U0/PWM_Controller_Int_Inst/count_reg was removed.  [c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_Controller_Int.v:43]
+WARNING: [Synth 8-3331] design Z_system_PWM_w_Int_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design Z_system_PWM_w_Int_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design Z_system_PWM_w_Int_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design Z_system_PWM_w_Int_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design Z_system_PWM_w_Int_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design Z_system_PWM_w_Int_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/PWM_w_Int_v1_0_S00_AXI_inst/aw_en_reg )
+INFO: [Synth 8-3886] merging instance 'U0/PWM_w_Int_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/PWM_w_Int_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/PWM_w_Int_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/PWM_w_Int_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/PWM_w_Int_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/PWM_w_Int_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/PWM_w_Int_v1_0_S00_AXI_inst/aw_en_reg) is unused and will be removed from module Z_system_PWM_w_Int_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/PWM_w_Int_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module Z_system_PWM_w_Int_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/PWM_w_Int_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module Z_system_PWM_w_Int_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/PWM_w_Int_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module Z_system_PWM_w_Int_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/PWM_w_Int_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module Z_system_PWM_w_Int_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/PWM_w_Int_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module Z_system_PWM_w_Int_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/PWM_w_Int_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module Z_system_PWM_w_Int_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     9|
+|2     |LUT1   |    21|
+|3     |LUT2   |    14|
+|4     |LUT3   |     4|
+|5     |LUT4   |    41|
+|6     |LUT5   |     5|
+|7     |LUT6   |    37|
+|8     |FDRE   |   189|
+|9     |FDSE   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------------+-----------------------+------+
+|      |Instance                        |Module                 |Cells |
++------+--------------------------------+-----------------------+------+
+|1     |top                             |                       |   322|
+|2     |  U0                            |PWM_w_Int_v1_0         |   322|
+|3     |    PWM_Controller_Int_Inst     |PWM_Controller_Int     |    51|
+|4     |    PWM_w_Int_v1_0_S00_AXI_inst |PWM_w_Int_v1_0_S00_AXI |   271|
++------+--------------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 705.930 ; gain = 416.258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 705.930 ; gain = 124.109
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 705.930 ; gain = 416.258
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+35 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 705.930 ; gain = 416.824
+INFO: [Common 17-1381] The checkpoint 'C:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.runs/Z_system_PWM_w_Int_0_0_synth_1/Z_system_PWM_w_Int_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.srcs/sources_1/bd/Z_system/ip/Z_system_PWM_w_Int_0_0/Z_system_PWM_w_Int_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Speedway/ZynqHW/2017_1/ZynqDesign/ZynqDesign.runs/Z_system_PWM_w_Int_0_0_synth_1/Z_system_PWM_w_Int_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 705.930 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 19 10:04:17 2017...

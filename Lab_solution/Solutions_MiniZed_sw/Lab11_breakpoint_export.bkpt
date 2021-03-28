@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<breakpoints>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="-1" lineNumber="-1" type="org.eclipse.cdt.debug.core.cFunctionBreakpointMarker">
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.tcf.debug.tcfStamp" value="true"/>
+<attrib name="requestedLine" value="-1"/>
+<attrib name="charEnd" value="-1"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="message" value="Function breakpoint:  [function: _exit]"/>
+<attrib name="requestedSourceHandle" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value=""/>
+<attrib name="charStart" value="-1"/>
+<attrib name="org.eclipse.cdt.debug.core.function" value="_exit"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="-1" lineNumber="-1" type="org.eclipse.cdt.debug.core.cFunctionBreakpointMarker">
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.tcf.debug.tcfStamp" value="true"/>
+<attrib name="requestedLine" value="-1"/>
+<attrib name="charEnd" value="-1"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="message" value="Function breakpoint:  [function: main]"/>
+<attrib name="requestedSourceHandle" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value=""/>
+<attrib name="charStart" value="-1"/>
+<attrib name="org.eclipse.cdt.debug.core.function" value="main"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="false" persistant="true" registered="true">
+<resource path="/Test_Peripherals/src/testperiph.c" type="1"/>
+<marker lineNumber="273" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.tcf.debug.tcfStamp" value="true"/>
+<attrib name="requestedLine" value="273"/>
+<attrib name="org.eclipse.debug.core.enabled" value="false"/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="message" value="Line breakpoint: testperiph.c [line: 273]"/>
+<attrib name="requestedSourceHandle" value="C:\Speedway\ZynqSW\2017_4\SDK_Workspace\Test_Peripherals\src\testperiph.c"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\Speedway\ZynqSW\2017_4\SDK_Workspace\Test_Peripherals\src\testperiph.c"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+</breakpoints>

@@ -1,0 +1,8 @@
+vhdl xil_defaultlib "../../../bd/Z_system/ip/Z_system_axi_bram_ctrl_0_0/sim/Z_system_axi_bram_ctrl_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/Z_system/ip/Z_system_rst_ps7_0_50M_0/sim/Z_system_rst_ps7_0_50M_0.vhd" 
+vhdl xil_defaultlib "../../../../ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0.vhd" 
+vhdl xil_defaultlib "../../../../ZynqDesign.srcs/sources_1/bd/Z_system/ipshared/73b3/hdl/PWM_w_Int_v1_0_S00_AXI.vhd" 
+vhdl xil_defaultlib "../../../bd/Z_system/ip/Z_system_PWM_w_Int_0_0/sim/Z_system_PWM_w_Int_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/Z_system/ip/Z_system_ila_0_0/sim/Z_system_ila_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/Z_system/hdl/Z_system.vhd" 
+nosort

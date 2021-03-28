@@ -1,0 +1,30 @@
+// BMM LOC annotation file.
+//
+// SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+// Vivado v2017.1 (64-bit)
+// Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Processor 'Z_system_i_processing_system7_0', ID 100, memory map.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+ADDRESS_MAP Z_system_i_processing_system7_0 ARM 100 Z_system_i/processing_system7_0
+
+    ///////////////////////////////////////////////////////////////////////////////
+    //
+    // Processor 'Z_system_i_processing_system7_0' address space 'Z_system_i_axi_bram_ctrl_0' 0x40000000:0x40001FFF (8 KBytes).
+    //
+    ///////////////////////////////////////////////////////////////////////////////
+
+    ADDRESS_SPACE Z_system_i_axi_bram_ctrl_0 RAMB32 [0x40000000:0x40001FFF] Z_system_i/axi_bram_ctrl_0
+        BUS_BLOCK
+            Z_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram RAMB32 [63:32] [0:1023] PLACED = X0Y6;
+            Z_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram RAMB32 [31:0] [0:1023] PLACED = X0Y5;
+        END_BUS_BLOCK;
+    END_ADDRESS_SPACE;
+
+END_ADDRESS_MAP;
+
