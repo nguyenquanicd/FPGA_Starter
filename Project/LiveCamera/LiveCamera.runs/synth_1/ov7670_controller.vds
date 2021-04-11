@@ -1,0 +1,694 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Apr 11 11:59:02 2021
+# Process ID: 6816
+# Current directory: F:/Fpga/LiveCamera/LiveCamera.runs/synth_1
+# Command line: vivado.exe -log ov7670_controller.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ov7670_controller.tcl
+# Log file: F:/Fpga/LiveCamera/LiveCamera.runs/synth_1/ov7670_controller.vds
+# Journal file: F:/Fpga/LiveCamera/LiveCamera.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ov7670_controller.tcl -notrace
+Command: synth_design -top ov7670_controller -part xc7z007sclg225-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7692 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 704.328 ; gain = 177.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [F:/Fpga/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/ov7670_controller_vhd.vhd:23]
+	Parameter clk_divide bound to: 8'b01111101 
+INFO: [Synth 8-3491] module 'i3c2' declared at 'F:/Fpga/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/i3c2_vhd.vhd:18' bound to instance 'Inst_i3c2' of component 'i3c2' [F:/Fpga/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/ov7670_controller_vhd.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'i3c2' [F:/Fpga/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/i3c2_vhd.vhd:34]
+	Parameter clk_divide bound to: 8'b01111101 
+INFO: [Synth 8-256] done synthesizing module 'i3c2' (1#1) [F:/Fpga/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/i3c2_vhd.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (2#1) [F:/Fpga/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/ov7670_controller_vhd.vhd:23]
+WARNING: [Synth 8-3917] design ov7670_controller has port reset driven by constant 1
+WARNING: [Synth 8-3917] design ov7670_controller has port pwdn driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 768.312 ; gain = 241.352
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 768.312 ; gain = 241.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 768.312 ; gain = 241.352
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_IO0'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_IO1'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_IO1'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT2'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT2'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT3'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT3'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT4'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT4'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT5'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT5'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT6'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT6'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT7'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT7'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT8'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT8'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT9'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_DAT9'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_IO10'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_IO10'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_IO11'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_IO11'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_IO12'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_IO12'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_IO13'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_IO13'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_A0'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_A0'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_A1'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARDUINO_A1'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_ADDR2'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ARD_ADDR2'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pl_led_g'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pl_led_g'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LED_R'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LED_R'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_SW'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_SW'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_SDA'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_SDA'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_SCL'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_SCL'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN1'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN1'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN2'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN2'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN3'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN3'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN4'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN4'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN7'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN7'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN8'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN8'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN9'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN9'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN10'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_PIN10'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN1'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN1'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN2'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN2'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN3'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN3'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN4'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN4'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN7'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN7'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN8'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN8'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN9'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN9'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN10'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD2_PIN10'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUDIO_CLK'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUDIO_CLK'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUDIO_DAT'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUDIO_DAT'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_SDIO_CLK'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:177]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_SDIO_CLK'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_SDIO_CMD'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:180]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:180]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_SDIO_CMD'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_SDIO_DAT[0]'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_SDIO_DAT[0]'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_SDIO_DAT[1]'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_SDIO_DAT[1]'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:187]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_SDIO_DAT[2]'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_SDIO_DAT[2]'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:190]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_SDIO_DAT[3]'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_SDIO_DAT[3]'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_REG_ON'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_REG_ON'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:196]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:196]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_HOST_WAKE'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WL_HOST_WAKE'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:199]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:199]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BT_TXD_OUT'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BT_TXD_OUT'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:202]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:202]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BT_RXD_IN'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BT_RXD_IN'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BT_RTS_OUT_N'. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:207]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 889.086 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 894.086 ; gain = 5.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 894.086 ; gain = 367.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 894.086 ; gain = 367.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 894.086 ; gain = 367.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 894.086 ; gain = 367.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	  21 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   6 Input     16 Bit        Muxes := 1     
+	  13 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   6 Input     10 Bit        Muxes := 1     
+	  13 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   6 Input      9 Bit        Muxes := 1     
+	  13 Input      9 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 2     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 6     
+	  19 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 35    
+	   6 Input      1 Bit        Muxes := 15    
+	   7 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ov7670_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module i3c2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  21 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   6 Input     16 Bit        Muxes := 1     
+	  13 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   6 Input     10 Bit        Muxes := 1     
+	  13 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   6 Input      9 Bit        Muxes := 1     
+	  13 Input      9 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 2     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 6     
+	  19 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 35    
+	   6 Input      1 Bit        Muxes := 15    
+	   7 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6040] Register Inst_i3c2/pcnext_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-3917] design ov7670_controller has port reset driven by constant 1
+WARNING: [Synth 8-3917] design ov7670_controller has port pwdn driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 894.086 ; gain = 367.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+------------+---------------+----------------+
+|Module Name       | RTL Object | Depth x Width | Implemented As | 
++------------------+------------+---------------+----------------+
+|ov7670_controller | data_reg   | 1024x9        | Block RAM      | 
++------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_2/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 894.086 ; gain = 367.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 894.086 ; gain = 367.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 894.086 ; gain = 367.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 895.262 ; gain = 368.301
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 895.262 ; gain = 368.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 895.262 ; gain = 368.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 895.262 ; gain = 368.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 895.289 ; gain = 368.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 895.289 ; gain = 368.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     4|
+|3     |LUT1     |    18|
+|4     |LUT2     |    13|
+|5     |LUT3     |    14|
+|6     |LUT4     |    21|
+|7     |LUT5     |    24|
+|8     |LUT6     |    70|
+|9     |RAMB18E1 |     1|
+|10    |FDRE     |    69|
+|11    |IBUF     |     2|
+|12    |IOBUF    |     1|
+|13    |OBUF     |     5|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------+-------+------+
+|      |Instance    |Module |Cells |
++------+------------+-------+------+
+|1     |top         |       |   243|
+|2     |  Inst_i3c2 |i3c2   |   229|
++------+------------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 895.289 ; gain = 368.328
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 895.289 ; gain = 242.555
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 895.289 ; gain = 368.328
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 910.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 106 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 910.199 ; gain = 609.953
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 910.199 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/Fpga/LiveCamera/LiveCamera.runs/synth_1/ov7670_controller.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ov7670_controller_utilization_synth.rpt -pb ov7670_controller_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 11 11:59:36 2021...

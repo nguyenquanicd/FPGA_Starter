@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z007sclg225-1" LaunchTime="1618117138">
+  <File Type="PA-TCL" Name="ov7670_controller.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="ov7670_controller_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="ov7670_controller_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ov7670_controller.vds"/>
+  <File Type="RDS-UTIL" Name="ov7670_controller_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ov7670_controller_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ov7670_controller.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ov7670_controller_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ov7670_controller_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/i3c2_vhd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/i3c2_vhd.vhd"/>
+        <Attr Name="ImportTime" Val="1618112403"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/ov7670_controller_vhd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/ov7670_controller_vhd.vhd"/>
+        <Attr Name="ImportTime" Val="1618112407"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/address_generator_vhd.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/address_generator_vhd.vhd"/>
+        <Attr Name="ImportTime" Val="1618112392"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/debounce_vhd.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/debounce_vhd.vhd"/>
+        <Attr Name="ImportTime" Val="1618112400"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/ov7670_capture_vhd.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/ov7670_capture_vhd.vhd"/>
+        <Attr Name="ImportTime" Val="1618112410"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/vga.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/vga.vhd"/>
+        <Attr Name="ImportTime" Val="1618112389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/vga_vhd.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/vga_vhd.vhd"/>
+        <Attr Name="ImportTime" Val="1618112398"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ov7670_controller"/>
+      <Option Name="TopLib" Val="xil_defaultlib"/>
+      <Option Name="TopArchitecture" Val="Behavioral"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/Downloads/ov7670_controller_vhd.vhd"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Fpga/minized_pins.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../minized_pins.xdc"/>
+        <Attr Name="ImportTime" Val="1548836090"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
