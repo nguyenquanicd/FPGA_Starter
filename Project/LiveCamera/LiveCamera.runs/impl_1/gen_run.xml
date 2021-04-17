@@ -1,76 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z007sclg225-1" LaunchTime="1618117188">
-  <File Type="BITSTR-BMM" Name="ov7670_controller_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="ov7670_controller_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="ov7670_controller_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="ov7670_controller_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="ov7670_controller.tcl"/>
-  <File Type="OPT-TIMING" Name="ov7670_controller_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="ov7670_controller_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="ov7670_controller_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="ov7670_controller_reports.tcl"/>
-  <File Type="OPT-DRC" Name="ov7670_controller_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="ov7670_controller.hwdef"/>
-  <File Type="PWROPT-DCP" Name="ov7670_controller_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="ov7670_controller_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="ov7670_controller_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="ov7670_controller_placed.dcp"/>
-  <File Type="PLACE-IO" Name="ov7670_controller_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="ov7670_controller_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="ov7670_controller_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="ov7670_controller_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="ov7670_controller_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="ov7670_controller_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="ov7670_controller_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="ov7670_controller.bgn"/>
-  <File Type="PLACE-TIMING" Name="ov7670_controller_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="ov7670_controller_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="ov7670_controller.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="ov7670_controller_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="ov7670_controller_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="ov7670_controller_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="ov7670_controller.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="ov7670_controller_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="ov7670_controller_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="ov7670_controller_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="ov7670_controller_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="ov7670_controller_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="ov7670_controller_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7z007sclg225-1" LaunchTime="1618677233">
+  <File Type="BITSTR-BMM" Name="OV7670_QVGA_wrapper_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="OV7670_QVGA_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="OV7670_QVGA_wrapper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="OV7670_QVGA_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="OV7670_QVGA_wrapper.tcl"/>
+  <File Type="OPT-TIMING" Name="OV7670_QVGA_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="OV7670_QVGA_wrapper_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="OV7670_QVGA_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="OV7670_QVGA_wrapper_reports.tcl"/>
+  <File Type="OPT-DRC" Name="OV7670_QVGA_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="OV7670_QVGA_wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="OV7670_QVGA_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="OV7670_QVGA_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="OV7670_QVGA_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="OV7670_QVGA_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="OV7670_QVGA_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="OV7670_QVGA_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="OV7670_QVGA_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="OV7670_QVGA_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="OV7670_QVGA_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="OV7670_QVGA_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="OV7670_QVGA_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="OV7670_QVGA_wrapper.bgn"/>
+  <File Type="PLACE-TIMING" Name="OV7670_QVGA_wrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="OV7670_QVGA_wrapper_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="OV7670_QVGA_wrapper.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="OV7670_QVGA_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="OV7670_QVGA_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="OV7670_QVGA_wrapper_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="OV7670_QVGA_wrapper.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="OV7670_QVGA_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="OV7670_QVGA_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="OV7670_QVGA_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="OV7670_QVGA_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="OV7670_QVGA_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="OV7670_QVGA_wrapper_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="ov7670_controller.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="ov7670_controller_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="ov7670_controller.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="ov7670_controller_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ov7670_controller_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="ov7670_controller.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ov7670_controller_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="ov7670_controller_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="ov7670_controller_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="ov7670_controller_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="ov7670_controller_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="ov7670_controller_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="ov7670_controller_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="ov7670_controller_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="ov7670_controller_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="ov7670_controller_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="ov7670_controller_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="ov7670_controller_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ov7670_controller_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ov7670_controller_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ov7670_controller_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ov7670_controller_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ov7670_controller_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ov7670_controller_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ov7670_controller_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="ov7670_controller.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ov7670_controller_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="ov7670_controller.rbt"/>
-  <File Type="BITSTR-NKY" Name="ov7670_controller.nky"/>
-  <File Type="BG-DRC" Name="ov7670_controller.drc"/>
-  <File Type="RDI-RDI" Name="ov7670_controller.vdi"/>
+  <File Type="BITSTR-LTX" Name="OV7670_QVGA_wrapper.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="OV7670_QVGA_wrapper_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="OV7670_QVGA_wrapper.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="OV7670_QVGA_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="OV7670_QVGA_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="OV7670_QVGA_wrapper.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="OV7670_QVGA_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="OV7670_QVGA_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="OV7670_QVGA_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="OV7670_QVGA_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="OV7670_QVGA_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="OV7670_QVGA_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="OV7670_QVGA_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="OV7670_QVGA_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="OV7670_QVGA_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="OV7670_QVGA_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="OV7670_QVGA_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="OV7670_QVGA_wrapper_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="OV7670_QVGA_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="OV7670_QVGA_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="OV7670_QVGA_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="OV7670_QVGA_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="OV7670_QVGA_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="OV7670_QVGA_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="OV7670_QVGA_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="OV7670_QVGA_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="OV7670_QVGA_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="OV7670_QVGA_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="OV7670_QVGA_wrapper.nky"/>
+  <File Type="BG-DRC" Name="OV7670_QVGA_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="OV7670_QVGA_wrapper.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/address_generator_vhd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/address_generator_vhd.vhd"/>
+        <Attr Name="ImportTime" Val="1618112392"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/vga_vhd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/vga_vhd.vhd"/>
+        <Attr Name="ImportTime" Val="1618112398"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/vga.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/vga.vhd"/>
+        <Attr Name="ImportTime" Val="1618112389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/debounce_vhd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/debounce_vhd.vhd"/>
+        <Attr Name="ImportTime" Val="1618112400"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/ov7670_capture_vhd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/ov7670_capture_vhd.vhd"/>
+        <Attr Name="ImportTime" Val="1618112410"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/Downloads/i3c2_vhd.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/i3c2_vhd.vhd"/>
@@ -87,54 +127,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Downloads/address_generator_vhd.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/address_generator_vhd.vhd"/>
-        <Attr Name="ImportTime" Val="1618112392"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Downloads/debounce_vhd.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/debounce_vhd.vhd"/>
-        <Attr Name="ImportTime" Val="1618112400"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Downloads/ov7670_capture_vhd.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/ov7670_capture_vhd.vhd"/>
-        <Attr Name="ImportTime" Val="1618112410"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Downloads/vga.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/vga.vhd"/>
-        <Attr Name="ImportTime" Val="1618112389"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Downloads/vga_vhd.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/vga_vhd.vhd"/>
-        <Attr Name="ImportTime" Val="1618112398"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v">
+      <FileInfo>
+        <Attr Name="IsGlobalInclude" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -142,18 +144,14 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ov7670_controller"/>
-      <Option Name="TopLib" Val="xil_defaultlib"/>
-      <Option Name="TopArchitecture" Val="Behavioral"/>
-      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/Downloads/ov7670_controller_vhd.vhd"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="OV7670_QVGA_wrapper"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/Fpga/minized_pins.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../minized_pins.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Fpga/minized_pins.xdc"/>
         <Attr Name="ImportTime" Val="1548836090"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -170,9 +168,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -183,4 +179,17 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_ov7670_controller_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_VGA_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_Address_Generator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_RGB_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_debounce_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_ov7670_capture_0_0"/>
 </GenRun>

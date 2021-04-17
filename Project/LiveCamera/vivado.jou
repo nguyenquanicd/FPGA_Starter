@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr 17 21:16:48 2021
+# Process ID: 2996
+# Current directory: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4728 F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.xpr
+# Log file: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/vivado.log
+# Journal file: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.xpr
+update_compile_order -fileset sources_1
+open_bd_design {F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd}
+validate_bd_design -force
+save_bd_design
+open_run impl_1
+open_bd_design {F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd}
+get_bd_ports
+synth_design -rtl -name rtl_1
+open_bd_design {F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd}
+make_wrapper -files [get_files F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd] -top
+add_files -norecurse F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v
+update_compile_order -fileset sources_1
+set_property is_global_include true [get_files  F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top OV7670_QVGA_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_module_reference OV7670_QVGA_Address_Generator_0_0
+update_module_reference OV7670_QVGA_RGB_0_0
+update_module_reference OV7670_QVGA_VGA_0_0
+update_module_reference OV7670_QVGA_debounce_0_0
+update_module_reference OV7670_QVGA_ov7670_capture_0_0
+update_module_reference OV7670_QVGA_ov7670_controller_0_0
+set_property is_enabled false [get_files  F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v]
+set_property is_enabled true [get_files  F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+open_bd_design {F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd}
+generate_target all [get_files F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd]
+launch_runs OV7670_QVGA_Address_Generator_0_0_synth_1
+wait_on_run OV7670_QVGA_Address_Generator_0_0_synth_1
+launch_runs OV7670_QVGA_RGB_0_0_synth_1
+wait_on_run OV7670_QVGA_RGB_0_0_synth_1
+launch_runs OV7670_QVGA_VGA_0_0_synth_1
+wait_on_run OV7670_QVGA_VGA_0_0_synth_1
+launch_runs OV7670_QVGA_axi_gpio_0_0_synth_1
+wait_on_run OV7670_QVGA_axi_gpio_0_0_synth_1
+launch_runs OV7670_QVGA_axi_uartlite_0_0_synth_1
+wait_on_run OV7670_QVGA_axi_uartlite_0_0_synth_1
+launch_runs OV7670_QVGA_blk_mem_gen_0_0_synth_1
+wait_on_run OV7670_QVGA_blk_mem_gen_0_0_synth_1
+launch_runs OV7670_QVGA_clk_wiz_0_0_synth_1
+wait_on_run OV7670_QVGA_clk_wiz_0_0_synth_1
+launch_runs OV7670_QVGA_debounce_0_0_synth_1
+wait_on_run OV7670_QVGA_debounce_0_0_synth_1
+launch_runs OV7670_QVGA_ov7670_capture_0_0_synth_1
+wait_on_run OV7670_QVGA_ov7670_capture_0_0_synth_1
+launch_runs OV7670_QVGA_ov7670_controller_0_0_synth_1
+wait_on_run OV7670_QVGA_ov7670_controller_0_0_synth_1
+launch_runs OV7670_QVGA_processing_system7_0_0_synth_1
+wait_on_run OV7670_QVGA_processing_system7_0_0_synth_1
+launch_runs OV7670_QVGA_xbar_0_synth_1
+wait_on_run OV7670_QVGA_xbar_0_synth_1
+launch_runs OV7670_QVGA_rst_ps7_0_50M_0_synth_1
+wait_on_run OV7670_QVGA_rst_ps7_0_50M_0_synth_1
+launch_runs OV7670_QVGA_auto_pc_0_synth_1
+wait_on_run OV7670_QVGA_auto_pc_0_synth_1
+refresh_design
+open_bd_design {F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd}
+update_module_reference OV7670_QVGA_Address_Generator_0_0
+update_module_reference OV7670_QVGA_RGB_0_0
+update_module_reference OV7670_QVGA_VGA_0_0
+update_module_reference OV7670_QVGA_debounce_0_0
+update_module_reference OV7670_QVGA_ov7670_capture_0_0
+update_module_reference OV7670_QVGA_ov7670_controller_0_0
+generate_target all [get_files F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd]
+launch_runs OV7670_QVGA_Address_Generator_0_0_synth_1
+wait_on_run OV7670_QVGA_Address_Generator_0_0_synth_1
+set_property package_pin "" [get_ports [list  {VGA_B[3]}]]
+set_property package_pin "" [get_ports [list  {VGA_B[2]}]]
+reset_run OV7670_QVGA_RGB_0_0_synth_1
+launch_runs OV7670_QVGA_RGB_0_0_synth_1
+wait_on_run OV7670_QVGA_RGB_0_0_synth_1
+reset_run OV7670_QVGA_VGA_0_0_synth_1
+launch_runs OV7670_QVGA_VGA_0_0_synth_1
+wait_on_run OV7670_QVGA_VGA_0_0_synth_1
+reset_run OV7670_QVGA_debounce_0_0_synth_1
+launch_runs OV7670_QVGA_debounce_0_0_synth_1
+wait_on_run OV7670_QVGA_debounce_0_0_synth_1
+reset_run OV7670_QVGA_ov7670_capture_0_0_synth_1
+launch_runs OV7670_QVGA_ov7670_capture_0_0_synth_1
+wait_on_run OV7670_QVGA_ov7670_capture_0_0_synth_1
+reset_run OV7670_QVGA_ov7670_controller_0_0_synth_1
+launch_runs OV7670_QVGA_ov7670_controller_0_0_synth_1
+wait_on_run OV7670_QVGA_ov7670_controller_0_0_synth_1
+reset_run OV7670_QVGA_auto_pc_0_synth_1
+launch_runs OV7670_QVGA_auto_pc_0_synth_1
+wait_on_run OV7670_QVGA_auto_pc_0_synth_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd]
+refresh_design

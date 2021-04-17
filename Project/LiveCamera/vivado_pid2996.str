@@ -1,0 +1,2274 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 2996
+License: Customer
+
+Current time: 	Sat Apr 17 21:17:22 ICT 2021
+Time zone: 	Indochina Time (Asia/Bangkok)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 6 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	HaTiDe
+User home directory: C:/Users/HaTiDe
+User working directory: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/HaTiDe/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/HaTiDe/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/HaTiDe/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/vivado.log
+Vivado journal file location: 	F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/vivado.jou
+Engine tmp dir: 	F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/.Xil/Vivado-2996-DESKTOP-O25IKCM
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 601 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 616 MB. GUI used memory: 49 MB. Current time: 4/17/21, 9:17:24 PM ICT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 80 MB (+81686kb) [00:00:22]
+// [Engine Memory]: 663 MB (+543484kb) [00:00:22]
+// [GUI Memory]: 96 MB (+12016kb) [00:00:23]
+// [GUI Memory]: 103 MB (+2086kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  5401 ms.
+// Tcl Message: open_project F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'F:/Fpga/LiveCamera' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 732.742 ; gain = 106.488 
+// Project name: LiveCamera; location: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera; part: xc7z007sclg225-1
+// [Engine Memory]: 707 MB (+12120kb) [00:00:27]
+dismissDialog("Open Project"); // by (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 119 MB (+11536kb) [00:00:30]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 61 MB. Current time: 4/17/21, 9:17:39 PM ICT
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 579 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// by (cl):  Open Block Design : addNotify
+// Tcl Message: open_bd_design {F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd} 
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Successfully read diagram <OV7670_QVGA> from BD file <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 756 MB (+13474kb) [00:10:18]
+// WARNING: HEventQueue.dispatchEvent() is taking  2899 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+// Elapsed time: 13 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 843.484 ; gain = 91.871 
+// HMemoryUtils.trashcanNow. Engine heap size: 800 MB. GUI used memory: 63 MB. Current time: 4/17/21, 9:27:29 PM ICT
+// 'bB' command handler elapsed time: 14 seconds
+// [Engine Memory]: 800 MB (+6636kb) [00:10:21]
+dismissDialog("Open Block Design"); // by (cl)
+// Elapsed time: 654 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK (aH, cl)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aR, cl): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.. ]", 100, false); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.. ]", 100, false, false, false, false, false, true); // ah (O, cl) - Double Click
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "validate_bd_design_rsb"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design -force'
+selectButton("OptionPane.button", "Rerun Validate Design"); // JButton (A, G)
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// by (cl):  Validate Design : addNotify
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: validate_bd_design -force 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// HMemoryUtils.trashcanNow. Engine heap size: 825 MB. GUI used memory: 64 MB. Current time: 4/17/21, 9:38:39 PM ICT
+dismissDialog("Validate Design"); // by (cl)
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'. ]", 1, false); // ah (O, cl)
+typeControlKey(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 'a'); // ah (O, cl)
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3491] module 'i3c2' declared at 'F:/Fpga/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/i3c2_vhd.vhd:18' bound to instance 'Inst_i3c2' of component 'i3c2' [F:/Fpga/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/ov7670_controller_vhd.vhd:51]. ]", 3, false); // ah (O, cl)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK (aH, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (F, cl)
+// PAPropertyPanels.initPanels (minized_pins.xdc) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, minized_pins.xdc]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, minized_pins.xdc]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 862 MB. GUI used memory: 65 MB. Current time: 4/17/21, 9:38:59 PM ICT
+// [Engine Memory]: 862 MB (+23163kb) [00:22:01]
+// Elapsed time: 12 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 90, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;clk;-;;-;10;-;"); // ah (O, cl)
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// al (cl): Save Project: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,050 MB. GUI used memory: 65 MB. Current time: 4/17/21, 9:39:14 PM ICT
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// [Engine Memory]: 1,050 MB (+151900kb) [00:22:06]
+// by (cl):  Save Constraints : addNotify
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Save Project"); // al (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// by (cl):  Open Implemented Design : addNotify
+dismissDialog("Save Constraints"); // by (cl)
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 1,284 MB (+190815kb) [00:22:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,329 MB. GUI used memory: 65 MB. Current time: 4/17/21, 9:39:34 PM ICT
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,734 MB. GUI used memory: 65 MB. Current time: 4/17/21, 9:39:37 PM ICT
+// [Engine Memory]: 1,734 MB (+403924kb) [00:22:29]
+// [Engine Memory]: 1,839 MB (+19657kb) [00:22:30]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Xgd.load filename: C:/Xilinx/Vivado/2019.1/data/parts/xilinx/zynq/devint/zynq/xc7z007s/xc7z007s.xgd; ZipEntry: xc7z007s_detail.xgd elapsed time: 0.9s
+// [GUI Memory]: 138 MB (+13913kb) [00:22:31]
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 151 MB (+6540kb) [00:22:33]
+// WARNING: HEventQueue.dispatchEvent() is taking  3448 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z007sclg225-1 INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 1819.797 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 1819.797 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1819.797 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 1 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 1 instances  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2059.277 ; gain = 742.086 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1639 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// PAPropertyPanels.initPanels (clk) elapsed time: 0.2s
+// [Engine Memory]: 1,934 MB (+2294kb) [00:22:38]
+// Elapsed time: 30 seconds
+dismissDialog("Open Implemented Design"); // by (cl)
+// [GUI Memory]: 161 MB (+2710kb) [00:22:39]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 90, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;clk;-;;-;10;-;"); // ah (O, cl)
+// Device view-level: 0.3
+// HMemoryUtils.trashcanNow. Engine heap size: 1,949 MB. GUI used memory: 104 MB. Current time: 4/17/21, 9:39:53 PM ICT
+// Device view-level: 0.6
+// Device view-level: 0.9
+// HMemoryUtils.trashcanNow. Engine heap size: 1,970 MB. GUI used memory: 104 MB. Current time: 4/17/21, 9:39:54 PM ICT
+// Device view-level: 1.2
+// Device view-level: 1.5
+// Device view-level: 1.8
+// Device view-level: 2.0
+// Device view-level: 2.3
+// HMemoryUtils.trashcanNow. Engine heap size: 1,976 MB. GUI used memory: 104 MB. Current time: 4/17/21, 9:39:56 PM ICT
+// Device view-level: 2.6
+// HMemoryUtils.trashcanNow. Engine heap size: 1,976 MB. GUI used memory: 104 MB. Current time: 4/17/21, 9:39:58 PM ICT
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 310842, 247926); // D (I, cl)
+// Device select: 'I/O Port - clk'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 15543, 12397, 1056, 509); // U (k, cl)
+// Device view-level: 2.3
+// HMemoryUtils.trashcanNow. Engine heap size: 1,976 MB. GUI used memory: 105 MB. Current time: 4/17/21, 9:40:01 PM ICT
+// Device view-level: 2.0
+// [Engine Memory]: 2,046 MB (+16296kb) [00:22:54]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 90, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;config_finished;-;;-;10;-;"); // ah (O, cl)
+// Device view-level: 1.8
+// Device view-level: 1.5
+// HMemoryUtils.trashcanNow. Engine heap size: 2,047 MB. GUI used memory: 104 MB. Current time: 4/17/21, 9:40:04 PM ICT
+// Device view-level: 1.2
+// Device view-level: 0.6
+// Device view-level: 0.3
+// Device view-level: 0.0
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 90, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;pwdn;-;;-;10;-;"); // ah (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,047 MB. GUI used memory: 104 MB. Current time: 4/17/21, 9:40:07 PM ICT
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 90, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;resend;-;;-;10;-;"); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 90, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;reset;-;;-;10;-;"); // ah (O, cl)
+// Device view-level: 0.3
+// Device view-level: 0.6
+// HMemoryUtils.trashcanNow. Engine heap size: 2,054 MB. GUI used memory: 104 MB. Current time: 4/17/21, 9:40:13 PM ICT
+// Device view-level: 0.9
+// Device view-level: 1.2
+// Device view-level: 1.5
+// HMemoryUtils.trashcanNow. Engine heap size: 2,054 MB. GUI used memory: 104 MB. Current time: 4/17/21, 9:40:14 PM ICT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,054 MB. GUI used memory: 105 MB. Current time: 4/17/21, 9:40:14 PM ICT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,054 MB. GUI used memory: 105 MB. Current time: 4/17/21, 9:40:14 PM ICT
+// Device view-level: 1.8
+// Device view-level: 2.0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,054 MB. GUI used memory: 105 MB. Current time: 4/17/21, 9:40:16 PM ICT
+// Device view-level: 2.3
+// Device view-level: 2.6
+// HMemoryUtils.trashcanNow. Engine heap size: 2,054 MB. GUI used memory: 105 MB. Current time: 4/17/21, 9:40:18 PM ICT
+// Device view-level: 2.9
+// Device view-level: 3.2
+// HMemoryUtils.trashcanNow. Engine heap size: 2,054 MB. GUI used memory: 106 MB. Current time: 4/17/21, 9:40:20 PM ICT
+// Device view-level: 3.5
+// Elapsed time: 13 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 310968, 330683); // D (I, cl)
+// Device select: 'I/O Port - reset'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 52479, 55806, 1056, 509); // U (k, cl)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 310968, 330683); // D (I, cl)
+// Device select: 'I/O Port - reset'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 52479, 55806, 1056, 509); // U (k, cl)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 310968, 330683, false, false, false, false, true); // D (I, cl) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,054 MB. GUI used memory: 107 MB. Current time: 4/17/21, 9:40:25 PM ICT
+// Device select: 'I/O Port - reset'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 52479, 55806, 1056, 509); // U (k, cl)
+// PAPropertyPanels.initPanels (Site: P9) elapsed time: 0.2s
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 311200, 330689); // D (I, cl)
+// Device select: 'I/O Port - reset'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 52518, 55807, 1056, 509); // U (k, cl)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 311105, 330707); // D (I, cl)
+// Device select: 'I/O Port - reset'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 52502, 55810, 1056, 509); // U (k, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "minized_pins.xdc", 2); // k (j, cl)
+selectCodeEditor("minized_pins.xdc", 473, 288); // cl (w, cl)
+selectButton("FindAndReplaceDialog.cl_Close", "Close"); // JButton (cl, FindAndReplaceDialog)
+selectCodeEditor("minized_pins.xdc", 557, 294); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset", true); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l (aT, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aT, cl)
+selectCodeEditor("minized_pins.xdc", 493, 145); // cl (w, cl)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK (aH, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// by (cl):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design {F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd} 
+dismissDialog("Open Block Design"); // by (cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+// [GUI Memory]: 170 MB (+414kb) [00:23:58]
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, minized_pins.xdc]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, minized_pins.xdc]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_ADDRESS_EDITOR, "Address Editor"); // c
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "VGA_R"); // Y (Q, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "minized_pins.xdc", 1); // k (j, cl)
+selectCodeEditor("minized_pins.xdc", 488, 296); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "VGA_R"); // l (aT, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "minized_pins.xdc", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "I2C_SDA"); // Y (Q, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "minized_pins.xdc", 1); // k (j, cl)
+selectCodeEditor("minized_pins.xdc", 580, 125); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "I2C_SDA"); // l (aT, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "VGA_R"); // Y (Q, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "minized_pins.xdc", 1); // k (j, cl)
+selectCodeEditor("minized_pins.xdc", 502, 238); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "VGA_R"); // l (aT, cl)
+selectCodeEditor("minized_pins.xdc", 191, 141); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 191, 141, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("minized_pins.xdc", 587, 337); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "minized_pins.xdc", 1); // k (j, cl)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "minized_pins.xdc", 1, false, true); // k (j, cl) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (aH, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "minized_pins.xdc", 1); // k (j, cl)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "minized_pins.xdc", 1, false, true); // k (j, cl) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (aH, cl)
+selectCodeEditor("minized_pins.xdc", 374, 350); // cl (w, cl)
+typeControlKey((HResource) null, "minized_pins.xdc", 'c'); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 560, 288); // cl (w, cl)
+typeControlKey((HResource) null, "minized_pins.xdc", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "minized_pins.xdc", 'v'); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "minized_pins.xdc", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "minized_pins.xdc", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "minized_pins.xdc", 'c'); // cl (w, cl)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+// Tcl Command: 'rdi::info_commands {l*}'
+// Tcl Command: 'rdi::info_commands {lis*}'
+// Tcl Command: 'rdi::info_commands {lis*}'
+// Tcl Command: 'rdi::info_commands {list*}'
+// Tcl Command: 'rdi::info_commands {list_*}'
+// Tcl Command: 'rdi::info_commands {list_p*}'
+// Tcl Command: 'rdi::info_commands {list_po*}'
+// Tcl Command: 'rdi::info_commands {list_por*}'
+// Tcl Command: 'rdi::info_commands {p*}'
+// Tcl Command: 'rdi::info_commands {por*}'
+// Tcl Command: 'rdi::info_commands {port*}'
+// Tcl Command: 'rdi::info_commands {po*}'
+// Tcl Command: 'rdi::info_commands {get*}'
+// Tcl Command: 'rdi::info_commands {getP*}'
+// Tcl Command: 'rdi::info_commands {get*}'
+// Tcl Command: 'rdi::info_commands {getp*}'
+// Tcl Command: 'rdi::info_commands {getpor*}'
+// Tcl Command: 'rdi::info_commands {getport*}'
+// Tcl Command: 'rdi::info_commands {g*}'
+// Tcl Command: 'rdi::info_commands {ge*}'
+// Tcl Command: 'rdi::info_commands {get*}'
+// Elapsed time: 35 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get", true); // aC (Z, cl)
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_bd_ports"); // aC (Z, cl)
+// Tcl Command: 'get_bd_ports'
+// Tcl Command: 'get_bd_ports'
+// Tcl Message: get_bd_ports 
+// Tcl Message: /ARDUINO_A0 /ARDUINO_A1 /ARDUINO_IO0 /ARDUINO_IO1 /ARDUINO_IO10 /ARDUINO_IO11 /ARDUINO_IO12 /ARDUINO_IO13 /DDR_addr /DDR_ba /DDR_cas_n /DDR_ck_n /DDR_ck_p /DDR_cke /DDR_cs_n /DDR_dm /DDR_dq /DDR_dqs_n /DDR_dqs_p /DDR_odt /DDR_ras_n /DDR_reset_n /DDR_we_n /FIXED_IO_ddr_vrn /FIXED_IO_ddr_vrp /FIXED_IO_mio /FIXED_IO_ps_clk /FIXED_IO_ps_porb /FIXED_IO_ps_srstb /I2C_SCL /I2C_SDA /PL_LED_R /PL_SW /VGA_B /VGA_G /VGA_HS /VGA_R /VGA_VS /d_0 /pl_led_g_tri_o 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 622, 350); // dt (af, cl)
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dt (af, cl)
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 243, 376); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 56, 349); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 56, 349, false, false, false, false, true); // dt (af, cl) - Double Click
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dt (af, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 17, 333); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 4, 343); // dt (af, cl)
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dt (af, cl)
+// Elapsed time: 106 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, minized_pins.xdc]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, minized_pins.xdc]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("minized_pins.xdc", 181, 148); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 193, 232); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 193, 232, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("minized_pins.xdc", 191, 214); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 191, 214, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("minized_pins.xdc", 541, 418); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 95, 442); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 35, 261); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 393, 269); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 393, 269, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("minized_pins.xdc", 44, 224); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 44, 224, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("minized_pins.xdc", 425, 275); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 425, 274, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("minized_pins.xdc", 424, 266); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 424, 266, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("minized_pins.xdc", 573, 401); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 682, 274); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, minized_pins.xdc]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, minized_pins.xdc]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("minized_pins.xdc", 447, 190); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "d_0"); // l (aT, cl)
+selectCodeEditor("minized_pins.xdc", 219, 155); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pl_led_g_tri_o"); // l (aT, cl)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, cl)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, cl)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cl)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, cl)
+// al (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// A (cl): Elaborate Design: addNotify
+dismissDialog("Save Project"); // al (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (cl)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z007sclg225-1 Top: ov7670_controller 
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 114 MB. Current time: 4/17/21, 9:47:29 PM ICT
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,212 MB. GUI used memory: 114 MB. Current time: 4/17/21, 9:47:31 PM ICT
+// [Engine Memory]: 2,258 MB (+115084kb) [00:30:24]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (minized_pins.xdc) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  4106 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2537.988 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/ov7670_controller_vhd.vhd:23] 
+// Tcl Message: 	Parameter clk_divide bound to: 8'b01111101  
+// Tcl Message: INFO: [Synth 8-3491] module 'i3c2' declared at 'F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/i3c2_vhd.vhd:18' bound to instance 'Inst_i3c2' of component 'i3c2' [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/ov7670_controller_vhd.vhd:51] INFO: [Synth 8-638] synthesizing module 'i3c2' [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/i3c2_vhd.vhd:34] 
+// Tcl Message: 	Parameter clk_divide bound to: 8'b01111101  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'i3c2' (1#1) [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/i3c2_vhd.vhd:34] INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (2#1) [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/ov7670_controller_vhd.vhd:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2537.988 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2537.988 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2537.988 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc] 
+// Tcl Message: Finished Parsing XDC File [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2537.988 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 2537.988 ; gain = 0.000 
+// Tcl Message: 9 Infos, 77 Warnings, 75 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 2537.988 ; gain = 0.000 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// S (cl): Critical Messages: addNotify
+// [GUI Memory]: 179 MB (+934kb) [00:30:30]
+// Elapsed time: 14 seconds
+dismissDialog("Open Elaborated Design"); // by (cl)
+// Elapsed time: 47 seconds
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:14]. Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.", 4); // b (F, S)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:14]. Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.", 4, false, false, false, false, true); // b (F, S) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // S (cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]. ]", 2, true); // ah (O, cl) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\constrs_1\imports\Fpga\minized_pins.xdc;-;;-;16;-;line;-;5;-;;-;16;-;"); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]. ]", 2, true); // ah (O, cl) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\constrs_1\imports\Fpga\minized_pins.xdc;-;;-;16;-;line;-;5;-;;-;16;-;"); // ah (O, cl)
+selectCodeEditor("minized_pins.xdc", 422, 27); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 422, 27, false, false, false, false, true); // cl (w, cl) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]. ]", 4, true); // ah (O, cl) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\Fpga\LiveCamera\LiveCamera.srcs\constrs_1\imports\Fpga\minized_pins.xdc;-;;-;16;-;line;-;5;-;;-;16;-;"); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]. ]", 2, true); // ah (O, cl) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\constrs_1\imports\Fpga\minized_pins.xdc;-;;-;16;-;line;-;5;-;;-;16;-;"); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [F:/Fpga/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]. ]", 4, true); // ah (O, cl) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\Fpga\LiveCamera\LiveCamera.srcs\constrs_1\imports\Fpga\minized_pins.xdc;-;;-;16;-;line;-;5;-;;-;16;-;"); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]. ]", 2, true); // ah (O, cl) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]. ]", 2); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]. , [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:9]. ]", 3, false); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]. , [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:9]. ]", 3, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\constrs_1\imports\Fpga\minized_pins.xdc;-;;-;16;-;line;-;9;-;;-;16;-;"); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]. , [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:10]. ]", 4, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\constrs_1\imports\Fpga\minized_pins.xdc;-;;-;16;-;line;-;10;-;;-;16;-;"); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]. , [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:13]. ]", 5, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\constrs_1\imports\Fpga\minized_pins.xdc;-;;-;16;-;line;-;13;-;;-;16;-;"); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]. , [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:9]. ]", 3, false); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:5]. , [Common 17-55] 'set_property' expects at least one object. [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc:9]. ]", 3, false, false, false, false, false, true); // ah (O, cl) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 85, false); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 85, false, false, false, false, false, true); // ah (O, cl) - Double Click
+// Elapsed time: 18 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 86, false); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 86, false, false, false, false, false, true); // ah (O, cl) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 85, false); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 85, false, false, false, false, false, true); // ah (O, cl) - Double Click
+// [Engine Memory]: 2,400 MB (+30774kb) [00:32:15]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,402 MB. GUI used memory: 124 MB. Current time: 4/17/21, 9:49:24 PM ICT
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // Z (q, cl)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // Z (q, cl)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // Z (q, cl)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_PORTS_WINDOW, "I/O Ports"); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_PORTS_WINDOW
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 1); // z (O, cl)
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 1); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 1, "Scalar ports (8)", 0, true); // z (O, cl) - Node
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 1); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 1, "Scalar ports (8)", 0, true, false, false, false, false, true); // z (O, cl) - Double Click - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "clk ; IN ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 2, (String) null, 2, false); // z (O, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+// Elapsed time: 15 seconds
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 1); // z (O, cl)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 1); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "All ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0, "All ports (8)", 0, true); // z (O, cl) - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "All ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0, "All ports (8)", 0, true); // z (O, cl) - Node
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "All ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // z (O, cl)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "All ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "All ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0, "All ports (8)", 0, true, false, false, false, false, true); // z (O, cl) - Double Click - Node
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK (aH, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_controller(Behavioral) (ov7670_controller_vhd.vhd)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_controller(Behavioral) (ov7670_controller_vhd.vhd)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_controller(Behavioral) (ov7670_controller_vhd.vhd)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_controller(Behavioral) (ov7670_controller_vhd.vhd)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA (OV7670_QVGA.bd)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA (OV7670_QVGA.bd), OV7670_QVGA_RGB_0_0 (Module Reference Wrapper)]", 4, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// by (cl):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1842 ms.
+// Tcl Message: open_bd_design {F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd} 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Block Design"); // by (cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA (OV7670_QVGA.bd)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cl): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+dismissDialog("Create HDL Wrapper"); // a (cl)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// by (cl):  Create HDL Wrapper : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: make_wrapper -files [get_files F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd] -top 
+// Tcl Message: INFO: [BD 41-1662] The design 'OV7670_QVGA.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// Tcl Message: VHDL Output written to : F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/synth/OV7670_QVGA.v 
+// Tcl Message: VHDL Output written to : F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/sim/OV7670_QVGA.v VHDL Output written to : F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v 
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v 
+// a (cl): Critical Messages: addNotify
+dismissDialog("Create HDL Wrapper"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,452 MB. GUI used memory: 127 MB. Current time: 4/17/21, 9:50:24 PM ICT
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-1228] Width mismatch when connecting input pin '/blk_mem_gen_0/addrb'(18) to net 'Address_Generator_0_address'(17) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.", 1); // b (F, a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-1228] Width mismatch when connecting input pin '/blk_mem_gen_0/addrb'(18) to net 'Address_Generator_0_address'(17) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.", 1, false, false, false, false, true); // b (F, a) - Double Click
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-1228] Width mismatch when connecting input pin '/blk_mem_gen_0/addrb'(18) to net 'Address_Generator_0_address'(17) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.", 0); // b (F, a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-1228] Width mismatch when connecting input pin '/blk_mem_gen_0/addrb'(18) to net 'Address_Generator_0_address'(17) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.", 0, false, false, false, false, true); // b (F, a) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a (cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, OV7670_QVGA, General Messages, [BD 41-1228] Width mismatch when connecting input pin '/blk_mem_gen_0/addrb'(18) to net 'Address_Generator_0_address'(17) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.. ]", 2, true); // ah (O, cl) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "bd_pin;-;/blk_mem_gen_0/addrb;-;OV7670_QVGA;-;4;-;"); // ah (O, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_controller(Behavioral) (ov7670_controller_vhd.vhd)]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_controller(Behavioral) (ov7670_controller_vhd.vhd)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_controller(Behavioral) (ov7670_controller_vhd.vhd)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ov7670_controller_vhd.vhd", 3); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_controller(Behavioral) (ov7670_controller_vhd.vhd)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_controller(Behavioral) (ov7670_controller_vhd.vhd)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_GLOBAL_INCLUDE, "Set Global Include"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SET_GLOBAL_INCLUDE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_global_include true [get_files  F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top OV7670_QVGA_wrapper [current_fileset] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+selectMenuItem(PAResourceCommand.PACommandNames_SET_GLOBAL_INCLUDE, "Set Global Include"); // ah (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h (cS, cl)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// by (cl):  Refresh IP Catalog : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_module_reference OV7670_QVGA_Address_Generator_0_0 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated OV7670_QVGA_Address_Generator_0_0 to use current project options 
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// Tcl Message: update_module_reference OV7670_QVGA_RGB_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated OV7670_QVGA_RGB_0_0 to use current project options 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// Tcl Message: update_module_reference OV7670_QVGA_VGA_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated OV7670_QVGA_VGA_0_0 to use current project options 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// Tcl Message: update_module_reference OV7670_QVGA_debounce_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated OV7670_QVGA_debounce_0_0 to use current project options 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// Tcl Message: update_module_reference OV7670_QVGA_ov7670_capture_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated OV7670_QVGA_ov7670_capture_0_0 to use current project options 
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// Tcl Message: update_module_reference OV7670_QVGA_ov7670_controller_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'. 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated OV7670_QVGA_ov7670_controller_0_0 to use current project options 
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// Elapsed time: 15 seconds
+dismissDialog("Refresh IP Catalog"); // by (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_ENABLE, "Enable File"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SRC_ENABLE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled true [get_files  F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OV7670_QVGA_wrapper.v", 3); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "minized_pins.xdc (2)", 2); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "minized_pins.xdc", 1); // k (j, cl)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Tcl Message: update_compile_order -fileset sources_1 
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_QVGA_wrapper (OV7670_QVGA_wrapper.v)]", 2); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// by (cl):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd} 
+dismissDialog("Open Block Design"); // by (cl)
+// [GUI Memory]: 189 MB (+1153kb) [00:34:46]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, OV7670_QVGA, General Messages, [BD 41-1228] Width mismatch when connecting input pin '/blk_mem_gen_0/addrb'(18) to net 'Address_Generator_0_address'(17) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.. ]", 2, true); // ah (O, cl) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "bd_pin;-;/blk_mem_gen_0/addrb;-;OV7670_QVGA;-;4;-;"); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, OV7670_QVGA, General Messages, [BD 41-1228] Width mismatch when connecting input pin '/blk_mem_gen_0/addrb'(18) to net 'Address_Generator_0_address'(17) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.. ]", 2, true); // ah (O, cl) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "bd_net;-;/Address_Generator_0_address;-;OV7670_QVGA;-;4;-;"); // ah (O, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1242 ms.
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cS, cl)
+// by (cl):  Reloading : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,509 MB. GUI used memory: 132 MB. Current time: 4/17/21, 9:52:19 PM ICT
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  
+// Tcl Message: VHDL Output written to : F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/synth/OV7670_QVGA.v 
+// Tcl Message: VHDL Output written to : F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/sim/OV7670_QVGA.v VHDL Output written to : F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block Address_Generator_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block RGB_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 . 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block debounce_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_capture_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_controller_0 . 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,530 MB. GUI used memory: 132 MB. Current time: 4/17/21, 9:52:34 PM ICT
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . 
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,530 MB (+10495kb) [00:35:40]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s01_couplers/auto_pc . 
+// Tcl Message: Exporting to file F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hw_handoff/OV7670_QVGA.hwh Generated Block Design Tcl file F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hw_handoff/OV7670_QVGA_bd.tcl Generated Hardware Definition File F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/synth/OV7670_QVGA.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2639.594 ; gain = 38.789 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd] 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2639.594 ; gain = 0.000 
+// Tcl Message: launch_runs OV7670_QVGA_Address_Generator_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 17 21:52:57 2021] Launched OV7670_QVGA_Address_Generator_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_Address_Generator_0_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_Address_Generator_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 21:52:57 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 21:53:02 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:53:07 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:53:12 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:53:22 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:53:32 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:53:42 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 21:53:47 2021] OV7670_QVGA_Address_Generator_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:50 . Memory (MB): peak = 2639.594 ; gain = 0.000 
+// Tcl Message: launch_runs OV7670_QVGA_RGB_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 17 21:53:49 2021] Launched OV7670_QVGA_RGB_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_RGB_0_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_RGB_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 21:53:49 2021] Waiting for OV7670_QVGA_RGB_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 21:53:54 2021] Waiting for OV7670_QVGA_RGB_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:53:59 2021] Waiting for OV7670_QVGA_RGB_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:54:04 2021] Waiting for OV7670_QVGA_RGB_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:54:14 2021] Waiting for OV7670_QVGA_RGB_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:54:24 2021] Waiting for OV7670_QVGA_RGB_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 21:54:34 2021] Waiting for OV7670_QVGA_RGB_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:54:34 2021] OV7670_QVGA_RGB_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:45 . Memory (MB): peak = 2639.594 ; gain = 0.000 
+// Tcl Message: launch_runs OV7670_QVGA_VGA_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 17 21:54:35 2021] Launched OV7670_QVGA_VGA_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_VGA_0_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_VGA_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 21:54:35 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 21:54:40 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:54:45 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:54:51 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:55:01 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:55:11 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 21:55:21 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:55:21 2021] OV7670_QVGA_VGA_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:45 . Memory (MB): peak = 2639.594 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs OV7670_QVGA_axi_gpio_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 21:55:21 2021] Launched OV7670_QVGA_axi_gpio_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_axi_gpio_0_0_synth_1/runme.log 
+// [GUI Memory]: 199 MB (+284kb) [00:38:14]
+// Tcl Message: wait_on_run OV7670_QVGA_axi_gpio_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 21:55:21 2021] Waiting for OV7670_QVGA_axi_gpio_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 21:55:26 2021] Waiting for OV7670_QVGA_axi_gpio_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:55:31 2021] Waiting for OV7670_QVGA_axi_gpio_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:55:36 2021] Waiting for OV7670_QVGA_axi_gpio_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:55:46 2021] Waiting for OV7670_QVGA_axi_gpio_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:55:56 2021] Waiting for OV7670_QVGA_axi_gpio_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:56:06 2021] Waiting for OV7670_QVGA_axi_gpio_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 21:56:11 2021] OV7670_QVGA_axi_gpio_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:50 . Memory (MB): peak = 2639.594 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs OV7670_QVGA_axi_uartlite_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 21:56:12 2021] Launched OV7670_QVGA_axi_uartlite_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_axi_uartlite_0_0_synth_1/runme.log 
+// Tcl Message: wait_on_run OV7670_QVGA_axi_uartlite_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 21:56:12 2021] Waiting for OV7670_QVGA_axi_uartlite_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 21:56:17 2021] Waiting for OV7670_QVGA_axi_uartlite_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:56:22 2021] Waiting for OV7670_QVGA_axi_uartlite_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:56:27 2021] Waiting for OV7670_QVGA_axi_uartlite_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:56:37 2021] Waiting for OV7670_QVGA_axi_uartlite_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:56:47 2021] Waiting for OV7670_QVGA_axi_uartlite_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:56:57 2021] Waiting for OV7670_QVGA_axi_uartlite_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 21:57:02 2021] OV7670_QVGA_axi_uartlite_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:50 . Memory (MB): peak = 2639.594 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs OV7670_QVGA_blk_mem_gen_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 21:57:03 2021] Launched OV7670_QVGA_blk_mem_gen_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_blk_mem_gen_0_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_blk_mem_gen_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 21:57:03 2021] Waiting for OV7670_QVGA_blk_mem_gen_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 21:57:08 2021] Waiting for OV7670_QVGA_blk_mem_gen_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:57:13 2021] Waiting for OV7670_QVGA_blk_mem_gen_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:57:18 2021] Waiting for OV7670_QVGA_blk_mem_gen_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:57:28 2021] Waiting for OV7670_QVGA_blk_mem_gen_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:57:38 2021] Waiting for OV7670_QVGA_blk_mem_gen_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:57:48 2021] Waiting for OV7670_QVGA_blk_mem_gen_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:57:58 2021] Waiting for OV7670_QVGA_blk_mem_gen_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:58:18 2021] Waiting for OV7670_QVGA_blk_mem_gen_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:58:38 2021] Waiting for OV7670_QVGA_blk_mem_gen_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:58:59 2021] Waiting for OV7670_QVGA_blk_mem_gen_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:59:19 2021] Waiting for OV7670_QVGA_blk_mem_gen_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 21:59:59 2021] Waiting for OV7670_QVGA_blk_mem_gen_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:00:19 2021] OV7670_QVGA_blk_mem_gen_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:05 ; elapsed = 00:03:16 . Memory (MB): peak = 2639.594 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs OV7670_QVGA_clk_wiz_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:00:19 2021] Launched OV7670_QVGA_clk_wiz_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_clk_wiz_0_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_clk_wiz_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:00:20 2021] Waiting for OV7670_QVGA_clk_wiz_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:00:25 2021] Waiting for OV7670_QVGA_clk_wiz_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:00:30 2021] Waiting for OV7670_QVGA_clk_wiz_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:00:35 2021] Waiting for OV7670_QVGA_clk_wiz_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:00:45 2021] Waiting for OV7670_QVGA_clk_wiz_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:00:55 2021] Waiting for OV7670_QVGA_clk_wiz_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:01:05 2021] Waiting for OV7670_QVGA_clk_wiz_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:01:05 2021] OV7670_QVGA_clk_wiz_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:45 . Memory (MB): peak = 2639.594 ; gain = 0.000 
+// Tcl Message: launch_runs OV7670_QVGA_debounce_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 17 22:01:06 2021] Launched OV7670_QVGA_debounce_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_debounce_0_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 211 MB (+2253kb) [00:43:59]
+// Tcl Message: wait_on_run OV7670_QVGA_debounce_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:01:07 2021] Waiting for OV7670_QVGA_debounce_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:01:12 2021] Waiting for OV7670_QVGA_debounce_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:01:17 2021] Waiting for OV7670_QVGA_debounce_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:01:22 2021] Waiting for OV7670_QVGA_debounce_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:01:32 2021] Waiting for OV7670_QVGA_debounce_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:01:42 2021] Waiting for OV7670_QVGA_debounce_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:01:52 2021] Waiting for OV7670_QVGA_debounce_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:01:52 2021] OV7670_QVGA_debounce_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:45 . Memory (MB): peak = 2639.594 ; gain = 0.000 
+// Tcl Message: launch_runs OV7670_QVGA_ov7670_capture_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 17 22:01:53 2021] Launched OV7670_QVGA_ov7670_capture_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_ov7670_capture_0_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_ov7670_capture_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:01:54 2021] Waiting for OV7670_QVGA_ov7670_capture_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:01:59 2021] Waiting for OV7670_QVGA_ov7670_capture_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:02:04 2021] Waiting for OV7670_QVGA_ov7670_capture_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:02:09 2021] Waiting for OV7670_QVGA_ov7670_capture_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:02:19 2021] Waiting for OV7670_QVGA_ov7670_capture_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:02:29 2021] Waiting for OV7670_QVGA_ov7670_capture_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:02:39 2021] Waiting for OV7670_QVGA_ov7670_capture_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:02:39 2021] OV7670_QVGA_ov7670_capture_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:45 . Memory (MB): peak = 2639.594 ; gain = 0.000 
+// Tcl Message: launch_runs OV7670_QVGA_ov7670_controller_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 17 22:02:40 2021] Launched OV7670_QVGA_ov7670_controller_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_ov7670_controller_0_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_ov7670_controller_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:02:41 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:02:46 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:02:51 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:02:56 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:03:06 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:03:16 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:03:26 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:03:26 2021] OV7670_QVGA_ov7670_controller_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:45 . Memory (MB): peak = 2639.594 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs OV7670_QVGA_processing_system7_0_0_synth_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:03:26 2021] Launched OV7670_QVGA_processing_system7_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_processing_system7_0_0_synth_1/runme.log 
+// Tcl Message: wait_on_run OV7670_QVGA_processing_system7_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:03:27 2021] Waiting for OV7670_QVGA_processing_system7_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:03:32 2021] Waiting for OV7670_QVGA_processing_system7_0_0_synth_1 to finish... 
+// [GUI Memory]: 223 MB (+1479kb) [00:46:25]
+// Tcl Message: [Sat Apr 17 22:03:37 2021] Waiting for OV7670_QVGA_processing_system7_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:03:42 2021] Waiting for OV7670_QVGA_processing_system7_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:03:52 2021] Waiting for OV7670_QVGA_processing_system7_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:04:02 2021] Waiting for OV7670_QVGA_processing_system7_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:04:12 2021] Waiting for OV7670_QVGA_processing_system7_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:04:17 2021] OV7670_QVGA_processing_system7_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:50 . Memory (MB): peak = 2661.023 ; gain = 21.430 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs OV7670_QVGA_xbar_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:04:17 2021] Launched OV7670_QVGA_xbar_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_xbar_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_xbar_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:04:18 2021] Waiting for OV7670_QVGA_xbar_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:04:23 2021] Waiting for OV7670_QVGA_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:04:28 2021] Waiting for OV7670_QVGA_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:04:33 2021] Waiting for OV7670_QVGA_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:04:43 2021] Waiting for OV7670_QVGA_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:04:53 2021] Waiting for OV7670_QVGA_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:05:03 2021] Waiting for OV7670_QVGA_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:05:13 2021] Waiting for OV7670_QVGA_xbar_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:05:18 2021] OV7670_QVGA_xbar_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:03 ; elapsed = 00:01:01 . Memory (MB): peak = 2661.023 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs OV7670_QVGA_rst_ps7_0_50M_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:05:18 2021] Launched OV7670_QVGA_rst_ps7_0_50M_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_rst_ps7_0_50M_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_rst_ps7_0_50M_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:05:19 2021] Waiting for OV7670_QVGA_rst_ps7_0_50M_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:05:24 2021] Waiting for OV7670_QVGA_rst_ps7_0_50M_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:05:29 2021] Waiting for OV7670_QVGA_rst_ps7_0_50M_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:05:34 2021] Waiting for OV7670_QVGA_rst_ps7_0_50M_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:05:44 2021] Waiting for OV7670_QVGA_rst_ps7_0_50M_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:05:54 2021] Waiting for OV7670_QVGA_rst_ps7_0_50M_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:06:04 2021] Waiting for OV7670_QVGA_rst_ps7_0_50M_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:06:04 2021] OV7670_QVGA_rst_ps7_0_50M_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:46 . Memory (MB): peak = 2661.023 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs OV7670_QVGA_auto_pc_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:06:05 2021] Launched OV7670_QVGA_auto_pc_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_auto_pc_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_auto_pc_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:06:05 2021] Waiting for OV7670_QVGA_auto_pc_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:06:10 2021] Waiting for OV7670_QVGA_auto_pc_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:06:15 2021] Waiting for OV7670_QVGA_auto_pc_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:06:20 2021] Waiting for OV7670_QVGA_auto_pc_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:06:30 2021] Waiting for OV7670_QVGA_auto_pc_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:06:40 2021] Waiting for OV7670_QVGA_auto_pc_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:06:50 2021] Waiting for OV7670_QVGA_auto_pc_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:07:00 2021] Waiting for OV7670_QVGA_auto_pc_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:07:21 2021] Waiting for OV7670_QVGA_auto_pc_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:07:41 2021] Waiting for OV7670_QVGA_auto_pc_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:07:41 2021] OV7670_QVGA_auto_pc_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:03 ; elapsed = 00:01:36 . Memory (MB): peak = 2661.023 ; gain = 0.000 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_START
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2704.258 ; gain = 43.234 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'OV7670_QVGA_ps7_0_axi_periph_0' (18#1) [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/synth/OV7670_QVGA.v:527] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'OV7670_QVGA_rst_ps7_0_50M_0' [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/.Xil/Vivado-2996-DESKTOP-O25IKCM/realtime/OV7670_QVGA_rst_ps7_0_50M_0_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'OV7670_QVGA_rst_ps7_0_50M_0' (19#1) [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/.Xil/Vivado-2996-DESKTOP-O25IKCM/realtime/OV7670_QVGA_rst_ps7_0_50M_0_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'OV7670_QVGA_xlconstant_0_0' [f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_xlconstant_0_0/synth/OV7670_QVGA_xlconstant_0_0.v:57] INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23] 
+// Tcl Message: 	Parameter CONST_VAL bound to: 0 - type: integer  	Parameter CONST_WIDTH bound to: 1 - type: integer  
+// Tcl Message: 	Parameter CONST_VAL bound to: 1 - type: integer  	Parameter CONST_WIDTH bound to: 1 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2737.832 ; gain = 76.809 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2761.746 ; gain = 100.723 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2761.746 ; gain = 100.723 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,530 MB. GUI used memory: 136 MB. Current time: 4/17/21, 10:07:56 PM ICT
+// Engine heap size: 2,530 MB. GUI used memory: 137 MB. Current time: 4/17/21, 10:07:56 PM ICT
+// WARNING: HEventQueue.dispatchEvent() is taking  1141 ms.
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_auto_pc_0/OV7670_QVGA_auto_pc_0.dcp' for cell 'OV7670_QVGA_i/ps7_0_axi_periph/s01_couplers/auto_pc' 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 139 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Opt 31-140] Inserted 13 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 22 OBUFs to IO ports without IO buffers. 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_clk_wiz_0_0/OV7670_QVGA_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/OV7670_QVGA_wrapper_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/OV7670_QVGA_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: Parsing XDC File [f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_processing_system7_0_0/OV7670_QVGA_processing_system7_0_0.xdc] for cell 'OV7670_QVGA_i/processing_system7_0/inst' 
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,530 MB. GUI used memory: 134 MB. Current time: 4/17/21, 10:08:00 PM ICT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Schematic: addNotify
+// Schematic: addNotify
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2341 ms.
+// Tcl Message: Finished Parsing XDC File [f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_processing_system7_0_0/OV7670_QVGA_processing_system7_0_0.xdc] for cell 'OV7670_QVGA_i/processing_system7_0/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_processing_system7_0_0/OV7670_QVGA_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/OV7670_QVGA_wrapper_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/OV7670_QVGA_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Parsing XDC File [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc] 
+// Tcl Message: Finished Parsing XDC File [F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/constrs_1/imports/Fpga/minized_pins.xdc] 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2866.422 ; gain = 205.398 
+// S (cl): Critical Messages: addNotify
+// Elapsed time: 946 seconds
+dismissDialog("Reloading"); // by (cl)
+// Elapsed time: 680 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// by (cl):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design {F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd} 
+dismissDialog("Open Block Design"); // by (cl)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h (cS, cl)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// by (cl):  Refresh Changed Modules : addNotify
+// TclEventType: RUN_DELETE
+// Tcl Message: update_module_reference OV7670_QVGA_Address_Generator_0_0 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated OV7670_QVGA_Address_Generator_0_0 to use current project options 
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// Tcl Message: update_module_reference OV7670_QVGA_RGB_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated OV7670_QVGA_RGB_0_0 to use current project options 
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// Tcl Message: update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2866.422 ; gain = 0.000 
+// Tcl Message: update_module_reference OV7670_QVGA_VGA_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated OV7670_QVGA_VGA_0_0 to use current project options 
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// Tcl Message: update_module_reference OV7670_QVGA_debounce_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd' 
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated OV7670_QVGA_debounce_0_0 to use current project options 
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// Tcl Message: update_module_reference OV7670_QVGA_ov7670_capture_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd' 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated OV7670_QVGA_ov7670_capture_0_0 to use current project options 
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// Tcl Message: update_module_reference OV7670_QVGA_ov7670_controller_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'. 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd' 
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated OV7670_QVGA_ov7670_controller_0_0 to use current project options 
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  Wrote  : <F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ui/bd_3d34971f.ui>  
+// Elapsed time: 25 seconds
+dismissDialog("Refresh Changed Modules"); // by (cl)
+// Elapsed time: 348 seconds
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, minized_pins.xdc]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, minized_pins.xdc]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("minized_pins.xdc", 15, 123); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 14, 120); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 8, 119); // cl (w, cl)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1805 ms.
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cS, cl)
+// by (cl):  Reloading : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : <F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.srcs\sources_1\bd\OV7670_QVGA\OV7670_QVGA.bd>  
+// Tcl Message: VHDL Output written to : F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/synth/OV7670_QVGA.v 
+// Tcl Message: VHDL Output written to : F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/sim/OV7670_QVGA.v VHDL Output written to : F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s01_couplers/auto_pc . 
+// Tcl Message: Exporting to file F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hw_handoff/OV7670_QVGA.hwh Generated Block Design Tcl file F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hw_handoff/OV7670_QVGA_bd.tcl Generated Hardware Definition File F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/synth/OV7670_QVGA.hwdef 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: launch_runs OV7670_QVGA_Address_Generator_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 17 22:26:24 2021] Launched OV7670_QVGA_Address_Generator_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_Address_Generator_0_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_Address_Generator_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:26:24 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:26:29 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:26:34 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:26:39 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:26:49 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:27:00 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// Elapsed time: 50 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (by)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:27:10 2021] Waiting for OV7670_QVGA_Address_Generator_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:27:10 2021] OV7670_QVGA_Address_Generator_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:46 . Memory (MB): peak = 2916.066 ; gain = 0.000 
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// Tcl Message: INFO: [Common 17-344] 'wait_on_run' was cancelled 
+// S (cl): Critical Messages: addNotify
+dismissDialog("Reloading"); // by (cl)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Critical Messages"); // S (cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (6)", 5); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (6)", 3); // k (j, cl)
+// [GUI Memory]: 236 MB (+1902kb) [01:10:05]
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (6)", 2); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (6)", 1); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (6)", 1); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (6)", 0); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (6)", 1); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (d_0) elapsed time: 0.2s
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "d_0 (8) ; IN ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 7, "IN", 1, true); // z (O, cl) - Node
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_B (4) ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 8); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_B[3] ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 9, (String) null, 5, false); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_B[2] ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 10, (String) null, 5, false); // z (O, cl)
+// Tcl Message: set_property package_pin "" [get_ports [list  {VGA_B[3]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "d_0 (8) ; IN ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 7, "default (LVCMOS18)", 8, true); // z (O, cl) - Node
+// Tcl Message: set_property package_pin "" [get_ports [list  {VGA_B[2]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "d_0 (8) ; IN ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 7, "1.8", 9, true); // z (O, cl) - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_B (4) ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 8, "default (LVCMOS18)", 8, true); // z (O, cl) - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_B[3] ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 9, (String) null, 7, false); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_G (4) ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 13, "VGA_G (4)", 0, true); // z (O, cl) - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_G (4) ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 13, "VGA_G (4)", 0, true); // z (O, cl) - Node
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_G (4) ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 13); // z (O, cl)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_R (4) ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 18); // z (O, cl)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (10) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 23); // z (O, cl)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, minized_pins.xdc]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, minized_pins.xdc]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, minized_pins.xdc]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("minized_pins.xdc", 403, 175); // cl (w, cl)
+selectCodeEditor("minized_pins.xdc", 403, 175, false, false, false, false, true); // cl (w, cl) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,530 MB. GUI used memory: 154 MB. Current time: 4/17/21, 10:38:00 PM ICT
+// Elapsed time: 720 seconds
+selectCodeEditor("minized_pins.xdc", 316, 154); // cl (w, cl)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cS, cl)
+// HOptionPane Warning: 'There are unsaved changes in 'Elaborated Design - rtl_1' that would be lost. OK to reload? (Reload Design)'
+selectButton("OptionPane.button", "Cancel"); // JButton (A, G)
+// Elapsed time: 17 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cS, cl)
+// HOptionPane Warning: 'There are unsaved changes in 'Elaborated Design - rtl_1' that would be lost. OK to reload? (Reload Design)'
+// by (cl):  Reloading : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run OV7670_QVGA_RGB_0_0_synth_1 
+// Tcl Message: launch_runs OV7670_QVGA_RGB_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 17 22:40:33 2021] Launched OV7670_QVGA_RGB_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_RGB_0_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_RGB_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:40:33 2021] Waiting for OV7670_QVGA_RGB_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:40:39 2021] Waiting for OV7670_QVGA_RGB_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:40:44 2021] Waiting for OV7670_QVGA_RGB_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:40:49 2021] Waiting for OV7670_QVGA_RGB_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:40:59 2021] Waiting for OV7670_QVGA_RGB_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:41:09 2021] Waiting for OV7670_QVGA_RGB_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:41:14 2021] OV7670_QVGA_RGB_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:40 . Memory (MB): peak = 2916.066 ; gain = 0.000 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run OV7670_QVGA_VGA_0_0_synth_1 
+// Tcl Message: launch_runs OV7670_QVGA_VGA_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 17 22:41:15 2021] Launched OV7670_QVGA_VGA_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_VGA_0_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_VGA_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:41:15 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:41:20 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:41:26 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:41:31 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:41:41 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:41:51 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:42:01 2021] Waiting for OV7670_QVGA_VGA_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:42:01 2021] OV7670_QVGA_VGA_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:45 . Memory (MB): peak = 2916.066 ; gain = 0.000 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run OV7670_QVGA_debounce_0_0_synth_1 
+// Tcl Message: launch_runs OV7670_QVGA_debounce_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 17 22:42:02 2021] Launched OV7670_QVGA_debounce_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_debounce_0_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_debounce_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:42:03 2021] Waiting for OV7670_QVGA_debounce_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:42:08 2021] Waiting for OV7670_QVGA_debounce_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:42:13 2021] Waiting for OV7670_QVGA_debounce_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:42:18 2021] Waiting for OV7670_QVGA_debounce_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:42:28 2021] Waiting for OV7670_QVGA_debounce_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:42:38 2021] Waiting for OV7670_QVGA_debounce_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:42:43 2021] OV7670_QVGA_debounce_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:40 . Memory (MB): peak = 2916.066 ; gain = 0.000 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run OV7670_QVGA_ov7670_capture_0_0_synth_1 
+// Tcl Message: launch_runs OV7670_QVGA_ov7670_capture_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:42:44 2021] Launched OV7670_QVGA_ov7670_capture_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_ov7670_capture_0_0_synth_1/runme.log 
+// Tcl Message: wait_on_run OV7670_QVGA_ov7670_capture_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:42:45 2021] Waiting for OV7670_QVGA_ov7670_capture_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:42:50 2021] Waiting for OV7670_QVGA_ov7670_capture_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:42:55 2021] Waiting for OV7670_QVGA_ov7670_capture_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:43:00 2021] Waiting for OV7670_QVGA_ov7670_capture_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:43:10 2021] Waiting for OV7670_QVGA_ov7670_capture_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:43:20 2021] Waiting for OV7670_QVGA_ov7670_capture_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:43:25 2021] OV7670_QVGA_ov7670_capture_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:40 . Memory (MB): peak = 2916.066 ; gain = 0.000 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run OV7670_QVGA_ov7670_controller_0_0_synth_1 
+// Tcl Message: launch_runs OV7670_QVGA_ov7670_controller_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 17 22:43:26 2021] Launched OV7670_QVGA_ov7670_controller_0_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_ov7670_controller_0_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_ov7670_controller_0_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:43:27 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:43:32 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:43:37 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:43:42 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:43:52 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:44:02 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:44:12 2021] Waiting for OV7670_QVGA_ov7670_controller_0_0_synth_1 to finish... 
+// Tcl Message: [Sat Apr 17 22:44:12 2021] OV7670_QVGA_ov7670_controller_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:45 . Memory (MB): peak = 2916.066 ; gain = 0.000 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run OV7670_QVGA_auto_pc_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs OV7670_QVGA_auto_pc_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1160 ms.
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP OV7670_QVGA_auto_pc_0, cache-ID = 1c515c06ef096dd0; cache size = 5.486 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 17 22:44:14 2021] Launched OV7670_QVGA_auto_pc_0_synth_1... Run output will be captured here: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/OV7670_QVGA_auto_pc_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run OV7670_QVGA_auto_pc_0_synth_1 
+// Tcl Message: [Sat Apr 17 22:44:15 2021] Waiting for OV7670_QVGA_auto_pc_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Apr 17 22:44:20 2021] Waiting for OV7670_QVGA_auto_pc_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Sat Apr 17 22:44:25 2021] Waiting for OV7670_QVGA_auto_pc_0_synth_1 to finish... 
+// Tcl Message:  *** Running vivado     with args -log OV7670_QVGA_auto_pc_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source OV7670_QVGA_auto_pc_0.tcl   ****** Vivado v2019.1 (64-bit)   **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019   **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.  source OV7670_QVGA_auto_pc_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP OV7670_QVGA_auto_pc_0, cache-ID = 1c515c06ef096dd0. INFO: [Common 17-206] Exiting Vivado at Sat Apr 17 22:44:22 2021... 
+// Tcl Message: [Sat Apr 17 22:44:25 2021] OV7670_QVGA_auto_pc_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 2916.066 ; gain = 0.000 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2917.426 ; gain = 1.359 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sat Apr 17 22:44:31 ICT 2021
+# Process ID (PID): 2996
+# OS: Windows 10
+# User: HaTiDe
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+ui.utils.e: Error: Wrapper with null DB pointer (See F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/vivado_pid2996.debug)
+*/

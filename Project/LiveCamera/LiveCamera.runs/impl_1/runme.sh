@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/Fpga/LiveCamera/LiveCamera.runs/impl_1'
+HD_PWD='F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
-EAStep vivado -log ov7670_controller.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source ov7670_controller.tcl -notrace
+/bin/touch .write_bitstream.begin.rst
+EAStep vivado -log OV7670_QVGA_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source OV7670_QVGA_wrapper.tcl -notrace
 
 

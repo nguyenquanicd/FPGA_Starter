@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/Fpga/LiveCamera/LiveCamera.runs/synth_1'
+HD_PWD='F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log ov7670_controller.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ov7670_controller.tcl
+EAStep vivado -log OV7670_QVGA_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source OV7670_QVGA_wrapper.tcl
