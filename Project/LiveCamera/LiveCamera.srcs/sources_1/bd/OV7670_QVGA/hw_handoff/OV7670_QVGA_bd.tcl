@@ -175,7 +175,10 @@ proc create_root_design { parentCell } {
   set ARDUINO_A1 [ create_bd_port -dir O -type rst ARDUINO_A1 ]
   set ARDUINO_IO0 [ create_bd_port -dir I ARDUINO_IO0 ]
   set ARDUINO_IO1 [ create_bd_port -dir O ARDUINO_IO1 ]
-  set ARDUINO_IO10 [ create_bd_port -dir I ARDUINO_IO10 ]
+  set ARDUINO_IO10 [ create_bd_port -dir I -type clk ARDUINO_IO10 ]
+  set_property -dict [ list \
+   CONFIG.FREQ_HZ {25000000} \
+ ] $ARDUINO_IO10
   set ARDUINO_IO11 [ create_bd_port -dir O ARDUINO_IO11 ]
   set ARDUINO_IO12 [ create_bd_port -dir I ARDUINO_IO12 ]
   set ARDUINO_IO13 [ create_bd_port -dir I ARDUINO_IO13 ]
@@ -294,6 +297,16 @@ proc create_root_design { parentCell } {
      return 1
    }
   
+  # Create instance: ila_0, and set properties
+  set ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0 ]
+  set_property -dict [ list \
+   CONFIG.C_ENABLE_ILA_AXI_MON {false} \
+   CONFIG.C_MONITOR_TYPE {Native} \
+   CONFIG.C_NUM_OF_PROBES {1} \
+   CONFIG.C_PROBE0_WIDTH {8} \
+   CONFIG.C_TRIGIN_EN {false} \
+ ] $ila_0
+
   # Create instance: ov7670_capture_0, and set properties
   set block_name ov7670_capture
   set block_cell_name ov7670_capture_0
@@ -1073,7 +1086,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins RGB_0/Din] [get_bd_pins blk_mem_gen_0/doutb]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins debounce_0/clk] [get_bd_pins ov7670_controller_0/clk]
   connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins Address_Generator_0/CLK25] [get_bd_pins VGA_0/CLK25] [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins clk_wiz_0/clk_out2]
-  connect_bd_net -net d_0_1 [get_bd_ports d_0] [get_bd_pins ov7670_capture_0/d]
+  connect_bd_net -net d_0_1 [get_bd_ports d_0] [get_bd_pins ila_0/probe0] [get_bd_pins ov7670_capture_0/d]
   connect_bd_net -net debounce_0_o [get_bd_pins debounce_0/o] [get_bd_pins ov7670_controller_0/resend]
   connect_bd_net -net href_0_1 [get_bd_ports ARDUINO_IO13] [get_bd_pins ov7670_capture_0/href]
   connect_bd_net -net i_0_1 [get_bd_ports PL_SW] [get_bd_pins debounce_0/i]
@@ -1087,7 +1100,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net ov7670_controller_0_xclk [get_bd_ports ARDUINO_IO11] [get_bd_pins ov7670_controller_0/xclk]
   connect_bd_net -net pclk_0_1 [get_bd_ports ARDUINO_IO10] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins ov7670_capture_0/pclk]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins ps7_0_axi_periph/S01_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
-  connect_bd_net -net processing_system7_0_FCLK_CLK1 [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins processing_system7_0/FCLK_CLK1]
+  connect_bd_net -net processing_system7_0_FCLK_CLK1 [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins ila_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK1]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins clk_wiz_0/resetn] [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
   connect_bd_net -net rst_ps7_0_50M_interconnect_aresetn [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins rst_ps7_0_50M/interconnect_aresetn]
   connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins ps7_0_axi_periph/S01_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]

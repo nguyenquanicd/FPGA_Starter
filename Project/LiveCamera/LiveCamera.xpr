@@ -122,44 +122,47 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_RGB_0_0/OV7670_QVGA_RGB_0_0.xci">
-          <Proxy FileSetName="OV7670_QVGA_RGB_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_VGA_0_0/OV7670_QVGA_VGA_0_0.xci">
           <Proxy FileSetName="OV7670_QVGA_VGA_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_axi_gpio_0_0/OV7670_QVGA_axi_gpio_0_0.xci">
-          <Proxy FileSetName="OV7670_QVGA_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_axi_uartlite_0_0/OV7670_QVGA_axi_uartlite_0_0.xci">
-          <Proxy FileSetName="OV7670_QVGA_axi_uartlite_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_debounce_0_0/OV7670_QVGA_debounce_0_0.xci">
-          <Proxy FileSetName="OV7670_QVGA_debounce_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_blk_mem_gen_0_0/OV7670_QVGA_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="OV7670_QVGA_blk_mem_gen_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_Address_Generator_0_0/OV7670_QVGA_Address_Generator_0_0.xci">
           <Proxy FileSetName="OV7670_QVGA_Address_Generator_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_clk_wiz_0_0/OV7670_QVGA_clk_wiz_0_0.xci">
-          <Proxy FileSetName="OV7670_QVGA_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_xbar_0/OV7670_QVGA_xbar_0.xci">
-          <Proxy FileSetName="OV7670_QVGA_xbar_0"/>
+        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_RGB_0_0/OV7670_QVGA_RGB_0_0.xci">
+          <Proxy FileSetName="OV7670_QVGA_RGB_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_processing_system7_0_0/OV7670_QVGA_processing_system7_0_0.xci">
           <Proxy FileSetName="OV7670_QVGA_processing_system7_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_xbar_0/OV7670_QVGA_xbar_0.xci">
+          <Proxy FileSetName="OV7670_QVGA_xbar_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_ov7670_controller_0_0/OV7670_QVGA_ov7670_controller_0_0.xci">
           <Proxy FileSetName="OV7670_QVGA_ov7670_controller_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_axi_uartlite_0_0/OV7670_QVGA_axi_uartlite_0_0.xci">
+          <Proxy FileSetName="OV7670_QVGA_axi_uartlite_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_axi_gpio_0_0/OV7670_QVGA_axi_gpio_0_0.xci">
+          <Proxy FileSetName="OV7670_QVGA_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_blk_mem_gen_0_0/OV7670_QVGA_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="OV7670_QVGA_blk_mem_gen_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_debounce_0_0/OV7670_QVGA_debounce_0_0.xci">
+          <Proxy FileSetName="OV7670_QVGA_debounce_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_clk_wiz_0_0/OV7670_QVGA_clk_wiz_0_0.xci">
+          <Proxy FileSetName="OV7670_QVGA_clk_wiz_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_ov7670_capture_0_0/OV7670_QVGA_ov7670_capture_0_0.xci">
+          <Proxy FileSetName="OV7670_QVGA_ov7670_capture_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_rst_ps7_0_50M_0/OV7670_QVGA_rst_ps7_0_50M_0.xci">
           <Proxy FileSetName="OV7670_QVGA_rst_ps7_0_50M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_ov7670_capture_0_0/OV7670_QVGA_ov7670_capture_0_0.xci">
-          <Proxy FileSetName="OV7670_QVGA_ov7670_capture_0_0"/>
+        <CompFileExtendedInfo CompFileName="OV7670_QVGA.bd" FileRelPathName="ip/OV7670_QVGA_ila_0_0/OV7670_QVGA_ila_0_0.xci">
+          <Proxy FileSetName="OV7670_QVGA_ila_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v">
@@ -186,6 +189,7 @@
         </FileInfo>
       </File>
       <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/Fpga/minized_pins.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
@@ -251,6 +255,24 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="OV7670_QVGA_ila_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/OV7670_QVGA_ila_0_0">
+      <Config>
+        <Option Name="TopModule" Val="OV7670_QVGA_ila_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="OV7670_QVGA_ov7670_capture_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/OV7670_QVGA_ov7670_capture_0_0">
+      <Config>
+        <Option Name="TopModule" Val="OV7670_QVGA_ov7670_capture_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="OV7670_QVGA_debounce_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/OV7670_QVGA_debounce_0_0">
+      <Config>
+        <Option Name="TopModule" Val="OV7670_QVGA_debounce_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
     <FileSet Name="OV7670_QVGA_RGB_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/OV7670_QVGA_RGB_0_0">
       <Config>
         <Option Name="TopModule" Val="OV7670_QVGA_RGB_0_0"/>
@@ -263,12 +285,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="OV7670_QVGA_debounce_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/OV7670_QVGA_debounce_0_0">
-      <Config>
-        <Option Name="TopModule" Val="OV7670_QVGA_debounce_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="OV7670_QVGA_Address_Generator_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/OV7670_QVGA_Address_Generator_0_0">
       <Config>
         <Option Name="TopModule" Val="OV7670_QVGA_Address_Generator_0_0"/>
@@ -278,12 +294,6 @@
     <FileSet Name="OV7670_QVGA_ov7670_controller_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/OV7670_QVGA_ov7670_controller_0_0">
       <Config>
         <Option Name="TopModule" Val="OV7670_QVGA_ov7670_controller_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="OV7670_QVGA_ov7670_capture_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/OV7670_QVGA_ov7670_capture_0_0">
-      <Config>
-        <Option Name="TopModule" Val="OV7670_QVGA_ov7670_capture_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -379,55 +389,9 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="OV7670_QVGA_RGB_0_0_synth_1" Type="Ft3:Synth" SrcSet="OV7670_QVGA_RGB_0_0" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_RGB_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/OV7670_QVGA_RGB_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="OV7670_QVGA_ila_0_0_synth_1" Type="Ft3:Synth" SrcSet="OV7670_QVGA_ila_0_0" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_ila_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/OV7670_QVGA_ila_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="OV7670_QVGA_VGA_0_0_synth_1" Type="Ft3:Synth" SrcSet="OV7670_QVGA_VGA_0_0" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_VGA_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/OV7670_QVGA_VGA_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="OV7670_QVGA_debounce_0_0_synth_1" Type="Ft3:Synth" SrcSet="OV7670_QVGA_debounce_0_0" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_debounce_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/OV7670_QVGA_debounce_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="OV7670_QVGA_Address_Generator_0_0_synth_1" Type="Ft3:Synth" SrcSet="OV7670_QVGA_Address_Generator_0_0" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_Address_Generator_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/OV7670_QVGA_Address_Generator_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="OV7670_QVGA_ov7670_controller_0_0_synth_1" Type="Ft3:Synth" SrcSet="OV7670_QVGA_ov7670_controller_0_0" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_ov7670_controller_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/OV7670_QVGA_ov7670_controller_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -436,9 +400,52 @@
     </Run>
     <Run Id="OV7670_QVGA_ov7670_capture_0_0_synth_1" Type="Ft3:Synth" SrcSet="OV7670_QVGA_ov7670_capture_0_0" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_ov7670_capture_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/OV7670_QVGA_ov7670_capture_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="OV7670_QVGA_debounce_0_0_synth_1" Type="Ft3:Synth" SrcSet="OV7670_QVGA_debounce_0_0" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_debounce_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/OV7670_QVGA_debounce_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="OV7670_QVGA_RGB_0_0_synth_1" Type="Ft3:Synth" SrcSet="OV7670_QVGA_RGB_0_0" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_RGB_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/OV7670_QVGA_RGB_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="OV7670_QVGA_VGA_0_0_synth_1" Type="Ft3:Synth" SrcSet="OV7670_QVGA_VGA_0_0" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_VGA_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/OV7670_QVGA_VGA_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="OV7670_QVGA_Address_Generator_0_0_synth_1" Type="Ft3:Synth" SrcSet="OV7670_QVGA_Address_Generator_0_0" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_Address_Generator_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/OV7670_QVGA_Address_Generator_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="OV7670_QVGA_ov7670_controller_0_0_synth_1" Type="Ft3:Synth" SrcSet="OV7670_QVGA_ov7670_controller_0_0" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_ov7670_controller_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/OV7670_QVGA_ov7670_controller_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -574,83 +581,9 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="OV7670_QVGA_RGB_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_RGB_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="OV7670_QVGA_RGB_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="OV7670_QVGA_ila_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_ila_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="OV7670_QVGA_ila_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="OV7670_QVGA_VGA_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_VGA_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="OV7670_QVGA_VGA_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="OV7670_QVGA_debounce_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_debounce_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="OV7670_QVGA_debounce_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="OV7670_QVGA_Address_Generator_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_Address_Generator_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="OV7670_QVGA_Address_Generator_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="OV7670_QVGA_ov7670_controller_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_ov7670_controller_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="OV7670_QVGA_ov7670_controller_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -666,9 +599,87 @@
     </Run>
     <Run Id="OV7670_QVGA_ov7670_capture_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_ov7670_capture_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="OV7670_QVGA_ov7670_capture_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="OV7670_QVGA_debounce_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_debounce_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="OV7670_QVGA_debounce_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="OV7670_QVGA_RGB_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_RGB_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="OV7670_QVGA_RGB_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="OV7670_QVGA_VGA_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_VGA_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="OV7670_QVGA_VGA_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="OV7670_QVGA_Address_Generator_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_Address_Generator_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="OV7670_QVGA_Address_Generator_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="OV7670_QVGA_ov7670_controller_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg225-1" ConstrsSet="OV7670_QVGA_ov7670_controller_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="OV7670_QVGA_ov7670_controller_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

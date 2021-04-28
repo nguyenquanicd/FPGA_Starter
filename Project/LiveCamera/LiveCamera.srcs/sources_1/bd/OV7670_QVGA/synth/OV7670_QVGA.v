@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Sat Apr 17 23:33:34 2021
+//Date        : Thu Apr 29 00:17:01 2021
 //Host        : DESKTOP-O25IKCM running 64-bit major release  (build 9200)
 //Command     : generate_target OV7670_QVGA.bd
 //Design      : OV7670_QVGA
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "OV7670_QVGA,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=OV7670_QVGA,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=21,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=6,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "OV7670_QVGA.hwdef" *) 
+(* CORE_GENERATION_INFO = "OV7670_QVGA,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=OV7670_QVGA,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=22,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=6,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "OV7670_QVGA.hwdef" *) 
 module OV7670_QVGA
    (ARDUINO_A0,
     ARDUINO_A1,
@@ -55,7 +55,7 @@ module OV7670_QVGA
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.ARDUINO_A1 RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.ARDUINO_A1, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) output ARDUINO_A1;
   input ARDUINO_IO0;
   output ARDUINO_IO1;
-  input ARDUINO_IO10;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ARDUINO_IO10 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ARDUINO_IO10, CLK_DOMAIN OV7670_QVGA_ARDUINO_IO10, FREQ_HZ 25000000, INSERT_VIP 0, PHASE 0.000" *) input ARDUINO_IO10;
   output ARDUINO_IO11;
   input ARDUINO_IO12;
   input ARDUINO_IO13;
@@ -319,6 +319,9 @@ module OV7670_QVGA
        (.clk(clk_wiz_0_clk_out1),
         .i(i_0_1),
         .o(debounce_0_o));
+  OV7670_QVGA_ila_0_0 ila_0
+       (.clk(processing_system7_0_FCLK_CLK1),
+        .probe0(d_0_1));
   OV7670_QVGA_ov7670_capture_0_0 ov7670_capture_0
        (.addr(ov7670_capture_0_addr),
         .d(d_0_1),

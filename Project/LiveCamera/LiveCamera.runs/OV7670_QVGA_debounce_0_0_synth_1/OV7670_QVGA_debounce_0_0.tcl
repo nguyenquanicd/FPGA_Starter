@@ -18,9 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 2
-set_param synth.incrementalSynthesisCache C:/Users/HaTiDe/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14428-DESKTOP-O25IKCM/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 create_project -in_memory -part xc7z007sclg225-1
 

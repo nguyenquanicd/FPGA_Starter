@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="OV7670_QVGA_wrapper_hw_platform_0" key="applicationwizard.hw_platform_key"/>
+	<item value="OV7670_QVGA_wrapper_hw_platform_0" key="bspwizard.hw_platform_key"/>
+</section>

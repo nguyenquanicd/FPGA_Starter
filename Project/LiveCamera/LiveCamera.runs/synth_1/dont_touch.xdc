@@ -54,6 +54,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_xlc
 # IP: bd/OV7670_QVGA/ip/OV7670_QVGA_xlconstant_1_0/OV7670_QVGA_xlconstant_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_xlconstant_1_0 || ORIG_REF_NAME==OV7670_QVGA_xlconstant_1_0} -quiet] -quiet
 
+# IP: bd/OV7670_QVGA/ip/OV7670_QVGA_ila_0_0/OV7670_QVGA_ila_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_ila_0_0 || ORIG_REF_NAME==OV7670_QVGA_ila_0_0} -quiet] -quiet
+
 # IP: bd/OV7670_QVGA/ip/OV7670_QVGA_auto_pc_0/OV7670_QVGA_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_auto_pc_0 || ORIG_REF_NAME==OV7670_QVGA_auto_pc_0} -quiet] -quiet
 

@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Sat Apr 17 23:33:34 2021
+//Date        : Thu Apr 29 00:17:01 2021
 //Host        : DESKTOP-O25IKCM running 64-bit major release  (build 9200)
 //Command     : generate_target OV7670_QVGA_wrapper.bd
 //Design      : OV7670_QVGA_wrapper

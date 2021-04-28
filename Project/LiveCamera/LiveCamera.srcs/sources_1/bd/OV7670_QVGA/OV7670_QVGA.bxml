@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="37">
   <CompositeFile CompositeFileTopName="OV7670_QVGA" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1618677215"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1618677215"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1618677215"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1618677215"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1619630224"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1619630224"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1619630224"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1619630224"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\OV7670_QVGA_Address_Generator_0_0\OV7670_QVGA_Address_Generator_0_0.xci" Type="IP">
         <Instance HierarchyPath="Address_Generator_0"/>
@@ -135,8 +135,8 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\OV7670_QVGA_auto_pc_0\OV7670_QVGA_auto_pc_0.xci" Type="IP">
-        <Instance HierarchyPath="ps7_0_axi_periph/s01_couplers/auto_pc"/>
+      <File Name="ip\OV7670_QVGA_ila_0_0\OV7670_QVGA_ila_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ila_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -152,6 +152,14 @@
       <File Name="sim\OV7670_QVGA.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\OV7670_QVGA_auto_pc_0\OV7670_QVGA_auto_pc_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_0_axi_periph/s01_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="OV7670_QVGA_ooc.xdc" Type="XDC">

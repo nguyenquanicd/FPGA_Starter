@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x7D6FEF097A0061",
+      "boundary_crc": "0x7D6FEFB8F6FDD0",
       "device": "xc7z007sclg225-1",
       "name": "OV7670_QVGA",
       "synth_flow_mode": "Hierarchical",
@@ -26,6 +26,7 @@
       "rst_ps7_0_50M": "",
       "xlconstant_0": "",
       "xlconstant_1": "",
+      "ila_0": "",
       "Address_Generator_0": "",
       "RGB_0": "",
       "VGA_0": "",
@@ -127,9 +128,6 @@
       "ARDUINO_IO1": {
         "direction": "O"
       },
-      "ARDUINO_IO10": {
-        "direction": "I"
-      },
       "ARDUINO_IO11": {
         "direction": "O"
       },
@@ -176,6 +174,27 @@
         "direction": "I",
         "left": "7",
         "right": "0"
+      },
+      "ARDUINO_IO10": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "OV7670_QVGA_ARDUINO_IO10",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "25000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
       }
     },
     "components": {
@@ -2269,6 +2288,27 @@
           }
         }
       },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "OV7670_QVGA_ila_0_0",
+        "parameters": {
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "1"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "8"
+          },
+          "C_TRIGIN_EN": {
+            "value": "false"
+          }
+        }
+      },
       "Address_Generator_0": {
         "vlnv": "xilinx.com:module_ref:Address_Generator:1.0",
         "xci_name": "OV7670_QVGA_Address_Generator_0_0",
@@ -2436,7 +2476,21 @@
         },
         "ports": {
           "pclk": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "OV7670_QVGA_ARDUINO_IO10",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "25000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
           },
           "rez_160x120": {
             "direction": "I"
@@ -2527,22 +2581,10 @@
       }
     },
     "interface_nets": {
-      "ps7_0_axi_periph_M00_AXI": {
-        "interface_ports": [
-          "axi_gpio_0/S_AXI",
-          "ps7_0_axi_periph/M00_AXI"
-        ]
-      },
       "processing_system7_0_DDR": {
         "interface_ports": [
           "DDR",
           "processing_system7_0/DDR"
-        ]
-      },
-      "processing_system7_0_M_AXI_GP1": {
-        "interface_ports": [
-          "processing_system7_0/M_AXI_GP0",
-          "ps7_0_axi_periph/S01_AXI"
         ]
       },
       "ps7_0_axi_periph_M01_AXI": {
@@ -2551,16 +2593,28 @@
           "ps7_0_axi_periph/M01_AXI"
         ]
       },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
       "axi_gpio_0_GPIO": {
         "interface_ports": [
           "pl_led_g",
           "axi_gpio_0/GPIO"
+        ]
+      },
+      "ps7_0_axi_periph_M00_AXI": {
+        "interface_ports": [
+          "axi_gpio_0/S_AXI",
+          "ps7_0_axi_periph/M00_AXI"
+        ]
+      },
+      "processing_system7_0_M_AXI_GP1": {
+        "interface_ports": [
+          "processing_system7_0/M_AXI_GP0",
+          "ps7_0_axi_periph/S01_AXI"
+        ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
         ]
       }
     },
@@ -2645,6 +2699,7 @@
       "d_0_1": {
         "ports": [
           "d_0",
+          "ila_0/probe0",
           "ov7670_capture_0/d"
         ]
       },
@@ -2714,13 +2769,6 @@
           "ARDUINO_IO11"
         ]
       },
-      "pclk_0_1": {
-        "ports": [
-          "ARDUINO_IO10",
-          "blk_mem_gen_0/clka",
-          "ov7670_capture_0/pclk"
-        ]
-      },
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
@@ -2738,7 +2786,8 @@
       "processing_system7_0_FCLK_CLK1": {
         "ports": [
           "processing_system7_0/FCLK_CLK1",
-          "clk_wiz_0/clk_in1"
+          "clk_wiz_0/clk_in1",
+          "ila_0/clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2791,6 +2840,13 @@
           "Address_Generator_0/rez_320x240",
           "VGA_0/rez_320x240",
           "ov7670_capture_0/rez_320x240"
+        ]
+      },
+      "pclk_0_1": {
+        "ports": [
+          "ARDUINO_IO10",
+          "blk_mem_gen_0/clka",
+          "ov7670_capture_0/pclk"
         ]
       }
     },

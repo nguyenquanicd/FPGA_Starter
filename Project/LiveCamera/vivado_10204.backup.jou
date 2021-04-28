@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr 24 15:25:36 2021
+# Process ID: 10204
+# Current directory: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13008 F:\Git_Fpga\FPGA_Starter\Project\LiveCamera\LiveCamera.xpr
+# Log file: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/vivado.log
+# Journal file: F:/Git_Fpga/FPGA_Starter/Project/LiveCamera\vivado.jou
+#-----------------------------------------------------------
+start_guopopen_project F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.xpupdate_compile_order -fileset sources_1
+update_module_reference OV7670_QVGA_Address_Generator_0_0
+update_module_reference OV7670_QVGA_RGB_0_0
+update_module_reference OV7670_QVGA_VGA_0_0
+update_module_reference OV7670_QVGA_debounce_0_0
+update_module_reference OV7670_QVGA_ov7670_capture_0_0
+update_module_reference OV7670_QVGA_ov7670_controller_0_0

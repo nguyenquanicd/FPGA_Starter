@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z007sclg225-1" LaunchTime="1618677229">
+<GenRun Id="synth_1" LaunchPart="xc7z007sclg225-1" LaunchTime="1619631067">
   <File Type="PA-TCL" Name="OV7670_QVGA_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="OV7670_QVGA_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="OV7670_QVGA_wrapper_reports.tcl"/>
@@ -98,6 +98,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/Fpga/minized_pins.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -115,13 +116,14 @@
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_axi_uartlite_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_VGA_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_Address_Generator_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_blk_mem_gen_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_rst_ps7_0_50M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_RGB_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_debounce_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_ov7670_capture_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_debounce_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_RGB_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_VGA_0_0"/>
 </GenRun>

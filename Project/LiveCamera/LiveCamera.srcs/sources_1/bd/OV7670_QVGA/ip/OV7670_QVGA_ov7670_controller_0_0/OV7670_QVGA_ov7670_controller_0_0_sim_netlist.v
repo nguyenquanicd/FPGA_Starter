@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sat Apr 17 23:35:03 2021
+// Date        : Sun Apr 25 11:13:13 2021
 // Host        : DESKTOP-O25IKCM running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_ov7670_controller_0_0/OV7670_QVGA_ov7670_controller_0_0_sim_netlist.v

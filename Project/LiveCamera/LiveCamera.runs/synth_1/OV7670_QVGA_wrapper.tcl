@@ -18,9 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 2
-set_param synth.incrementalSynthesisCache C:/Users/HaTiDe/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14428-DESKTOP-O25IKCM/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z007sclg225-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -52,6 +49,10 @@ set_property used_in_implementation false [get_files -all f:/Git_Fpga/FPGA_Start
 set_property used_in_implementation false [get_files -all f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_rst_ps7_0_50M_0/OV7670_QVGA_rst_ps7_0_50M_0_board.xdc]
 set_property used_in_implementation false [get_files -all f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_rst_ps7_0_50M_0/OV7670_QVGA_rst_ps7_0_50M_0.xdc]
 set_property used_in_implementation false [get_files -all f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_rst_ps7_0_50M_0/OV7670_QVGA_rst_ps7_0_50M_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_ila_0_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_ila_0_0/OV7670_QVGA_ila_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_auto_pc_0/OV7670_QVGA_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/OV7670_QVGA_ooc.xdc]
 

@@ -10,44 +10,44 @@ set_property PACKAGE_PIN P8 [get_ports ARDUINO_IO1]
 set_property IOSTANDARD LVCMOS33 [get_ports ARDUINO_IO1]
 
 # To ARD_D2 on Arduino 8-pin  Pin 3
-set_property PACKAGE_PIN P9 [get_ports d_0[0]]
-set_property IOSTANDARD LVCMOS33 [get_ports d_0[0]]
+set_property PACKAGE_PIN P9 [get_ports {d_0[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {d_0[0]}]
 
 # To ARD_D3 on Arduino 8-pin  Pin 4
-set_property PACKAGE_PIN R7 [get_ports d_0[1]]
-set_property IOSTANDARD LVCMOS33 [get_ports d_0[1]]
+set_property PACKAGE_PIN R7 [get_ports {d_0[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {d_0[1]}]
 
 # To ARD_D4 on Arduino 8-pin  Pin 5
-set_property PACKAGE_PIN N7 [get_ports d_0[2]]
-set_property IOSTANDARD LVCMOS33 [get_ports d_0[2]]
+set_property PACKAGE_PIN N7 [get_ports {d_0[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {d_0[2]}]
 
 # To ARD_D5 on Arduino 8-pin  Pin 6
-set_property PACKAGE_PIN R10 [get_ports d_0[3]]
-set_property IOSTANDARD LVCMOS33 [get_ports d_0[3]]
+set_property PACKAGE_PIN R10 [get_ports {d_0[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {d_0[3]}]
 
 # To ARD_D6 on Arduino 8-pin  Pin 7
-set_property PACKAGE_PIN P10 [get_ports d_0[4]]
-set_property IOSTANDARD LVCMOS33 [get_ports d_0[4]]
+set_property PACKAGE_PIN P10 [get_ports {d_0[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {d_0[4]}]
 
 # To ARD_D7 on Arduino 8-pin  Pin 8
-set_property PACKAGE_PIN N8 [get_ports d_0[5]]
-set_property IOSTANDARD LVCMOS33 [get_ports d_0[5]]
+set_property PACKAGE_PIN N8 [get_ports {d_0[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {d_0[5]}]
 
 #######################################################################
 # Arduino 10-pin connector
 #######################################################################
 # To ARD_D8 on Arduino 10-pin  Pin 1
-set_property PACKAGE_PIN M9 [get_ports d_0[6]]
-set_property IOSTANDARD LVCMOS33 [get_ports d_0[6]]
+set_property PACKAGE_PIN M9 [get_ports {d_0[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {d_0[6]}]
 
 # To ARD_D9 on Arduino 10-pin  Pin 2
-set_property PACKAGE_PIN N9 [get_ports d_0[7]]
-set_property IOSTANDARD LVCMOS33 [get_ports d_0[7]]
+set_property PACKAGE_PIN N9 [get_ports {d_0[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {d_0[7]}]
 
 # To ARD_D10 on Arduino 10-pin  Pin 3
 set_property PACKAGE_PIN M10 [get_ports ARDUINO_IO10]
 set_property IOSTANDARD LVCMOS33 [get_ports ARDUINO_IO10]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets ARDUINO_IO10_IBUF]
+#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets ARDUINO_IO10_IBUF]
 # To ARD_D11 on Arduino 10-pin  Pin 4
 set_property PACKAGE_PIN M11 [get_ports ARDUINO_IO11]
 set_property IOSTANDARD LVCMOS33 [get_ports ARDUINO_IO11]
@@ -111,44 +111,44 @@ set_property IOSTANDARD LVCMOS33 [get_ports I2C_SCL]
 #######################################################################
 # Pmod #1
 #######################################################################
-set_property PACKAGE_PIN L15 [get_ports VGA_B[0]]
-set_property IOSTANDARD LVCMOS33 [get_ports VGA_B[0]]
+set_property PACKAGE_PIN L15 [get_ports {VGA_R[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {VGA_R[0]}]
 
-set_property PACKAGE_PIN M15 [get_ports VGA_B[1]]
-set_property IOSTANDARD LVCMOS33 [get_ports VGA_B[1]]
+set_property PACKAGE_PIN M15 [get_ports {VGA_R[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {VGA_R[1]}]
 
-set_property PACKAGE_PIN L14 [get_ports VGA_B[2]]
-set_property IOSTANDARD LVCMOS33 [get_ports VGA_B[2]]
+set_property PACKAGE_PIN L14 [get_ports {VGA_R[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {VGA_R[2]}]
 
-set_property PACKAGE_PIN M14 [get_ports VGA_B[3]]
-set_property IOSTANDARD LVCMOS33 [get_ports VGA_B[3]]
+set_property PACKAGE_PIN M14 [get_ports {VGA_R[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {VGA_R[3]}]
 
-set_property PACKAGE_PIN K13 [get_ports VGA_G[0]]
-set_property IOSTANDARD LVCMOS33 [get_ports VGA_G[0]]
+set_property PACKAGE_PIN K13 [get_ports {VGA_B[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {VGA_B[0]}]
 
-set_property PACKAGE_PIN L13 [get_ports VGA_G[1]]
-set_property IOSTANDARD LVCMOS33 [get_ports VGA_G[1]]
+set_property PACKAGE_PIN L13 [get_ports {VGA_B[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {VGA_B[1]}]
 
-set_property PACKAGE_PIN N13 [get_ports VGA_G[2]]
-set_property IOSTANDARD LVCMOS33 [get_ports VGA_G[2]]
+set_property PACKAGE_PIN N13 [get_ports {VGA_B[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {VGA_B[2]}]
 
-set_property PACKAGE_PIN N14 [get_ports VGA_G[3]]
-set_property IOSTANDARD LVCMOS33 [get_ports VGA_G[3]]
+set_property PACKAGE_PIN N14 [get_ports {VGA_B[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {VGA_B[3]}]
 
 #######################################################################
 # Pmod #2
 #######################################################################
-set_property PACKAGE_PIN P13 [get_ports VGA_R[0]]
-set_property IOSTANDARD LVCMOS33 [get_ports VGA_R[0]]
+set_property PACKAGE_PIN P13 [get_ports {VGA_G[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {VGA_G[0]}]
 
-set_property PACKAGE_PIN P14 [get_ports VGA_R[1]]
-set_property IOSTANDARD LVCMOS33 [get_ports VGA_R[1]]
+set_property PACKAGE_PIN P14 [get_ports {VGA_G[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {VGA_G[1]}]
 
-set_property PACKAGE_PIN N11 [get_ports VGA_R[2]]
-set_property IOSTANDARD LVCMOS33 [get_ports VGA_R[2]]
+set_property PACKAGE_PIN N11 [get_ports {VGA_G[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {VGA_G[2]}]
 
-set_property PACKAGE_PIN N12 [get_ports VGA_R[3]]
-set_property IOSTANDARD LVCMOS33 [get_ports VGA_R[3]]
+set_property PACKAGE_PIN N12 [get_ports {VGA_G[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {VGA_G[3]}]
 
 set_property PACKAGE_PIN P15 [get_ports VGA_HS]
 set_property IOSTANDARD LVCMOS33 [get_ports VGA_HS]
@@ -161,3 +161,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports VGA_VS]
 
 #set_property PACKAGE_PIN R13 [get_ports PMOD2_PIN10]
 #set_property IOSTANDARD LVCMOS33 [get_ports PMOD2_PIN10]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets ARDUINO_IO10_IBUF]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets clk]
