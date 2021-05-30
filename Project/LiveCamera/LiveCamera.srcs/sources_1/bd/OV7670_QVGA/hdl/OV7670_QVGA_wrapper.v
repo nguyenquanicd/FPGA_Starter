@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Thu Apr 29 00:17:01 2021
+//Date        : Sun May 30 10:24:42 2021
 //Host        : DESKTOP-O25IKCM running 64-bit major release  (build 9200)
 //Command     : generate_target OV7670_QVGA_wrapper.bd
 //Design      : OV7670_QVGA_wrapper
@@ -12,8 +12,6 @@
 module OV7670_QVGA_wrapper
    (ARDUINO_A0,
     ARDUINO_A1,
-    ARDUINO_IO0,
-    ARDUINO_IO1,
     ARDUINO_IO10,
     ARDUINO_IO11,
     ARDUINO_IO12,
@@ -39,8 +37,6 @@ module OV7670_QVGA_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    I2C_SCL,
-    I2C_SDA,
     PL_LED_R,
     PL_SW,
     VGA_B,
@@ -49,11 +45,10 @@ module OV7670_QVGA_wrapper
     VGA_R,
     VGA_VS,
     d_0,
-    pl_led_g_tri_o);
+    iic_rtl_scl_io,
+    iic_rtl_sda_io);
   output ARDUINO_A0;
   output ARDUINO_A1;
-  input ARDUINO_IO0;
-  output ARDUINO_IO1;
   input ARDUINO_IO10;
   output ARDUINO_IO11;
   input ARDUINO_IO12;
@@ -79,8 +74,6 @@ module OV7670_QVGA_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output I2C_SCL;
-  inout I2C_SDA;
   output PL_LED_R;
   input PL_SW;
   output [3:0]VGA_B;
@@ -89,12 +82,11 @@ module OV7670_QVGA_wrapper
   output [3:0]VGA_R;
   output VGA_VS;
   input [7:0]d_0;
-  output pl_led_g_tri_o;
+  inout iic_rtl_scl_io;
+  inout iic_rtl_sda_io;
 
   wire ARDUINO_A0;
   wire ARDUINO_A1;
-  wire ARDUINO_IO0;
-  wire ARDUINO_IO1;
   wire ARDUINO_IO10;
   wire ARDUINO_IO11;
   wire ARDUINO_IO12;
@@ -120,8 +112,6 @@ module OV7670_QVGA_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire I2C_SCL;
-  wire I2C_SDA;
   wire PL_LED_R;
   wire PL_SW;
   wire [3:0]VGA_B;
@@ -130,13 +120,18 @@ module OV7670_QVGA_wrapper
   wire [3:0]VGA_R;
   wire VGA_VS;
   wire [7:0]d_0;
-  wire pl_led_g_tri_o;
+  wire iic_rtl_scl_i;
+  wire iic_rtl_scl_io;
+  wire iic_rtl_scl_o;
+  wire iic_rtl_scl_t;
+  wire iic_rtl_sda_i;
+  wire iic_rtl_sda_io;
+  wire iic_rtl_sda_o;
+  wire iic_rtl_sda_t;
 
   OV7670_QVGA OV7670_QVGA_i
        (.ARDUINO_A0(ARDUINO_A0),
         .ARDUINO_A1(ARDUINO_A1),
-        .ARDUINO_IO0(ARDUINO_IO0),
-        .ARDUINO_IO1(ARDUINO_IO1),
         .ARDUINO_IO10(ARDUINO_IO10),
         .ARDUINO_IO11(ARDUINO_IO11),
         .ARDUINO_IO12(ARDUINO_IO12),
@@ -162,8 +157,6 @@ module OV7670_QVGA_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .I2C_SCL(I2C_SCL),
-        .I2C_SDA(I2C_SDA),
         .PL_LED_R(PL_LED_R),
         .PL_SW(PL_SW),
         .VGA_B(VGA_B),
@@ -172,5 +165,20 @@ module OV7670_QVGA_wrapper
         .VGA_R(VGA_R),
         .VGA_VS(VGA_VS),
         .d_0(d_0),
-        .pl_led_g_tri_o(pl_led_g_tri_o));
+        .iic_rtl_scl_i(iic_rtl_scl_i),
+        .iic_rtl_scl_o(iic_rtl_scl_o),
+        .iic_rtl_scl_t(iic_rtl_scl_t),
+        .iic_rtl_sda_i(iic_rtl_sda_i),
+        .iic_rtl_sda_o(iic_rtl_sda_o),
+        .iic_rtl_sda_t(iic_rtl_sda_t));
+  IOBUF iic_rtl_scl_iobuf
+       (.I(iic_rtl_scl_o),
+        .IO(iic_rtl_scl_io),
+        .O(iic_rtl_scl_i),
+        .T(iic_rtl_scl_t));
+  IOBUF iic_rtl_sda_iobuf
+       (.I(iic_rtl_sda_o),
+        .IO(iic_rtl_sda_io),
+        .O(iic_rtl_sda_i),
+        .T(iic_rtl_sda_t));
 endmodule

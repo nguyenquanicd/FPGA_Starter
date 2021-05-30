@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sat Apr 17 22:04:12 2021
+-- Date        : Sun May 30 10:13:11 2021
 -- Host        : DESKTOP-O25IKCM running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_processing_system7_0_0/OV7670_QVGA_processing_system7_0_0_sim_netlist.vhdl
@@ -817,7 +817,7 @@ entity OV7670_QVGA_processing_system7_0_0_processing_system7_v5_5_processing_sys
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of OV7670_QVGA_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "processing_system7_v5_5_processing_system7";
   attribute POWER : string;
-  attribute POWER of OV7670_QVGA_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3(LowVoltage)} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={I2C} ioStandard={} bidis={1} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><IO interface={UART} ioStandard={} bidis={0} ioBank={} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS33} bidis={6} ioBank={Vcco_p0} clockFreq={25.000000} usageRate={0.5} /><IO interface={SD} ioStandard={} bidis={0} ioBank={} clockFreq={25.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS33} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1400.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>";
+  attribute POWER of OV7670_QVGA_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3(LowVoltage)} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS33} bidis={14} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={9} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1600.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;
   attribute USE_TRACE_DATA_EDGE_DETECTOR of OV7670_QVGA_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
 end OV7670_QVGA_processing_system7_0_0_processing_system7_v5_5_processing_system7;
@@ -2739,36 +2739,6 @@ entity OV7670_QVGA_processing_system7_0_0 is
     GPIO_I : in STD_LOGIC_VECTOR ( 15 downto 0 );
     GPIO_O : out STD_LOGIC_VECTOR ( 15 downto 0 );
     GPIO_T : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    I2C0_SDA_I : in STD_LOGIC;
-    I2C0_SDA_O : out STD_LOGIC;
-    I2C0_SDA_T : out STD_LOGIC;
-    I2C0_SCL_I : in STD_LOGIC;
-    I2C0_SCL_O : out STD_LOGIC;
-    I2C0_SCL_T : out STD_LOGIC;
-    SDIO0_CLK : out STD_LOGIC;
-    SDIO0_CLK_FB : in STD_LOGIC;
-    SDIO0_CMD_O : out STD_LOGIC;
-    SDIO0_CMD_I : in STD_LOGIC;
-    SDIO0_CMD_T : out STD_LOGIC;
-    SDIO0_DATA_I : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    SDIO0_DATA_O : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    SDIO0_DATA_T : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    SDIO0_LED : out STD_LOGIC;
-    SDIO0_CDN : in STD_LOGIC;
-    SDIO0_WP : in STD_LOGIC;
-    SDIO0_BUSPOW : out STD_LOGIC;
-    SDIO0_BUSVOLT : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    UART0_DTRN : out STD_LOGIC;
-    UART0_RTSN : out STD_LOGIC;
-    UART0_TX : out STD_LOGIC;
-    UART0_CTSN : in STD_LOGIC;
-    UART0_DCDN : in STD_LOGIC;
-    UART0_DSRN : in STD_LOGIC;
-    UART0_RIN : in STD_LOGIC;
-    UART0_RX : in STD_LOGIC;
-    USB0_PORT_INDCTL : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    USB0_VBUS_PWRSELECT : out STD_LOGIC;
-    USB0_VBUS_PWRFAULT : in STD_LOGIC;
     M_AXI_GP0_ARVALID : out STD_LOGIC;
     M_AXI_GP0_AWVALID : out STD_LOGIC;
     M_AXI_GP0_BREADY : out STD_LOGIC;
@@ -2902,6 +2872,10 @@ architecture STRUCTURE of OV7670_QVGA_processing_system7_0_0 is
   signal NLW_inst_FTMT_P2F_TRIG_1_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_FTMT_P2F_TRIG_2_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_FTMT_P2F_TRIG_3_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_I2C0_SCL_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_I2C0_SCL_T_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_I2C0_SDA_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_I2C0_SDA_T_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_I2C1_SCL_O_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_I2C1_SCL_T_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_I2C1_SDA_O_UNCONNECTED : STD_LOGIC;
@@ -2944,6 +2918,11 @@ architecture STRUCTURE of OV7670_QVGA_processing_system7_0_0 is
   signal NLW_inst_M_AXI_GP1_WLAST_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_M_AXI_GP1_WVALID_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_PJTAG_TDO_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SDIO0_BUSPOW_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SDIO0_CLK_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SDIO0_CMD_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SDIO0_CMD_T_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SDIO0_LED_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_SDIO1_BUSPOW_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_SDIO1_CLK_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_SDIO1_CMD_O_UNCONNECTED : STD_LOGIC;
@@ -3026,9 +3005,13 @@ architecture STRUCTURE of OV7670_QVGA_processing_system7_0_0 is
   signal NLW_inst_TTC1_WAVE0_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_TTC1_WAVE1_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_TTC1_WAVE2_OUT_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_UART0_DTRN_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_UART0_RTSN_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_UART0_TX_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_UART1_DTRN_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_UART1_RTSN_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_UART1_TX_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_USB1_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_WDT_RST_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_DMA0_DATYPE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -3061,6 +3044,9 @@ architecture STRUCTURE of OV7670_QVGA_processing_system7_0_0 is
   signal NLW_inst_M_AXI_GP1_WDATA_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_inst_M_AXI_GP1_WID_UNCONNECTED : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal NLW_inst_M_AXI_GP1_WSTRB_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_inst_SDIO0_BUSVOLT_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_inst_SDIO0_DATA_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_inst_SDIO0_DATA_T_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_inst_SDIO1_BUSVOLT_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_inst_SDIO1_DATA_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_inst_SDIO1_DATA_T_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -3116,6 +3102,7 @@ architecture STRUCTURE of OV7670_QVGA_processing_system7_0_0 is
   signal NLW_inst_S_AXI_HP3_WACOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_inst_S_AXI_HP3_WCOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal NLW_inst_TRACE_DATA_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_inst_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_USB1_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute C_DM_WIDTH : integer;
   attribute C_DM_WIDTH of inst : label is 2;
@@ -3230,7 +3217,7 @@ architecture STRUCTURE of OV7670_QVGA_processing_system7_0_0 is
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of inst : label is "OV7670_QVGA_processing_system7_0_0.hwdef";
   attribute POWER : string;
-  attribute POWER of inst : label is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3(LowVoltage)} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={I2C} ioStandard={} bidis={1} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><IO interface={UART} ioStandard={} bidis={0} ioBank={} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS33} bidis={6} ioBank={Vcco_p0} clockFreq={25.000000} usageRate={0.5} /><IO interface={SD} ioStandard={} bidis={0} ioBank={} clockFreq={25.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS33} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1400.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>";
+  attribute POWER of inst : label is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3(LowVoltage)} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS33} bidis={14} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={9} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1600.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;
   attribute USE_TRACE_DATA_EDGE_DETECTOR of inst : label is 0;
   attribute X_INTERFACE_INFO : string;
@@ -3252,12 +3239,6 @@ architecture STRUCTURE of OV7670_QVGA_processing_system7_0_0 is
   attribute X_INTERFACE_PARAMETER of FCLK_CLK1 : signal is "XIL_INTERFACENAME FCLK_CLK1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN OV7670_QVGA_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of FCLK_RESET0_N : signal is "xilinx.com:signal:reset:1.0 FCLK_RESET0_N RST";
   attribute X_INTERFACE_PARAMETER of FCLK_RESET0_N : signal is "XIL_INTERFACENAME FCLK_RESET0_N, POLARITY ACTIVE_LOW, INSERT_VIP 0";
-  attribute X_INTERFACE_INFO of I2C0_SCL_I : signal is "xilinx.com:interface:iic:1.0 IIC_0 SCL_I";
-  attribute X_INTERFACE_INFO of I2C0_SCL_O : signal is "xilinx.com:interface:iic:1.0 IIC_0 SCL_O";
-  attribute X_INTERFACE_INFO of I2C0_SCL_T : signal is "xilinx.com:interface:iic:1.0 IIC_0 SCL_T";
-  attribute X_INTERFACE_INFO of I2C0_SDA_I : signal is "xilinx.com:interface:iic:1.0 IIC_0 SDA_I";
-  attribute X_INTERFACE_INFO of I2C0_SDA_O : signal is "xilinx.com:interface:iic:1.0 IIC_0 SDA_O";
-  attribute X_INTERFACE_INFO of I2C0_SDA_T : signal is "xilinx.com:interface:iic:1.0 IIC_0 SDA_T";
   attribute X_INTERFACE_INFO of M_AXI_GP0_ACLK : signal is "xilinx.com:signal:clock:1.0 M_AXI_GP0_ACLK CLK";
   attribute X_INTERFACE_PARAMETER of M_AXI_GP0_ACLK : signal is "XIL_INTERFACENAME M_AXI_GP0_ACLK, ASSOCIATED_BUSIF M_AXI_GP0, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN OV7670_QVGA_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of M_AXI_GP0_ARREADY : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARREADY";
@@ -3276,25 +3257,6 @@ architecture STRUCTURE of OV7670_QVGA_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of PS_PORB : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
   attribute X_INTERFACE_PARAMETER of PS_PORB : signal is "XIL_INTERFACENAME FIXED_IO, CAN_DEBUG false";
   attribute X_INTERFACE_INFO of PS_SRSTB : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
-  attribute X_INTERFACE_INFO of SDIO0_BUSPOW : signal is "xilinx.com:interface:sdio:1.0 SDIO_0 BUSPOW";
-  attribute X_INTERFACE_INFO of SDIO0_CDN : signal is "xilinx.com:interface:sdio:1.0 SDIO_0 CDN";
-  attribute X_INTERFACE_INFO of SDIO0_CLK : signal is "xilinx.com:interface:sdio:1.0 SDIO_0 CLK";
-  attribute X_INTERFACE_INFO of SDIO0_CLK_FB : signal is "xilinx.com:interface:sdio:1.0 SDIO_0 CLK_FB";
-  attribute X_INTERFACE_INFO of SDIO0_CMD_I : signal is "xilinx.com:interface:sdio:1.0 SDIO_0 CMD_I";
-  attribute X_INTERFACE_INFO of SDIO0_CMD_O : signal is "xilinx.com:interface:sdio:1.0 SDIO_0 CMD_O";
-  attribute X_INTERFACE_INFO of SDIO0_CMD_T : signal is "xilinx.com:interface:sdio:1.0 SDIO_0 CMD_T";
-  attribute X_INTERFACE_INFO of SDIO0_LED : signal is "xilinx.com:interface:sdio:1.0 SDIO_0 LED";
-  attribute X_INTERFACE_INFO of SDIO0_WP : signal is "xilinx.com:interface:sdio:1.0 SDIO_0 WP";
-  attribute X_INTERFACE_INFO of UART0_CTSN : signal is "xilinx.com:interface:uart:1.0 UART_0 CTSn";
-  attribute X_INTERFACE_INFO of UART0_DCDN : signal is "xilinx.com:interface:uart:1.0 UART_0 DCDn";
-  attribute X_INTERFACE_INFO of UART0_DSRN : signal is "xilinx.com:interface:uart:1.0 UART_0 DSRn";
-  attribute X_INTERFACE_INFO of UART0_DTRN : signal is "xilinx.com:interface:uart:1.0 UART_0 DTRn";
-  attribute X_INTERFACE_INFO of UART0_RIN : signal is "xilinx.com:interface:uart:1.0 UART_0 RI";
-  attribute X_INTERFACE_INFO of UART0_RTSN : signal is "xilinx.com:interface:uart:1.0 UART_0 RTSn";
-  attribute X_INTERFACE_INFO of UART0_RX : signal is "xilinx.com:interface:uart:1.0 UART_0 RxD";
-  attribute X_INTERFACE_INFO of UART0_TX : signal is "xilinx.com:interface:uart:1.0 UART_0 TxD";
-  attribute X_INTERFACE_INFO of USB0_VBUS_PWRFAULT : signal is "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRFAULT";
-  attribute X_INTERFACE_INFO of USB0_VBUS_PWRSELECT : signal is "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRSELECT";
   attribute X_INTERFACE_INFO of DDR_Addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
   attribute X_INTERFACE_INFO of DDR_BankAddr : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
   attribute X_INTERFACE_INFO of DDR_DM : signal is "xilinx.com:interface:ddrx:1.0 DDR DM";
@@ -3333,11 +3295,6 @@ architecture STRUCTURE of OV7670_QVGA_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of M_AXI_GP0_WDATA : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WDATA";
   attribute X_INTERFACE_INFO of M_AXI_GP0_WID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WID";
   attribute X_INTERFACE_INFO of M_AXI_GP0_WSTRB : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WSTRB";
-  attribute X_INTERFACE_INFO of SDIO0_BUSVOLT : signal is "xilinx.com:interface:sdio:1.0 SDIO_0 BUSVOLT";
-  attribute X_INTERFACE_INFO of SDIO0_DATA_I : signal is "xilinx.com:interface:sdio:1.0 SDIO_0 DATA_I";
-  attribute X_INTERFACE_INFO of SDIO0_DATA_O : signal is "xilinx.com:interface:sdio:1.0 SDIO_0 DATA_O";
-  attribute X_INTERFACE_INFO of SDIO0_DATA_T : signal is "xilinx.com:interface:sdio:1.0 SDIO_0 DATA_T";
-  attribute X_INTERFACE_INFO of USB0_PORT_INDCTL : signal is "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 PORT_INDCTL";
 begin
 inst: entity work.OV7670_QVGA_processing_system7_0_0_processing_system7_v5_5_processing_system7
      port map (
@@ -3495,12 +3452,12 @@ inst: entity work.OV7670_QVGA_processing_system7_0_0_processing_system7_v5_5_pro
       GPIO_I(15 downto 0) => GPIO_I(15 downto 0),
       GPIO_O(15 downto 0) => GPIO_O(15 downto 0),
       GPIO_T(15 downto 0) => GPIO_T(15 downto 0),
-      I2C0_SCL_I => I2C0_SCL_I,
-      I2C0_SCL_O => I2C0_SCL_O,
-      I2C0_SCL_T => I2C0_SCL_T,
-      I2C0_SDA_I => I2C0_SDA_I,
-      I2C0_SDA_O => I2C0_SDA_O,
-      I2C0_SDA_T => I2C0_SDA_T,
+      I2C0_SCL_I => '0',
+      I2C0_SCL_O => NLW_inst_I2C0_SCL_O_UNCONNECTED,
+      I2C0_SCL_T => NLW_inst_I2C0_SCL_T_UNCONNECTED,
+      I2C0_SDA_I => '0',
+      I2C0_SDA_O => NLW_inst_I2C0_SDA_O_UNCONNECTED,
+      I2C0_SDA_T => NLW_inst_I2C0_SDA_T_UNCONNECTED,
       I2C1_SCL_I => '0',
       I2C1_SCL_O => NLW_inst_I2C1_SCL_O_UNCONNECTED,
       I2C1_SCL_T => NLW_inst_I2C1_SCL_T_UNCONNECTED,
@@ -3625,19 +3582,19 @@ inst: entity work.OV7670_QVGA_processing_system7_0_0_processing_system7_v5_5_pro
       PS_CLK => PS_CLK,
       PS_PORB => PS_PORB,
       PS_SRSTB => PS_SRSTB,
-      SDIO0_BUSPOW => SDIO0_BUSPOW,
-      SDIO0_BUSVOLT(2 downto 0) => SDIO0_BUSVOLT(2 downto 0),
-      SDIO0_CDN => SDIO0_CDN,
-      SDIO0_CLK => SDIO0_CLK,
-      SDIO0_CLK_FB => SDIO0_CLK_FB,
-      SDIO0_CMD_I => SDIO0_CMD_I,
-      SDIO0_CMD_O => SDIO0_CMD_O,
-      SDIO0_CMD_T => SDIO0_CMD_T,
-      SDIO0_DATA_I(3 downto 0) => SDIO0_DATA_I(3 downto 0),
-      SDIO0_DATA_O(3 downto 0) => SDIO0_DATA_O(3 downto 0),
-      SDIO0_DATA_T(3 downto 0) => SDIO0_DATA_T(3 downto 0),
-      SDIO0_LED => SDIO0_LED,
-      SDIO0_WP => SDIO0_WP,
+      SDIO0_BUSPOW => NLW_inst_SDIO0_BUSPOW_UNCONNECTED,
+      SDIO0_BUSVOLT(2 downto 0) => NLW_inst_SDIO0_BUSVOLT_UNCONNECTED(2 downto 0),
+      SDIO0_CDN => '0',
+      SDIO0_CLK => NLW_inst_SDIO0_CLK_UNCONNECTED,
+      SDIO0_CLK_FB => '0',
+      SDIO0_CMD_I => '0',
+      SDIO0_CMD_O => NLW_inst_SDIO0_CMD_O_UNCONNECTED,
+      SDIO0_CMD_T => NLW_inst_SDIO0_CMD_T_UNCONNECTED,
+      SDIO0_DATA_I(3 downto 0) => B"0000",
+      SDIO0_DATA_O(3 downto 0) => NLW_inst_SDIO0_DATA_O_UNCONNECTED(3 downto 0),
+      SDIO0_DATA_T(3 downto 0) => NLW_inst_SDIO0_DATA_T_UNCONNECTED(3 downto 0),
+      SDIO0_LED => NLW_inst_SDIO0_LED_UNCONNECTED,
+      SDIO0_WP => '0',
       SDIO1_BUSPOW => NLW_inst_SDIO1_BUSPOW_UNCONNECTED,
       SDIO1_BUSVOLT(2 downto 0) => NLW_inst_SDIO1_BUSVOLT_UNCONNECTED(2 downto 0),
       SDIO1_CDN => '0',
@@ -4002,14 +3959,14 @@ inst: entity work.OV7670_QVGA_processing_system7_0_0_processing_system7_v5_5_pro
       TTC1_WAVE0_OUT => NLW_inst_TTC1_WAVE0_OUT_UNCONNECTED,
       TTC1_WAVE1_OUT => NLW_inst_TTC1_WAVE1_OUT_UNCONNECTED,
       TTC1_WAVE2_OUT => NLW_inst_TTC1_WAVE2_OUT_UNCONNECTED,
-      UART0_CTSN => UART0_CTSN,
-      UART0_DCDN => UART0_DCDN,
-      UART0_DSRN => UART0_DSRN,
-      UART0_DTRN => UART0_DTRN,
-      UART0_RIN => UART0_RIN,
-      UART0_RTSN => UART0_RTSN,
-      UART0_RX => UART0_RX,
-      UART0_TX => UART0_TX,
+      UART0_CTSN => '0',
+      UART0_DCDN => '0',
+      UART0_DSRN => '0',
+      UART0_DTRN => NLW_inst_UART0_DTRN_UNCONNECTED,
+      UART0_RIN => '0',
+      UART0_RTSN => NLW_inst_UART0_RTSN_UNCONNECTED,
+      UART0_RX => '1',
+      UART0_TX => NLW_inst_UART0_TX_UNCONNECTED,
       UART1_CTSN => '0',
       UART1_DCDN => '0',
       UART1_DSRN => '0',
@@ -4018,9 +3975,9 @@ inst: entity work.OV7670_QVGA_processing_system7_0_0_processing_system7_v5_5_pro
       UART1_RTSN => NLW_inst_UART1_RTSN_UNCONNECTED,
       UART1_RX => '1',
       UART1_TX => NLW_inst_UART1_TX_UNCONNECTED,
-      USB0_PORT_INDCTL(1 downto 0) => USB0_PORT_INDCTL(1 downto 0),
-      USB0_VBUS_PWRFAULT => USB0_VBUS_PWRFAULT,
-      USB0_VBUS_PWRSELECT => USB0_VBUS_PWRSELECT,
+      USB0_PORT_INDCTL(1 downto 0) => NLW_inst_USB0_PORT_INDCTL_UNCONNECTED(1 downto 0),
+      USB0_VBUS_PWRFAULT => '0',
+      USB0_VBUS_PWRSELECT => NLW_inst_USB0_VBUS_PWRSELECT_UNCONNECTED,
       USB1_PORT_INDCTL(1 downto 0) => NLW_inst_USB1_PORT_INDCTL_UNCONNECTED(1 downto 0),
       USB1_VBUS_PWRFAULT => '0',
       USB1_VBUS_PWRSELECT => NLW_inst_USB1_VBUS_PWRSELECT_UNCONNECTED,

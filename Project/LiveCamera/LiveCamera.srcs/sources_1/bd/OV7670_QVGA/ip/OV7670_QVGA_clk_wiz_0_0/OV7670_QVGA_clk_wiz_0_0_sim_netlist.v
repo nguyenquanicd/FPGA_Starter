@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sat Apr 17 22:01:03 2021
+// Date        : Sun May  2 20:33:12 2021
 // Host        : DESKTOP-O25IKCM running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_clk_wiz_0_0/OV7670_QVGA_clk_wiz_0_0_sim_netlist.v
@@ -17,21 +17,25 @@ module OV7670_QVGA_clk_wiz_0_0
    (clk_out1,
     clk_out2,
     resetn,
+    locked,
     clk_in1);
   output clk_out1;
   output clk_out2;
   input resetn;
+  output locked;
   input clk_in1;
 
   (* IBUF_LOW_PWR *) wire clk_in1;
   wire clk_out1;
   wire clk_out2;
+  wire locked;
   wire resetn;
 
   OV7670_QVGA_clk_wiz_0_0_OV7670_QVGA_clk_wiz_0_0_clk_wiz inst
        (.clk_in1(clk_in1),
         .clk_out1(clk_out1),
         .clk_out2(clk_out2),
+        .locked(locked),
         .resetn(resetn));
 endmodule
 
@@ -40,10 +44,12 @@ module OV7670_QVGA_clk_wiz_0_0_OV7670_QVGA_clk_wiz_0_0_clk_wiz
    (clk_out1,
     clk_out2,
     resetn,
+    locked,
     clk_in1);
   output clk_out1;
   output clk_out2;
   input resetn;
+  output locked;
   input clk_in1;
 
   wire clk_in1;
@@ -54,6 +60,7 @@ module OV7670_QVGA_clk_wiz_0_0_OV7670_QVGA_clk_wiz_0_0_clk_wiz
   wire clk_out2_OV7670_QVGA_clk_wiz_0_0;
   wire clkfbout_OV7670_QVGA_clk_wiz_0_0;
   wire clkfbout_buf_OV7670_QVGA_clk_wiz_0_0;
+  wire locked;
   wire reset_high;
   wire resetn;
   wire NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED;
@@ -69,7 +76,6 @@ module OV7670_QVGA_clk_wiz_0_0_OV7670_QVGA_clk_wiz_0_0_clk_wiz
   wire NLW_mmcm_adv_inst_CLKOUT5_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKOUT6_UNCONNECTED;
   wire NLW_mmcm_adv_inst_DRDY_UNCONNECTED;
-  wire NLW_mmcm_adv_inst_LOCKED_UNCONNECTED;
   wire NLW_mmcm_adv_inst_PSDONE_UNCONNECTED;
   wire [15:0]NLW_mmcm_adv_inst_DO_UNCONNECTED;
 
@@ -171,7 +177,7 @@ module OV7670_QVGA_clk_wiz_0_0_OV7670_QVGA_clk_wiz_0_0_clk_wiz
         .DO(NLW_mmcm_adv_inst_DO_UNCONNECTED[15:0]),
         .DRDY(NLW_mmcm_adv_inst_DRDY_UNCONNECTED),
         .DWE(1'b0),
-        .LOCKED(NLW_mmcm_adv_inst_LOCKED_UNCONNECTED),
+        .LOCKED(locked),
         .PSCLK(1'b0),
         .PSDONE(NLW_mmcm_adv_inst_PSDONE_UNCONNECTED),
         .PSEN(1'b0),

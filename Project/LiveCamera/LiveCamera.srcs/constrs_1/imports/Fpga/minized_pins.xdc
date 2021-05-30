@@ -2,47 +2,46 @@
 # Arduino 8-pin connector
 #######################################################################
 # To ARD_D0 on Arduino 8-pin  Pin 1
-set_property PACKAGE_PIN R8 [get_ports ARDUINO_IO0]
-set_property IOSTANDARD LVCMOS33 [get_ports ARDUINO_IO0]
-
-# To ARD_D1 on Arduino 8-pin  Pin 2
-set_property PACKAGE_PIN P8 [get_ports ARDUINO_IO1]
-set_property IOSTANDARD LVCMOS33 [get_ports ARDUINO_IO1]
-
-# To ARD_D2 on Arduino 8-pin  Pin 3
-set_property PACKAGE_PIN P9 [get_ports {d_0[0]}]
+set_property PACKAGE_PIN R8 [get_ports {d_0[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {d_0[0]}]
 
-# To ARD_D3 on Arduino 8-pin  Pin 4
-set_property PACKAGE_PIN R7 [get_ports {d_0[1]}]
+# To ARD_D1 on Arduino 8-pin  Pin 2
+set_property PACKAGE_PIN P8 [get_ports {d_0[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {d_0[1]}]
 
-# To ARD_D4 on Arduino 8-pin  Pin 5
-set_property PACKAGE_PIN N7 [get_ports {d_0[2]}]
+# To ARD_D2 on Arduino 8-pin  Pin 3
+set_property PACKAGE_PIN P9 [get_ports {d_0[2]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {d_0[2]}]
 
-# To ARD_D5 on Arduino 8-pin  Pin 6
-set_property PACKAGE_PIN R10 [get_ports {d_0[3]}]
+# To ARD_D3 on Arduino 8-pin  Pin 4
+set_property PACKAGE_PIN R7 [get_ports {d_0[3]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {d_0[3]}]
 
-# To ARD_D6 on Arduino 8-pin  Pin 7
-set_property PACKAGE_PIN P10 [get_ports {d_0[4]}]
+# To ARD_D4 on Arduino 8-pin  Pin 5
+set_property PACKAGE_PIN N7 [get_ports {d_0[4]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {d_0[4]}]
 
-# To ARD_D7 on Arduino 8-pin  Pin 8
-set_property PACKAGE_PIN N8 [get_ports {d_0[5]}]
+# To ARD_D5 on Arduino 8-pin  Pin 6
+set_property PACKAGE_PIN R10 [get_ports {d_0[5]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {d_0[5]}]
 
+# To ARD_D6 on Arduino 8-pin  Pin 7
+set_property PACKAGE_PIN P10 [get_ports {d_0[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {d_0[6]}]
+
+# To ARD_D7 on Arduino 8-pin  Pin 8
+set_property PACKAGE_PIN N8 [get_ports {d_0[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {d_0[7]}]
 #######################################################################
 # Arduino 10-pin connector
 #######################################################################
 # To ARD_D8 on Arduino 10-pin  Pin 1
-set_property PACKAGE_PIN M9 [get_ports {d_0[6]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {d_0[6]}]
+#set_property PACKAGE_PIN M9 [get_ports ARDUINO_IO1]
+#set_property IOSTANDARD LVCMOS33 [get_ports ARDUINO_IO1]
 
 # To ARD_D9 on Arduino 10-pin  Pin 2
-set_property PACKAGE_PIN N9 [get_ports {d_0[7]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {d_0[7]}]
+#set_property PACKAGE_PIN N9 [get_ports ARDUINO_IO0]
+#set_property IOSTANDARD LVCMOS33 [get_ports ARDUINO_IO0]
 
 # To ARD_D10 on Arduino 10-pin  Pin 3
 set_property PACKAGE_PIN M10 [get_ports ARDUINO_IO10]
@@ -78,8 +77,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports ARDUINO_A1]
 # To ARD_A3 on Arduino 6-pin  Pin 3 (and PL_LED Green)
 #set_property PACKAGE_PIN E13 [get_ports ARD_ADDR3]
 #set_property IOSTANDARD LVCMOS33 [get_ports ARD_ADDR3]
-set_property PACKAGE_PIN E13 [get_ports pl_led_g]
-set_property IOSTANDARD LVCMOS33 [get_ports pl_led_g]
+#set_property PACKAGE_PIN E13 [get_ports pl_led_g]
+#set_property IOSTANDARD LVCMOS33 [get_ports pl_led_g]
 
 # To ARD_A4 on Arduino 6-pin  Pin 2 (and PL_LED Red)
 #set_property PACKAGE_PIN E12 [get_ports ARD_ADDR4]
@@ -99,14 +98,14 @@ set_property IOSTANDARD LVCMOS33 [get_ports PL_SW]
 # To SDA on Arduino 10-pin  Pin 9 and Motion Sensor
 #set_property PACKAGE_PIN F15 [get_ports I2C_SDA]
 #set_property IOSTANDARD LVCMOS33 [get_ports I2C_SDA]
-set_property PACKAGE_PIN F15 [get_ports I2C_SDA]
-set_property IOSTANDARD LVCMOS33 [get_ports I2C_SDA]
+set_property PACKAGE_PIN F15 [get_ports iic_rtl_sda_io]
+set_property IOSTANDARD LVCMOS33 [get_ports iic_rtl_sda_io]
 
 # To SCL on Arduino 10-pin  Pin 10 and Motion Sensor
 #set_property PACKAGE_PIN G15 [get_ports I2C_SCL]
 #set_property IOSTANDARD LVCMOS33 [get_ports I2C_SCL]
-set_property PACKAGE_PIN G15 [get_ports I2C_SCL]
-set_property IOSTANDARD LVCMOS33 [get_ports I2C_SCL]
+set_property PACKAGE_PIN G15 [get_ports iic_rtl_scl_io]
+set_property IOSTANDARD LVCMOS33 [get_ports iic_rtl_scl_io]
 
 #######################################################################
 # Pmod #1
@@ -162,7 +161,30 @@ set_property IOSTANDARD LVCMOS33 [get_ports VGA_VS]
 #set_property PACKAGE_PIN R13 [get_ports PMOD2_PIN10]
 #set_property IOSTANDARD LVCMOS33 [get_ports PMOD2_PIN10]
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets ARDUINO_IO10_IBUF]
-set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
-set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
-set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
-connect_debug_port dbg_hub/clk [get_nets clk]
+
+
+create_clock -period 40.000 -name clockOv7670In -waveform {0.000 20.000} [get_ports ARDUINO_IO10]
+set_property PULLUP true [get_ports iic_rtl_scl_io]
+set_property PULLUP true [get_ports iic_rtl_sda_io]
+
+# i2c configuration
+set_property IOSTANDARD LVCMOS33 [get_ports IIC_0_0_scl_io]
+set_property IOSTANDARD LVCMOS33 [get_ports IIC_0_0_sda_io]
+set_property PACKAGE_PIN G15 [get_ports IIC_0_0_scl_io]
+set_property PACKAGE_PIN F15 [get_ports IIC_0_0_sda_io]
+set_property PULLUP true [get_ports IIC_0_0_scl_io]
+set_property PULLUP true [get_ports IIC_0_0_sda_io]
+
+set_property SLEW FAST [get_ports {VGA_B[3]}]
+set_property SLEW FAST [get_ports {VGA_B[2]}]
+set_property SLEW FAST [get_ports {VGA_B[1]}]
+set_property SLEW FAST [get_ports {VGA_B[0]}]
+set_property SLEW FAST [get_ports {VGA_G[3]}]
+set_property SLEW FAST [get_ports {VGA_G[2]}]
+set_property SLEW FAST [get_ports {VGA_G[1]}]
+set_property SLEW FAST [get_ports {VGA_G[0]}]
+set_property SLEW FAST [get_ports {VGA_R[3]}]
+set_property SLEW FAST [get_ports {VGA_R[2]}]
+set_property SLEW FAST [get_ports {VGA_R[1]}]
+set_property SLEW FAST [get_ports {VGA_R[0]}]
+set_property SLEW FAST [get_ports iic_rtl_scl_io]

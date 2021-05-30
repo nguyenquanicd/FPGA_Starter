@@ -60,13 +60,17 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
+  set_param synth.incrementalSynthesisCache C:/Users/HaTiDe/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9244-DESKTOP-O25IKCM/incrSyn
   create_project -in_memory -part xc7z007sclg225-1
+  set_property board_part_repo_paths {C:/Users/HaTiDe/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
   set_property board_part em.avnet.com:minized:part0:1.2 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0

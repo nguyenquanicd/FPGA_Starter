@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sun Apr 25 11:12:29 2021
+// Date        : Sun May  2 16:47:44 2021
 // Host        : DESKTOP-O25IKCM running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ OV7670_QVGA_Address_Generator_0_0_sim_netlist.v
@@ -19,7 +19,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Address_Generator
     rez_320x240,
     rez_160x120,
     vsync);
-  output [16:0]address;
+  output [17:0]address;
   input CLK25;
   input enable;
   input rez_320x240;
@@ -27,37 +27,30 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Address_Generator
   input vsync;
 
   wire CLK25;
-  wire [16:0]address;
+  wire [17:0]address;
   wire clear;
   wire enable;
   wire ltOp;
-  wire ltOp__2_carry_i_1_n_0;
-  wire ltOp__2_carry_i_2_n_0;
-  wire ltOp__2_carry_i_3_n_0;
-  wire ltOp__2_carry_i_4_n_0;
-  wire ltOp__2_carry_i_5_n_0;
-  wire ltOp__2_carry_i_6_n_0;
-  wire ltOp__2_carry_n_0;
-  wire ltOp__2_carry_n_1;
-  wire ltOp__2_carry_n_2;
-  wire ltOp__2_carry_n_3;
-  wire ltOp__6_carry__0_i_1_n_0;
-  wire ltOp__6_carry_i_1_n_0;
-  wire ltOp__6_carry_i_2_n_0;
-  wire ltOp__6_carry_i_3_n_0;
-  wire ltOp__6_carry_i_4_n_0;
-  wire ltOp__6_carry_i_5_n_0;
-  wire ltOp__6_carry_i_6_n_0;
-  wire ltOp__6_carry_i_7_n_0;
-  wire ltOp__6_carry_n_0;
-  wire ltOp__6_carry_n_1;
-  wire ltOp__6_carry_n_2;
-  wire ltOp__6_carry_n_3;
+  wire ltOp__3_carry__0_i_1_n_0;
+  wire ltOp__3_carry_i_1_n_0;
+  wire ltOp__3_carry_i_2_n_0;
+  wire ltOp__3_carry_i_3_n_0;
+  wire ltOp__3_carry_i_4_n_0;
+  wire ltOp__3_carry_i_5_n_0;
+  wire ltOp__3_carry_i_6_n_0;
+  wire ltOp__3_carry_i_7_n_0;
+  wire ltOp__3_carry_n_0;
+  wire ltOp__3_carry_n_1;
+  wire ltOp__3_carry_n_2;
+  wire ltOp__3_carry_n_3;
   wire ltOp_carry_i_1_n_0;
   wire ltOp_carry_i_2_n_0;
   wire ltOp_carry_i_3_n_0;
   wire ltOp_carry_i_4_n_0;
   wire ltOp_carry_i_5_n_0;
+  wire ltOp_carry_i_6_n_0;
+  wire ltOp_carry_i_7_n_0;
+  wire ltOp_carry_n_0;
   wire ltOp_carry_n_1;
   wire ltOp_carry_n_2;
   wire ltOp_carry_n_3;
@@ -81,7 +74,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Address_Generator
   wire \val_reg[15]_i_1_n_5 ;
   wire \val_reg[15]_i_1_n_6 ;
   wire \val_reg[15]_i_1_n_7 ;
-  wire \val_reg[16]_i_3_n_7 ;
+  wire \val_reg[17]_i_3_n_3 ;
+  wire \val_reg[17]_i_3_n_6 ;
+  wire \val_reg[17]_i_3_n_7 ;
   wire \val_reg[3]_i_1_n_0 ;
   wire \val_reg[3]_i_1_n_1 ;
   wire \val_reg[3]_i_1_n_2 ;
@@ -99,165 +94,135 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Address_Generator
   wire \val_reg[7]_i_1_n_6 ;
   wire \val_reg[7]_i_1_n_7 ;
   wire vsync;
-  wire [3:0]NLW_ltOp__2_carry_O_UNCONNECTED;
-  wire [3:0]NLW_ltOp__6_carry_O_UNCONNECTED;
-  wire [3:1]NLW_ltOp__6_carry__0_CO_UNCONNECTED;
-  wire [3:0]NLW_ltOp__6_carry__0_O_UNCONNECTED;
-  wire [3:3]NLW_ltOp_carry_CO_UNCONNECTED;
+  wire [3:0]NLW_ltOp__3_carry_O_UNCONNECTED;
+  wire [3:1]NLW_ltOp__3_carry__0_CO_UNCONNECTED;
+  wire [3:0]NLW_ltOp__3_carry__0_O_UNCONNECTED;
   wire [3:0]NLW_ltOp_carry_O_UNCONNECTED;
-  wire [3:0]\NLW_val_reg[16]_i_3_CO_UNCONNECTED ;
-  wire [3:1]\NLW_val_reg[16]_i_3_O_UNCONNECTED ;
+  wire [3:1]\NLW_val_reg[17]_i_3_CO_UNCONNECTED ;
+  wire [3:2]\NLW_val_reg[17]_i_3_O_UNCONNECTED ;
 
-  CARRY4 ltOp__2_carry
+  CARRY4 ltOp__3_carry
        (.CI(1'b0),
-        .CO({ltOp__2_carry_n_0,ltOp__2_carry_n_1,ltOp__2_carry_n_2,ltOp__2_carry_n_3}),
+        .CO({ltOp__3_carry_n_0,ltOp__3_carry_n_1,ltOp__3_carry_n_2,ltOp__3_carry_n_3}),
         .CYINIT(1'b0),
-        .DI({ltOp__2_carry_i_1_n_0,1'b0,ltOp__2_carry_i_2_n_0,ltOp__2_carry_i_3_n_0}),
-        .O(NLW_ltOp__2_carry_O_UNCONNECTED[3:0]),
-        .S({address[16],ltOp__2_carry_i_4_n_0,ltOp__2_carry_i_5_n_0,ltOp__2_carry_i_6_n_0}));
-  LUT1 #(
-    .INIT(2'h1)) 
-    ltOp__2_carry_i_1
-       (.I0(address[16]),
-        .O(ltOp__2_carry_i_1_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    ltOp__2_carry_i_2
-       (.I0(address[13]),
-        .O(ltOp__2_carry_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h7)) 
-    ltOp__2_carry_i_3
-       (.I0(address[10]),
-        .I1(address[11]),
-        .O(ltOp__2_carry_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ltOp__2_carry_i_4
-       (.I0(address[14]),
-        .I1(address[15]),
-        .O(ltOp__2_carry_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    ltOp__2_carry_i_5
-       (.I0(address[13]),
-        .I1(address[12]),
-        .O(ltOp__2_carry_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    ltOp__2_carry_i_6
-       (.I0(address[10]),
-        .I1(address[11]),
-        .O(ltOp__2_carry_i_6_n_0));
-  CARRY4 ltOp__6_carry
-       (.CI(1'b0),
-        .CO({ltOp__6_carry_n_0,ltOp__6_carry_n_1,ltOp__6_carry_n_2,ltOp__6_carry_n_3}),
-        .CYINIT(1'b0),
-        .DI({ltOp__6_carry_i_1_n_0,1'b0,ltOp__6_carry_i_2_n_0,ltOp__6_carry_i_3_n_0}),
-        .O(NLW_ltOp__6_carry_O_UNCONNECTED[3:0]),
-        .S({ltOp__6_carry_i_4_n_0,ltOp__6_carry_i_5_n_0,ltOp__6_carry_i_6_n_0,ltOp__6_carry_i_7_n_0}));
-  CARRY4 ltOp__6_carry__0
-       (.CI(ltOp__6_carry_n_0),
-        .CO({NLW_ltOp__6_carry__0_CO_UNCONNECTED[3:1],ltOp}),
+        .DI({ltOp__3_carry_i_1_n_0,1'b0,ltOp__3_carry_i_2_n_0,ltOp__3_carry_i_3_n_0}),
+        .O(NLW_ltOp__3_carry_O_UNCONNECTED[3:0]),
+        .S({ltOp__3_carry_i_4_n_0,ltOp__3_carry_i_5_n_0,ltOp__3_carry_i_6_n_0,ltOp__3_carry_i_7_n_0}));
+  CARRY4 ltOp__3_carry__0
+       (.CI(ltOp__3_carry_n_0),
+        .CO({NLW_ltOp__3_carry__0_CO_UNCONNECTED[3:1],ltOp}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_ltOp__6_carry__0_O_UNCONNECTED[3:0]),
-        .S({1'b0,1'b0,1'b0,ltOp__6_carry__0_i_1_n_0}));
-  LUT1 #(
-    .INIT(2'h1)) 
-    ltOp__6_carry__0_i_1
-       (.I0(address[16]),
-        .O(ltOp__6_carry__0_i_1_n_0));
+        .O(NLW_ltOp__3_carry__0_O_UNCONNECTED[3:0]),
+        .S({1'b0,1'b0,1'b0,ltOp__3_carry__0_i_1_n_0}));
   LUT2 #(
     .INIT(4'h1)) 
-    ltOp__6_carry_i_1
+    ltOp__3_carry__0_i_1
+       (.I0(address[16]),
+        .I1(address[17]),
+        .O(ltOp__3_carry__0_i_1_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ltOp__3_carry_i_1
        (.I0(address[14]),
         .I1(address[15]),
-        .O(ltOp__6_carry_i_1_n_0));
+        .O(ltOp__3_carry_i_1_n_0));
   LUT1 #(
     .INIT(2'h1)) 
-    ltOp__6_carry_i_2
+    ltOp__3_carry_i_2
        (.I0(address[11]),
-        .O(ltOp__6_carry_i_2_n_0));
+        .O(ltOp__3_carry_i_2_n_0));
   LUT2 #(
     .INIT(4'h7)) 
-    ltOp__6_carry_i_3
+    ltOp__3_carry_i_3
        (.I0(address[8]),
         .I1(address[9]),
-        .O(ltOp__6_carry_i_3_n_0));
+        .O(ltOp__3_carry_i_3_n_0));
   LUT2 #(
     .INIT(4'h2)) 
-    ltOp__6_carry_i_4
+    ltOp__3_carry_i_4
        (.I0(address[14]),
         .I1(address[15]),
-        .O(ltOp__6_carry_i_4_n_0));
+        .O(ltOp__3_carry_i_4_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    ltOp__6_carry_i_5
+    ltOp__3_carry_i_5
        (.I0(address[12]),
         .I1(address[13]),
-        .O(ltOp__6_carry_i_5_n_0));
+        .O(ltOp__3_carry_i_5_n_0));
   LUT2 #(
     .INIT(4'h2)) 
-    ltOp__6_carry_i_6
+    ltOp__3_carry_i_6
        (.I0(address[11]),
         .I1(address[10]),
-        .O(ltOp__6_carry_i_6_n_0));
+        .O(ltOp__3_carry_i_6_n_0));
   LUT2 #(
     .INIT(4'h8)) 
-    ltOp__6_carry_i_7
+    ltOp__3_carry_i_7
        (.I0(address[8]),
         .I1(address[9]),
-        .O(ltOp__6_carry_i_7_n_0));
+        .O(ltOp__3_carry_i_7_n_0));
   CARRY4 ltOp_carry
        (.CI(1'b0),
-        .CO({NLW_ltOp_carry_CO_UNCONNECTED[3],ltOp_carry_n_1,ltOp_carry_n_2,ltOp_carry_n_3}),
+        .CO({ltOp_carry_n_0,ltOp_carry_n_1,ltOp_carry_n_2,ltOp_carry_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,ltOp_carry_i_1_n_0,ltOp_carry_i_2_n_0}),
+        .DI({ltOp_carry_i_1_n_0,1'b0,ltOp_carry_i_2_n_0,ltOp_carry_i_3_n_0}),
         .O(NLW_ltOp_carry_O_UNCONNECTED[3:0]),
-        .S({1'b0,ltOp_carry_i_3_n_0,ltOp_carry_i_4_n_0,ltOp_carry_i_5_n_0}));
+        .S({ltOp_carry_i_4_n_0,ltOp_carry_i_5_n_0,ltOp_carry_i_6_n_0,ltOp_carry_i_7_n_0}));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ltOp_carry_i_1
+       (.I0(address[16]),
+        .I1(address[17]),
+        .O(ltOp_carry_i_1_n_0));
   LUT1 #(
     .INIT(2'h1)) 
-    ltOp_carry_i_1
-       (.I0(address[15]),
-        .O(ltOp_carry_i_1_n_0));
+    ltOp_carry_i_2
+       (.I0(address[13]),
+        .O(ltOp_carry_i_2_n_0));
   LUT2 #(
     .INIT(4'h7)) 
-    ltOp_carry_i_2
-       (.I0(address[12]),
-        .I1(address[13]),
-        .O(ltOp_carry_i_2_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
     ltOp_carry_i_3
-       (.I0(address[16]),
+       (.I0(address[10]),
+        .I1(address[11]),
         .O(ltOp_carry_i_3_n_0));
   LUT2 #(
     .INIT(4'h2)) 
     ltOp_carry_i_4
-       (.I0(address[15]),
-        .I1(address[14]),
+       (.I0(address[16]),
+        .I1(address[17]),
         .O(ltOp_carry_i_4_n_0));
   LUT2 #(
-    .INIT(4'h8)) 
+    .INIT(4'h1)) 
     ltOp_carry_i_5
-       (.I0(address[12]),
-        .I1(address[13]),
+       (.I0(address[14]),
+        .I1(address[15]),
         .O(ltOp_carry_i_5_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    ltOp_carry_i_6
+       (.I0(address[13]),
+        .I1(address[12]),
+        .O(ltOp_carry_i_6_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    ltOp_carry_i_7
+       (.I0(address[10]),
+        .I1(address[11]),
+        .O(ltOp_carry_i_7_n_0));
   LUT1 #(
     .INIT(2'h1)) 
-    \val[16]_i_1 
+    \val[17]_i_1 
        (.I0(vsync),
         .O(clear));
-  LUT6 #(
-    .INIT(64'hAAAAA8080000A808)) 
-    \val[16]_i_2 
+  LUT5 #(
+    .INIT(32'hAA800080)) 
+    \val[17]_i_2 
        (.I0(enable),
-        .I1(ltOp_carry_n_1),
+        .I1(ltOp_carry_n_0),
         .I2(rez_320x240),
-        .I3(ltOp__2_carry_n_0),
-        .I4(rez_160x120),
-        .I5(ltOp),
+        .I3(rez_160x120),
+        .I4(ltOp),
         .O(val));
   LUT1 #(
     .INIT(2'h1)) 
@@ -339,16 +304,24 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Address_Generator
     \val_reg[16] 
        (.C(CLK25),
         .CE(val),
-        .D(\val_reg[16]_i_3_n_7 ),
+        .D(\val_reg[17]_i_3_n_7 ),
         .Q(address[16]),
         .R(clear));
-  CARRY4 \val_reg[16]_i_3 
+  FDRE #(
+    .INIT(1'b0)) 
+    \val_reg[17] 
+       (.C(CLK25),
+        .CE(val),
+        .D(\val_reg[17]_i_3_n_6 ),
+        .Q(address[17]),
+        .R(clear));
+  CARRY4 \val_reg[17]_i_3 
        (.CI(\val_reg[15]_i_1_n_0 ),
-        .CO(\NLW_val_reg[16]_i_3_CO_UNCONNECTED [3:0]),
+        .CO({\NLW_val_reg[17]_i_3_CO_UNCONNECTED [3:1],\val_reg[17]_i_3_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\NLW_val_reg[16]_i_3_O_UNCONNECTED [3:1],\val_reg[16]_i_3_n_7 }),
-        .S({1'b0,1'b0,1'b0,address[16]}));
+        .O({\NLW_val_reg[17]_i_3_O_UNCONNECTED [3:2],\val_reg[17]_i_3_n_6 ,\val_reg[17]_i_3_n_7 }),
+        .S({1'b0,1'b0,address[17:16]}));
   FDRE #(
     .INIT(1'b0)) 
     \val_reg[1] 
@@ -452,10 +425,10 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   input rez_160x120;
   input rez_320x240;
   input vsync;
-  output [16:0]address;
+  output [17:0]address;
 
   wire CLK25;
-  wire [16:0]address;
+  wire [17:0]address;
   wire enable;
   wire rez_160x120;
   wire rez_320x240;

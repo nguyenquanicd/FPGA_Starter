@@ -69,7 +69,7 @@ input wire enable;
 input wire rez_160x120;
 input wire rez_320x240;
 input wire vsync;
-output wire [16 : 0] address;
+output wire [17 : 0] address;
 
   Address_Generator inst (
     .CLK25(CLK25),

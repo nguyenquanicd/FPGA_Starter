@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sat Apr 17 22:04:12 2021
+// Date        : Sun May 30 10:13:11 2021
 // Host        : DESKTOP-O25IKCM running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_processing_system7_0_0/OV7670_QVGA_processing_system7_0_0_sim_netlist.v
@@ -18,36 +18,6 @@ module OV7670_QVGA_processing_system7_0_0
    (GPIO_I,
     GPIO_O,
     GPIO_T,
-    I2C0_SDA_I,
-    I2C0_SDA_O,
-    I2C0_SDA_T,
-    I2C0_SCL_I,
-    I2C0_SCL_O,
-    I2C0_SCL_T,
-    SDIO0_CLK,
-    SDIO0_CLK_FB,
-    SDIO0_CMD_O,
-    SDIO0_CMD_I,
-    SDIO0_CMD_T,
-    SDIO0_DATA_I,
-    SDIO0_DATA_O,
-    SDIO0_DATA_T,
-    SDIO0_LED,
-    SDIO0_CDN,
-    SDIO0_WP,
-    SDIO0_BUSPOW,
-    SDIO0_BUSVOLT,
-    UART0_DTRN,
-    UART0_RTSN,
-    UART0_TX,
-    UART0_CTSN,
-    UART0_DCDN,
-    UART0_DSRN,
-    UART0_RIN,
-    UART0_RX,
-    USB0_PORT_INDCTL,
-    USB0_VBUS_PWRSELECT,
-    USB0_VBUS_PWRFAULT,
     M_AXI_GP0_ARVALID,
     M_AXI_GP0_AWVALID,
     M_AXI_GP0_BREADY,
@@ -114,36 +84,6 @@ module OV7670_QVGA_processing_system7_0_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_I" *) input [15:0]GPIO_I;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) output [15:0]GPIO_O;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_T" *) output [15:0]GPIO_T;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0 SDA_I" *) input I2C0_SDA_I;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0 SDA_O" *) output I2C0_SDA_O;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0 SDA_T" *) output I2C0_SDA_T;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0 SCL_I" *) input I2C0_SCL_I;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0 SCL_O" *) output I2C0_SCL_O;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0 SCL_T" *) output I2C0_SCL_T;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 CLK" *) output SDIO0_CLK;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 CLK_FB" *) input SDIO0_CLK_FB;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 CMD_O" *) output SDIO0_CMD_O;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 CMD_I" *) input SDIO0_CMD_I;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 CMD_T" *) output SDIO0_CMD_T;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 DATA_I" *) input [3:0]SDIO0_DATA_I;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 DATA_O" *) output [3:0]SDIO0_DATA_O;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 DATA_T" *) output [3:0]SDIO0_DATA_T;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 LED" *) output SDIO0_LED;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 CDN" *) input SDIO0_CDN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 WP" *) input SDIO0_WP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 BUSPOW" *) output SDIO0_BUSPOW;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 BUSVOLT" *) output [2:0]SDIO0_BUSVOLT;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 DTRn" *) output UART0_DTRN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 RTSn" *) output UART0_RTSN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 TxD" *) output UART0_TX;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 CTSn" *) input UART0_CTSN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 DCDn" *) input UART0_DCDN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 DSRn" *) input UART0_DSRN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 RI" *) input UART0_RIN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 RxD" *) input UART0_RX;
-  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 PORT_INDCTL" *) output [1:0]USB0_PORT_INDCTL;
-  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRSELECT" *) output USB0_VBUS_PWRSELECT;
-  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRFAULT" *) input USB0_VBUS_PWRFAULT;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARVALID" *) output M_AXI_GP0_ARVALID;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWVALID" *) output M_AXI_GP0_AWVALID;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 BREADY" *) output M_AXI_GP0_BREADY;
@@ -231,12 +171,6 @@ module OV7670_QVGA_processing_system7_0_0
   wire [15:0]GPIO_I;
   wire [15:0]GPIO_O;
   wire [15:0]GPIO_T;
-  wire I2C0_SCL_I;
-  wire I2C0_SCL_O;
-  wire I2C0_SCL_T;
-  wire I2C0_SDA_I;
-  wire I2C0_SDA_O;
-  wire I2C0_SDA_T;
   wire [31:0]MIO;
   wire M_AXI_GP0_ACLK;
   wire [31:0]M_AXI_GP0_ARADDR;
@@ -280,30 +214,6 @@ module OV7670_QVGA_processing_system7_0_0
   wire PS_CLK;
   wire PS_PORB;
   wire PS_SRSTB;
-  wire SDIO0_BUSPOW;
-  wire [2:0]SDIO0_BUSVOLT;
-  wire SDIO0_CDN;
-  wire SDIO0_CLK;
-  wire SDIO0_CLK_FB;
-  wire SDIO0_CMD_I;
-  wire SDIO0_CMD_O;
-  wire SDIO0_CMD_T;
-  wire [3:0]SDIO0_DATA_I;
-  wire [3:0]SDIO0_DATA_O;
-  wire [3:0]SDIO0_DATA_T;
-  wire SDIO0_LED;
-  wire SDIO0_WP;
-  wire UART0_CTSN;
-  wire UART0_DCDN;
-  wire UART0_DSRN;
-  wire UART0_DTRN;
-  wire UART0_RIN;
-  wire UART0_RTSN;
-  wire UART0_RX;
-  wire UART0_TX;
-  wire [1:0]USB0_PORT_INDCTL;
-  wire USB0_VBUS_PWRFAULT;
-  wire USB0_VBUS_PWRSELECT;
   wire NLW_inst_CAN0_PHY_TX_UNCONNECTED;
   wire NLW_inst_CAN1_PHY_TX_UNCONNECTED;
   wire NLW_inst_DMA0_DAVALID_UNCONNECTED;
@@ -362,6 +272,10 @@ module OV7670_QVGA_processing_system7_0_0
   wire NLW_inst_FTMT_P2F_TRIG_1_UNCONNECTED;
   wire NLW_inst_FTMT_P2F_TRIG_2_UNCONNECTED;
   wire NLW_inst_FTMT_P2F_TRIG_3_UNCONNECTED;
+  wire NLW_inst_I2C0_SCL_O_UNCONNECTED;
+  wire NLW_inst_I2C0_SCL_T_UNCONNECTED;
+  wire NLW_inst_I2C0_SDA_O_UNCONNECTED;
+  wire NLW_inst_I2C0_SDA_T_UNCONNECTED;
   wire NLW_inst_I2C1_SCL_O_UNCONNECTED;
   wire NLW_inst_I2C1_SCL_T_UNCONNECTED;
   wire NLW_inst_I2C1_SDA_O_UNCONNECTED;
@@ -404,6 +318,11 @@ module OV7670_QVGA_processing_system7_0_0
   wire NLW_inst_M_AXI_GP1_WLAST_UNCONNECTED;
   wire NLW_inst_M_AXI_GP1_WVALID_UNCONNECTED;
   wire NLW_inst_PJTAG_TDO_UNCONNECTED;
+  wire NLW_inst_SDIO0_BUSPOW_UNCONNECTED;
+  wire NLW_inst_SDIO0_CLK_UNCONNECTED;
+  wire NLW_inst_SDIO0_CMD_O_UNCONNECTED;
+  wire NLW_inst_SDIO0_CMD_T_UNCONNECTED;
+  wire NLW_inst_SDIO0_LED_UNCONNECTED;
   wire NLW_inst_SDIO1_BUSPOW_UNCONNECTED;
   wire NLW_inst_SDIO1_CLK_UNCONNECTED;
   wire NLW_inst_SDIO1_CMD_O_UNCONNECTED;
@@ -486,9 +405,13 @@ module OV7670_QVGA_processing_system7_0_0
   wire NLW_inst_TTC1_WAVE0_OUT_UNCONNECTED;
   wire NLW_inst_TTC1_WAVE1_OUT_UNCONNECTED;
   wire NLW_inst_TTC1_WAVE2_OUT_UNCONNECTED;
+  wire NLW_inst_UART0_DTRN_UNCONNECTED;
+  wire NLW_inst_UART0_RTSN_UNCONNECTED;
+  wire NLW_inst_UART0_TX_UNCONNECTED;
   wire NLW_inst_UART1_DTRN_UNCONNECTED;
   wire NLW_inst_UART1_RTSN_UNCONNECTED;
   wire NLW_inst_UART1_TX_UNCONNECTED;
+  wire NLW_inst_USB0_VBUS_PWRSELECT_UNCONNECTED;
   wire NLW_inst_USB1_VBUS_PWRSELECT_UNCONNECTED;
   wire NLW_inst_WDT_RST_OUT_UNCONNECTED;
   wire [1:0]NLW_inst_DMA0_DATYPE_UNCONNECTED;
@@ -521,6 +444,9 @@ module OV7670_QVGA_processing_system7_0_0
   wire [31:0]NLW_inst_M_AXI_GP1_WDATA_UNCONNECTED;
   wire [11:0]NLW_inst_M_AXI_GP1_WID_UNCONNECTED;
   wire [3:0]NLW_inst_M_AXI_GP1_WSTRB_UNCONNECTED;
+  wire [2:0]NLW_inst_SDIO0_BUSVOLT_UNCONNECTED;
+  wire [3:0]NLW_inst_SDIO0_DATA_O_UNCONNECTED;
+  wire [3:0]NLW_inst_SDIO0_DATA_T_UNCONNECTED;
   wire [2:0]NLW_inst_SDIO1_BUSVOLT_UNCONNECTED;
   wire [3:0]NLW_inst_SDIO1_DATA_O_UNCONNECTED;
   wire [3:0]NLW_inst_SDIO1_DATA_T_UNCONNECTED;
@@ -576,6 +502,7 @@ module OV7670_QVGA_processing_system7_0_0
   wire [5:0]NLW_inst_S_AXI_HP3_WACOUNT_UNCONNECTED;
   wire [7:0]NLW_inst_S_AXI_HP3_WCOUNT_UNCONNECTED;
   wire [1:0]NLW_inst_TRACE_DATA_UNCONNECTED;
+  wire [1:0]NLW_inst_USB0_PORT_INDCTL_UNCONNECTED;
   wire [1:0]NLW_inst_USB1_PORT_INDCTL_UNCONNECTED;
 
   (* C_DM_WIDTH = "2" *) 
@@ -634,7 +561,7 @@ module OV7670_QVGA_processing_system7_0_0
   (* C_USE_S_AXI_HP2 = "0" *) 
   (* C_USE_S_AXI_HP3 = "0" *) 
   (* HW_HANDOFF = "OV7670_QVGA_processing_system7_0_0.hwdef" *) 
-  (* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3(LowVoltage)} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={I2C} ioStandard={} bidis={1} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><IO interface={UART} ioStandard={} bidis={0} ioBank={} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS33} bidis={6} ioBank={Vcco_p0} clockFreq={25.000000} usageRate={0.5} /><IO interface={SD} ioStandard={} bidis={0} ioBank={} clockFreq={25.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS33} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1400.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>" *) 
+  (* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3(LowVoltage)} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS33} bidis={14} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={9} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1600.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>" *) 
   (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
   OV7670_QVGA_processing_system7_0_0_processing_system7_v5_5_processing_system7 inst
        (.CAN0_PHY_RX(1'b0),
@@ -791,12 +718,12 @@ module OV7670_QVGA_processing_system7_0_0
         .GPIO_I(GPIO_I),
         .GPIO_O(GPIO_O),
         .GPIO_T(GPIO_T),
-        .I2C0_SCL_I(I2C0_SCL_I),
-        .I2C0_SCL_O(I2C0_SCL_O),
-        .I2C0_SCL_T(I2C0_SCL_T),
-        .I2C0_SDA_I(I2C0_SDA_I),
-        .I2C0_SDA_O(I2C0_SDA_O),
-        .I2C0_SDA_T(I2C0_SDA_T),
+        .I2C0_SCL_I(1'b0),
+        .I2C0_SCL_O(NLW_inst_I2C0_SCL_O_UNCONNECTED),
+        .I2C0_SCL_T(NLW_inst_I2C0_SCL_T_UNCONNECTED),
+        .I2C0_SDA_I(1'b0),
+        .I2C0_SDA_O(NLW_inst_I2C0_SDA_O_UNCONNECTED),
+        .I2C0_SDA_T(NLW_inst_I2C0_SDA_T_UNCONNECTED),
         .I2C1_SCL_I(1'b0),
         .I2C1_SCL_O(NLW_inst_I2C1_SCL_O_UNCONNECTED),
         .I2C1_SCL_T(NLW_inst_I2C1_SCL_T_UNCONNECTED),
@@ -921,19 +848,19 @@ module OV7670_QVGA_processing_system7_0_0
         .PS_CLK(PS_CLK),
         .PS_PORB(PS_PORB),
         .PS_SRSTB(PS_SRSTB),
-        .SDIO0_BUSPOW(SDIO0_BUSPOW),
-        .SDIO0_BUSVOLT(SDIO0_BUSVOLT),
-        .SDIO0_CDN(SDIO0_CDN),
-        .SDIO0_CLK(SDIO0_CLK),
-        .SDIO0_CLK_FB(SDIO0_CLK_FB),
-        .SDIO0_CMD_I(SDIO0_CMD_I),
-        .SDIO0_CMD_O(SDIO0_CMD_O),
-        .SDIO0_CMD_T(SDIO0_CMD_T),
-        .SDIO0_DATA_I(SDIO0_DATA_I),
-        .SDIO0_DATA_O(SDIO0_DATA_O),
-        .SDIO0_DATA_T(SDIO0_DATA_T),
-        .SDIO0_LED(SDIO0_LED),
-        .SDIO0_WP(SDIO0_WP),
+        .SDIO0_BUSPOW(NLW_inst_SDIO0_BUSPOW_UNCONNECTED),
+        .SDIO0_BUSVOLT(NLW_inst_SDIO0_BUSVOLT_UNCONNECTED[2:0]),
+        .SDIO0_CDN(1'b0),
+        .SDIO0_CLK(NLW_inst_SDIO0_CLK_UNCONNECTED),
+        .SDIO0_CLK_FB(1'b0),
+        .SDIO0_CMD_I(1'b0),
+        .SDIO0_CMD_O(NLW_inst_SDIO0_CMD_O_UNCONNECTED),
+        .SDIO0_CMD_T(NLW_inst_SDIO0_CMD_T_UNCONNECTED),
+        .SDIO0_DATA_I({1'b0,1'b0,1'b0,1'b0}),
+        .SDIO0_DATA_O(NLW_inst_SDIO0_DATA_O_UNCONNECTED[3:0]),
+        .SDIO0_DATA_T(NLW_inst_SDIO0_DATA_T_UNCONNECTED[3:0]),
+        .SDIO0_LED(NLW_inst_SDIO0_LED_UNCONNECTED),
+        .SDIO0_WP(1'b0),
         .SDIO1_BUSPOW(NLW_inst_SDIO1_BUSPOW_UNCONNECTED),
         .SDIO1_BUSVOLT(NLW_inst_SDIO1_BUSVOLT_UNCONNECTED[2:0]),
         .SDIO1_CDN(1'b0),
@@ -1298,14 +1225,14 @@ module OV7670_QVGA_processing_system7_0_0
         .TTC1_WAVE0_OUT(NLW_inst_TTC1_WAVE0_OUT_UNCONNECTED),
         .TTC1_WAVE1_OUT(NLW_inst_TTC1_WAVE1_OUT_UNCONNECTED),
         .TTC1_WAVE2_OUT(NLW_inst_TTC1_WAVE2_OUT_UNCONNECTED),
-        .UART0_CTSN(UART0_CTSN),
-        .UART0_DCDN(UART0_DCDN),
-        .UART0_DSRN(UART0_DSRN),
-        .UART0_DTRN(UART0_DTRN),
-        .UART0_RIN(UART0_RIN),
-        .UART0_RTSN(UART0_RTSN),
-        .UART0_RX(UART0_RX),
-        .UART0_TX(UART0_TX),
+        .UART0_CTSN(1'b0),
+        .UART0_DCDN(1'b0),
+        .UART0_DSRN(1'b0),
+        .UART0_DTRN(NLW_inst_UART0_DTRN_UNCONNECTED),
+        .UART0_RIN(1'b0),
+        .UART0_RTSN(NLW_inst_UART0_RTSN_UNCONNECTED),
+        .UART0_RX(1'b1),
+        .UART0_TX(NLW_inst_UART0_TX_UNCONNECTED),
         .UART1_CTSN(1'b0),
         .UART1_DCDN(1'b0),
         .UART1_DSRN(1'b0),
@@ -1314,9 +1241,9 @@ module OV7670_QVGA_processing_system7_0_0
         .UART1_RTSN(NLW_inst_UART1_RTSN_UNCONNECTED),
         .UART1_RX(1'b1),
         .UART1_TX(NLW_inst_UART1_TX_UNCONNECTED),
-        .USB0_PORT_INDCTL(USB0_PORT_INDCTL),
-        .USB0_VBUS_PWRFAULT(USB0_VBUS_PWRFAULT),
-        .USB0_VBUS_PWRSELECT(USB0_VBUS_PWRSELECT),
+        .USB0_PORT_INDCTL(NLW_inst_USB0_PORT_INDCTL_UNCONNECTED[1:0]),
+        .USB0_VBUS_PWRFAULT(1'b0),
+        .USB0_VBUS_PWRSELECT(NLW_inst_USB0_VBUS_PWRSELECT_UNCONNECTED),
         .USB1_PORT_INDCTL(NLW_inst_USB1_PORT_INDCTL_UNCONNECTED[1:0]),
         .USB1_VBUS_PWRFAULT(1'b0),
         .USB1_VBUS_PWRSELECT(NLW_inst_USB1_VBUS_PWRSELECT_UNCONNECTED),
@@ -1343,7 +1270,7 @@ endmodule
 (* C_USE_S_AXI_ACP = "0" *) (* C_USE_S_AXI_GP0 = "0" *) (* C_USE_S_AXI_GP1 = "0" *) 
 (* C_USE_S_AXI_HP0 = "0" *) (* C_USE_S_AXI_HP1 = "0" *) (* C_USE_S_AXI_HP2 = "0" *) 
 (* C_USE_S_AXI_HP3 = "0" *) (* HW_HANDOFF = "OV7670_QVGA_processing_system7_0_0.hwdef" *) (* ORIG_REF_NAME = "processing_system7_v5_5_processing_system7" *) 
-(* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3(LowVoltage)} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={I2C} ioStandard={} bidis={1} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><IO interface={UART} ioStandard={} bidis={0} ioBank={} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS33} bidis={6} ioBank={Vcco_p0} clockFreq={25.000000} usageRate={0.5} /><IO interface={SD} ioStandard={} bidis={0} ioBank={} clockFreq={25.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS33} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1400.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>" *) (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
+(* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3(LowVoltage)} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS33} bidis={14} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={9} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1600.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>" *) (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
 module OV7670_QVGA_processing_system7_0_0_processing_system7_v5_5_processing_system7
    (CAN0_PHY_TX,
     CAN0_PHY_RX,

@@ -15,12 +15,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_RGB
 # IP: bd/OV7670_QVGA/ip/OV7670_QVGA_VGA_0_0/OV7670_QVGA_VGA_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_VGA_0_0 || ORIG_REF_NAME==OV7670_QVGA_VGA_0_0} -quiet] -quiet
 
-# IP: bd/OV7670_QVGA/ip/OV7670_QVGA_axi_gpio_0_0/OV7670_QVGA_axi_gpio_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_axi_gpio_0_0 || ORIG_REF_NAME==OV7670_QVGA_axi_gpio_0_0} -quiet] -quiet
-
-# IP: bd/OV7670_QVGA/ip/OV7670_QVGA_axi_uartlite_0_0/OV7670_QVGA_axi_uartlite_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_axi_uartlite_0_0 || ORIG_REF_NAME==OV7670_QVGA_axi_uartlite_0_0} -quiet] -quiet
-
 # IP: bd/OV7670_QVGA/ip/OV7670_QVGA_blk_mem_gen_0_0/OV7670_QVGA_blk_mem_gen_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_blk_mem_gen_0_0 || ORIG_REF_NAME==OV7670_QVGA_blk_mem_gen_0_0} -quiet] -quiet
 
@@ -39,12 +33,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_ov7
 # IP: bd/OV7670_QVGA/ip/OV7670_QVGA_processing_system7_0_0/OV7670_QVGA_processing_system7_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_processing_system7_0_0 || ORIG_REF_NAME==OV7670_QVGA_processing_system7_0_0} -quiet] -quiet
 
-# IP: bd/OV7670_QVGA/ip/OV7670_QVGA_xbar_0/OV7670_QVGA_xbar_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_xbar_0 || ORIG_REF_NAME==OV7670_QVGA_xbar_0} -quiet] -quiet
-
-# IP: bd/OV7670_QVGA/ip/OV7670_QVGA_ps7_0_axi_periph_0/OV7670_QVGA_ps7_0_axi_periph_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_ps7_0_axi_periph_0 || ORIG_REF_NAME==OV7670_QVGA_ps7_0_axi_periph_0} -quiet] -quiet
-
 # IP: bd/OV7670_QVGA/ip/OV7670_QVGA_rst_ps7_0_50M_0/OV7670_QVGA_rst_ps7_0_50M_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_rst_ps7_0_50M_0 || ORIG_REF_NAME==OV7670_QVGA_rst_ps7_0_50M_0} -quiet] -quiet
 
@@ -54,8 +42,11 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_xlc
 # IP: bd/OV7670_QVGA/ip/OV7670_QVGA_xlconstant_1_0/OV7670_QVGA_xlconstant_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_xlconstant_1_0 || ORIG_REF_NAME==OV7670_QVGA_xlconstant_1_0} -quiet] -quiet
 
-# IP: bd/OV7670_QVGA/ip/OV7670_QVGA_ila_0_0/OV7670_QVGA_ila_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_ila_0_0 || ORIG_REF_NAME==OV7670_QVGA_ila_0_0} -quiet] -quiet
+# IP: bd/OV7670_QVGA/ip/OV7670_QVGA_axi_iic_0_0/OV7670_QVGA_axi_iic_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_axi_iic_0_0 || ORIG_REF_NAME==OV7670_QVGA_axi_iic_0_0} -quiet] -quiet
+
+# IP: bd/OV7670_QVGA/ip/OV7670_QVGA_ps7_0_axi_periph_0/OV7670_QVGA_ps7_0_axi_periph_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_ps7_0_axi_periph_0 || ORIG_REF_NAME==OV7670_QVGA_ps7_0_axi_periph_0} -quiet] -quiet
 
 # IP: bd/OV7670_QVGA/ip/OV7670_QVGA_auto_pc_0/OV7670_QVGA_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==OV7670_QVGA_auto_pc_0 || ORIG_REF_NAME==OV7670_QVGA_auto_pc_0} -quiet] -quiet

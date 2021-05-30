@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z007sclg225-1" LaunchTime="1619631067">
+<GenRun Id="impl_1" LaunchPart="xc7z007sclg225-1" LaunchTime="1622349651">
   <File Type="BITSTR-BMM" Name="OV7670_QVGA_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="OV7670_QVGA_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="OV7670_QVGA_wrapper_timing_summary_init.rpt"/>
@@ -73,8 +73,6 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Downloads/address_generator_vhd.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/address_generator_vhd.vhd"/>
-        <Attr Name="ImportTime" Val="1618112392"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -113,16 +111,12 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Downloads/i3c2_vhd.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/i3c2_vhd.vhd"/>
-        <Attr Name="ImportTime" Val="1618112403"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Downloads/ov7670_controller_vhd.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="C:/Users/HaTiDe/Downloads/ov7670_controller_vhd.vhd"/>
-        <Attr Name="ImportTime" Val="1618112407"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -136,7 +130,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v">
       <FileInfo>
-        <Attr Name="IsGlobalInclude" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -145,6 +138,7 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="OV7670_QVGA_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -180,18 +174,15 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_ov7670_controller_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_axi_uartlite_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_Address_Generator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_VGA_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_Address_Generator_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_rst_ps7_0_50M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_clk_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_ov7670_controller_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_ov7670_capture_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_debounce_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_RGB_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_VGA_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV7670_QVGA_axi_iic_0_0"/>
 </GenRun>

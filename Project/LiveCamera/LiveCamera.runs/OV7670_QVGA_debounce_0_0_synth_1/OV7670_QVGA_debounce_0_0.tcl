@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
 set_param project.vivado.isBlockSynthRun true
 create_project -in_memory -part xc7z007sclg225-1
 
@@ -33,7 +32,6 @@ set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:minized:part0:1.2 [current_project]
 set_property ip_output_repo f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v
 read_vhdl -library xil_defaultlib F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/debounce_vhd.vhd
 read_ip -quiet F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_debounce_0_0/OV7670_QVGA_debounce_0_0.xci
 

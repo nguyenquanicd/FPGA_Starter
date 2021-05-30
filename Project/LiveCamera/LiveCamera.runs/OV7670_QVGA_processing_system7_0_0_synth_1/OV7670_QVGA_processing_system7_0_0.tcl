@@ -17,9 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/.Xil/Vivado-2996-DESKTOP-O25IKCM/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 create_project -in_memory -part xc7z007sclg225-1
@@ -33,6 +30,7 @@ set_property parent.project_path F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/Liv
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property board_part_repo_paths {C:/Users/HaTiDe/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
 set_property board_part em.avnet.com:minized:part0:1.2 [current_project]
 set_property ip_output_repo f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

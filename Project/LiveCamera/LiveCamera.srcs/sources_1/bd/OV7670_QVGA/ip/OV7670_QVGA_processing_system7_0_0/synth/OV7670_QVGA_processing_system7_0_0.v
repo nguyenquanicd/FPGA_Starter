@@ -61,36 +61,6 @@ module OV7670_QVGA_processing_system7_0_0 (
   GPIO_I,
   GPIO_O,
   GPIO_T,
-  I2C0_SDA_I,
-  I2C0_SDA_O,
-  I2C0_SDA_T,
-  I2C0_SCL_I,
-  I2C0_SCL_O,
-  I2C0_SCL_T,
-  SDIO0_CLK,
-  SDIO0_CLK_FB,
-  SDIO0_CMD_O,
-  SDIO0_CMD_I,
-  SDIO0_CMD_T,
-  SDIO0_DATA_I,
-  SDIO0_DATA_O,
-  SDIO0_DATA_T,
-  SDIO0_LED,
-  SDIO0_CDN,
-  SDIO0_WP,
-  SDIO0_BUSPOW,
-  SDIO0_BUSVOLT,
-  UART0_DTRN,
-  UART0_RTSN,
-  UART0_TX,
-  UART0_CTSN,
-  UART0_DCDN,
-  UART0_DSRN,
-  UART0_RIN,
-  UART0_RX,
-  USB0_PORT_INDCTL,
-  USB0_VBUS_PWRSELECT,
-  USB0_VBUS_PWRFAULT,
   M_AXI_GP0_ARVALID,
   M_AXI_GP0_AWVALID,
   M_AXI_GP0_BREADY,
@@ -162,66 +132,6 @@ input wire [15 : 0] GPIO_I;
 output wire [15 : 0] GPIO_O;
 (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_T" *)
 output wire [15 : 0] GPIO_T;
-(* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0 SDA_I" *)
-input wire I2C0_SDA_I;
-(* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0 SDA_O" *)
-output wire I2C0_SDA_O;
-(* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0 SDA_T" *)
-output wire I2C0_SDA_T;
-(* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0 SCL_I" *)
-input wire I2C0_SCL_I;
-(* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0 SCL_O" *)
-output wire I2C0_SCL_O;
-(* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0 SCL_T" *)
-output wire I2C0_SCL_T;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 CLK" *)
-output wire SDIO0_CLK;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 CLK_FB" *)
-input wire SDIO0_CLK_FB;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 CMD_O" *)
-output wire SDIO0_CMD_O;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 CMD_I" *)
-input wire SDIO0_CMD_I;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 CMD_T" *)
-output wire SDIO0_CMD_T;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 DATA_I" *)
-input wire [3 : 0] SDIO0_DATA_I;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 DATA_O" *)
-output wire [3 : 0] SDIO0_DATA_O;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 DATA_T" *)
-output wire [3 : 0] SDIO0_DATA_T;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 LED" *)
-output wire SDIO0_LED;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 CDN" *)
-input wire SDIO0_CDN;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 WP" *)
-input wire SDIO0_WP;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 BUSPOW" *)
-output wire SDIO0_BUSPOW;
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 BUSVOLT" *)
-output wire [2 : 0] SDIO0_BUSVOLT;
-(* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 DTRn" *)
-output wire UART0_DTRN;
-(* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 RTSn" *)
-output wire UART0_RTSN;
-(* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 TxD" *)
-output wire UART0_TX;
-(* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 CTSn" *)
-input wire UART0_CTSN;
-(* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 DCDn" *)
-input wire UART0_DCDN;
-(* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 DSRn" *)
-input wire UART0_DSRN;
-(* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 RI" *)
-input wire UART0_RIN;
-(* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 RxD" *)
-input wire UART0_RX;
-(* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 PORT_INDCTL" *)
-output wire [1 : 0] USB0_PORT_INDCTL;
-(* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRSELECT" *)
-output wire USB0_VBUS_PWRSELECT;
-(* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRFAULT" *)
-input wire USB0_VBUS_PWRFAULT;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARVALID" *)
 output wire M_AXI_GP0_ARVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWVALID" *)
@@ -472,12 +382,12 @@ inout wire PS_PORB;
     .GPIO_I(GPIO_I),
     .GPIO_O(GPIO_O),
     .GPIO_T(GPIO_T),
-    .I2C0_SDA_I(I2C0_SDA_I),
-    .I2C0_SDA_O(I2C0_SDA_O),
-    .I2C0_SDA_T(I2C0_SDA_T),
-    .I2C0_SCL_I(I2C0_SCL_I),
-    .I2C0_SCL_O(I2C0_SCL_O),
-    .I2C0_SCL_T(I2C0_SCL_T),
+    .I2C0_SDA_I(1'B0),
+    .I2C0_SDA_O(),
+    .I2C0_SDA_T(),
+    .I2C0_SCL_I(1'B0),
+    .I2C0_SCL_O(),
+    .I2C0_SCL_T(),
     .I2C1_SDA_I(1'B0),
     .I2C1_SDA_O(),
     .I2C1_SDA_T(),
@@ -488,19 +398,19 @@ inout wire PS_PORB;
     .PJTAG_TMS(1'B0),
     .PJTAG_TDI(1'B0),
     .PJTAG_TDO(),
-    .SDIO0_CLK(SDIO0_CLK),
-    .SDIO0_CLK_FB(SDIO0_CLK_FB),
-    .SDIO0_CMD_O(SDIO0_CMD_O),
-    .SDIO0_CMD_I(SDIO0_CMD_I),
-    .SDIO0_CMD_T(SDIO0_CMD_T),
-    .SDIO0_DATA_I(SDIO0_DATA_I),
-    .SDIO0_DATA_O(SDIO0_DATA_O),
-    .SDIO0_DATA_T(SDIO0_DATA_T),
-    .SDIO0_LED(SDIO0_LED),
-    .SDIO0_CDN(SDIO0_CDN),
-    .SDIO0_WP(SDIO0_WP),
-    .SDIO0_BUSPOW(SDIO0_BUSPOW),
-    .SDIO0_BUSVOLT(SDIO0_BUSVOLT),
+    .SDIO0_CLK(),
+    .SDIO0_CLK_FB(1'B0),
+    .SDIO0_CMD_O(),
+    .SDIO0_CMD_I(1'B0),
+    .SDIO0_CMD_T(),
+    .SDIO0_DATA_I(4'B0),
+    .SDIO0_DATA_O(),
+    .SDIO0_DATA_T(),
+    .SDIO0_LED(),
+    .SDIO0_CDN(1'B0),
+    .SDIO0_WP(1'B0),
+    .SDIO0_BUSPOW(),
+    .SDIO0_BUSVOLT(),
     .SDIO1_CLK(),
     .SDIO1_CLK_FB(1'B0),
     .SDIO1_CMD_O(),
@@ -542,14 +452,14 @@ inout wire PS_PORB;
     .SPI1_SS1_O(),
     .SPI1_SS2_O(),
     .SPI1_SS_T(),
-    .UART0_DTRN(UART0_DTRN),
-    .UART0_RTSN(UART0_RTSN),
-    .UART0_TX(UART0_TX),
-    .UART0_CTSN(UART0_CTSN),
-    .UART0_DCDN(UART0_DCDN),
-    .UART0_DSRN(UART0_DSRN),
-    .UART0_RIN(UART0_RIN),
-    .UART0_RX(UART0_RX),
+    .UART0_DTRN(),
+    .UART0_RTSN(),
+    .UART0_TX(),
+    .UART0_CTSN(1'B0),
+    .UART0_DCDN(1'B0),
+    .UART0_DSRN(1'B0),
+    .UART0_RIN(1'B0),
+    .UART0_RX(1'B1),
     .UART1_DTRN(),
     .UART1_RTSN(),
     .UART1_TX(),
@@ -576,9 +486,9 @@ inout wire PS_PORB;
     .TRACE_CLK_OUT(),
     .TRACE_CTL(),
     .TRACE_DATA(),
-    .USB0_PORT_INDCTL(USB0_PORT_INDCTL),
-    .USB0_VBUS_PWRSELECT(USB0_VBUS_PWRSELECT),
-    .USB0_VBUS_PWRFAULT(USB0_VBUS_PWRFAULT),
+    .USB0_PORT_INDCTL(),
+    .USB0_VBUS_PWRSELECT(),
+    .USB0_VBUS_PWRFAULT(1'B0),
     .USB1_PORT_INDCTL(),
     .USB1_VBUS_PWRSELECT(),
     .USB1_VBUS_PWRFAULT(1'B0),

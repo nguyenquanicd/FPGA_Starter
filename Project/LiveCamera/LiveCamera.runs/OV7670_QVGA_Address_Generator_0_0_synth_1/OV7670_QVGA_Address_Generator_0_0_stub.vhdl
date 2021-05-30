@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sun Apr 25 11:12:29 2021
+-- Date        : Sun May  2 16:47:44 2021
 -- Host        : DESKTOP-O25IKCM running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ OV7670_QVGA_Address_Generator_0_0_stub.vhdl
@@ -19,7 +19,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
     rez_160x120 : in STD_LOGIC;
     rez_320x240 : in STD_LOGIC;
     vsync : in STD_LOGIC;
-    address : out STD_LOGIC_VECTOR ( 16 downto 0 )
+    address : out STD_LOGIC_VECTOR ( 17 downto 0 )
   );
 
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
@@ -28,7 +28,7 @@ architecture stub of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "CLK25,enable,rez_160x120,rez_320x240,vsync,address[16:0]";
+attribute black_box_pad_pin of stub : architecture is "CLK25,enable,rez_160x120,rez_320x240,vsync,address[17:0]";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "Address_Generator,Vivado 2019.1";
 begin

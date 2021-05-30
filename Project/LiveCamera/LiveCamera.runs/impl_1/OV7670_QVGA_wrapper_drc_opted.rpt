@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Thu Apr 29 00:33:34 2021
+| Date         : Sun May 30 11:42:29 2021
 | Host         : DESKTOP-O25IKCM running 64-bit major release  (build 9200)
 | Command      : report_drc -file OV7670_QVGA_wrapper_drc_opted.rpt -pb OV7670_QVGA_wrapper_drc_opted.pb -rpx OV7670_QVGA_wrapper_drc_opted.rpx
 | Design       : OV7670_QVGA_wrapper
@@ -24,13 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 2
-+---------+----------+---------------------------------+------------+
-| Rule    | Severity | Description                     | Violations |
-+---------+----------+---------------------------------+------------+
-| PLCK-12 | Warning  | Clock Placer Checks             | 1          |
-| RPBF-3  | Warning  | IO port buffering is incomplete | 1          |
-+---------+----------+---------------------------------+------------+
+             Violations found: 1
++---------+----------+---------------------+------------+
+| Rule    | Severity | Description         | Violations |
++---------+----------+---------------------+------------+
+| PLCK-12 | Warning  | Clock Placer Checks | 1          |
++---------+----------+---------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -43,11 +42,6 @@ Resolution: Poor placement of an IO pin and a BUFG has resulted in the router us
 	ARDUINO_IO10_IBUF_inst (IBUF.O) is locked to M10
 	ARDUINO_IO10_IBUF_BUFG_inst (BUFG.I) cannot be placed
 
-Related violations: <none>
-
-RPBF-3#1 Warning
-IO port buffering is incomplete  
-Device port I2C_SDA expects both input and output buffering but the buffers are incomplete.
 Related violations: <none>
 
 

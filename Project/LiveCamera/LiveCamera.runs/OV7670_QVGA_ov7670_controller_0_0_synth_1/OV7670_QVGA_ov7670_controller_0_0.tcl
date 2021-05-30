@@ -33,7 +33,6 @@ set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:minized:part0:1.2 [current_project]
 set_property ip_output_repo f:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/hdl/OV7670_QVGA_wrapper.v
 read_vhdl -library xil_defaultlib {
   F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/i3c2_vhd.vhd
   F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/imports/Downloads/ov7670_controller_vhd.vhd

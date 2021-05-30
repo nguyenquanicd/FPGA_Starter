@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sun Apr 25 11:12:30 2021
+-- Date        : Sun May  2 16:47:44 2021
 -- Host        : DESKTOP-O25IKCM running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               F:/Git_Fpga/FPGA_Starter/Project/LiveCamera/LiveCamera.srcs/sources_1/bd/OV7670_QVGA/ip/OV7670_QVGA_Address_Generator_0_0/OV7670_QVGA_Address_Generator_0_0_sim_netlist.vhdl
@@ -16,7 +16,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity OV7670_QVGA_Address_Generator_0_0_Address_Generator is
   port (
-    address : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    address : out STD_LOGIC_VECTOR ( 17 downto 0 );
     CLK25 : in STD_LOGIC;
     enable : in STD_LOGIC;
     rez_320x240 : in STD_LOGIC;
@@ -28,36 +28,29 @@ entity OV7670_QVGA_Address_Generator_0_0_Address_Generator is
 end OV7670_QVGA_Address_Generator_0_0_Address_Generator;
 
 architecture STRUCTURE of OV7670_QVGA_Address_Generator_0_0_Address_Generator is
-  signal \^address\ : STD_LOGIC_VECTOR ( 16 downto 0 );
+  signal \^address\ : STD_LOGIC_VECTOR ( 17 downto 0 );
   signal clear : STD_LOGIC;
   signal ltOp : STD_LOGIC;
-  signal \ltOp__2_carry_i_1_n_0\ : STD_LOGIC;
-  signal \ltOp__2_carry_i_2_n_0\ : STD_LOGIC;
-  signal \ltOp__2_carry_i_3_n_0\ : STD_LOGIC;
-  signal \ltOp__2_carry_i_4_n_0\ : STD_LOGIC;
-  signal \ltOp__2_carry_i_5_n_0\ : STD_LOGIC;
-  signal \ltOp__2_carry_i_6_n_0\ : STD_LOGIC;
-  signal \ltOp__2_carry_n_0\ : STD_LOGIC;
-  signal \ltOp__2_carry_n_1\ : STD_LOGIC;
-  signal \ltOp__2_carry_n_2\ : STD_LOGIC;
-  signal \ltOp__2_carry_n_3\ : STD_LOGIC;
-  signal \ltOp__6_carry__0_i_1_n_0\ : STD_LOGIC;
-  signal \ltOp__6_carry_i_1_n_0\ : STD_LOGIC;
-  signal \ltOp__6_carry_i_2_n_0\ : STD_LOGIC;
-  signal \ltOp__6_carry_i_3_n_0\ : STD_LOGIC;
-  signal \ltOp__6_carry_i_4_n_0\ : STD_LOGIC;
-  signal \ltOp__6_carry_i_5_n_0\ : STD_LOGIC;
-  signal \ltOp__6_carry_i_6_n_0\ : STD_LOGIC;
-  signal \ltOp__6_carry_i_7_n_0\ : STD_LOGIC;
-  signal \ltOp__6_carry_n_0\ : STD_LOGIC;
-  signal \ltOp__6_carry_n_1\ : STD_LOGIC;
-  signal \ltOp__6_carry_n_2\ : STD_LOGIC;
-  signal \ltOp__6_carry_n_3\ : STD_LOGIC;
+  signal \ltOp__3_carry__0_i_1_n_0\ : STD_LOGIC;
+  signal \ltOp__3_carry_i_1_n_0\ : STD_LOGIC;
+  signal \ltOp__3_carry_i_2_n_0\ : STD_LOGIC;
+  signal \ltOp__3_carry_i_3_n_0\ : STD_LOGIC;
+  signal \ltOp__3_carry_i_4_n_0\ : STD_LOGIC;
+  signal \ltOp__3_carry_i_5_n_0\ : STD_LOGIC;
+  signal \ltOp__3_carry_i_6_n_0\ : STD_LOGIC;
+  signal \ltOp__3_carry_i_7_n_0\ : STD_LOGIC;
+  signal \ltOp__3_carry_n_0\ : STD_LOGIC;
+  signal \ltOp__3_carry_n_1\ : STD_LOGIC;
+  signal \ltOp__3_carry_n_2\ : STD_LOGIC;
+  signal \ltOp__3_carry_n_3\ : STD_LOGIC;
   signal ltOp_carry_i_1_n_0 : STD_LOGIC;
   signal ltOp_carry_i_2_n_0 : STD_LOGIC;
   signal ltOp_carry_i_3_n_0 : STD_LOGIC;
   signal ltOp_carry_i_4_n_0 : STD_LOGIC;
   signal ltOp_carry_i_5_n_0 : STD_LOGIC;
+  signal ltOp_carry_i_6_n_0 : STD_LOGIC;
+  signal ltOp_carry_i_7_n_0 : STD_LOGIC;
+  signal ltOp_carry_n_0 : STD_LOGIC;
   signal ltOp_carry_n_1 : STD_LOGIC;
   signal ltOp_carry_n_2 : STD_LOGIC;
   signal ltOp_carry_n_3 : STD_LOGIC;
@@ -79,7 +72,9 @@ architecture STRUCTURE of OV7670_QVGA_Address_Generator_0_0_Address_Generator is
   signal \val_reg[15]_i_1_n_5\ : STD_LOGIC;
   signal \val_reg[15]_i_1_n_6\ : STD_LOGIC;
   signal \val_reg[15]_i_1_n_7\ : STD_LOGIC;
-  signal \val_reg[16]_i_3_n_7\ : STD_LOGIC;
+  signal \val_reg[17]_i_3_n_3\ : STD_LOGIC;
+  signal \val_reg[17]_i_3_n_6\ : STD_LOGIC;
+  signal \val_reg[17]_i_3_n_7\ : STD_LOGIC;
   signal \val_reg[3]_i_1_n_0\ : STD_LOGIC;
   signal \val_reg[3]_i_1_n_1\ : STD_LOGIC;
   signal \val_reg[3]_i_1_n_2\ : STD_LOGIC;
@@ -96,225 +91,156 @@ architecture STRUCTURE of OV7670_QVGA_Address_Generator_0_0_Address_Generator is
   signal \val_reg[7]_i_1_n_5\ : STD_LOGIC;
   signal \val_reg[7]_i_1_n_6\ : STD_LOGIC;
   signal \val_reg[7]_i_1_n_7\ : STD_LOGIC;
-  signal \NLW_ltOp__2_carry_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_ltOp__6_carry_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_ltOp__6_carry__0_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal \NLW_ltOp__6_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_ltOp_carry_CO_UNCONNECTED : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal \NLW_ltOp__3_carry_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_ltOp__3_carry__0_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal \NLW_ltOp__3_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_ltOp_carry_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_val_reg[16]_i_3_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_val_reg[16]_i_3_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal \NLW_val_reg[17]_i_3_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal \NLW_val_reg[17]_i_3_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
 begin
-  address(16 downto 0) <= \^address\(16 downto 0);
-\ltOp__2_carry\: unisim.vcomponents.CARRY4
+  address(17 downto 0) <= \^address\(17 downto 0);
+\ltOp__3_carry\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => \ltOp__2_carry_n_0\,
-      CO(2) => \ltOp__2_carry_n_1\,
-      CO(1) => \ltOp__2_carry_n_2\,
-      CO(0) => \ltOp__2_carry_n_3\,
+      CO(3) => \ltOp__3_carry_n_0\,
+      CO(2) => \ltOp__3_carry_n_1\,
+      CO(1) => \ltOp__3_carry_n_2\,
+      CO(0) => \ltOp__3_carry_n_3\,
       CYINIT => '0',
-      DI(3) => \ltOp__2_carry_i_1_n_0\,
+      DI(3) => \ltOp__3_carry_i_1_n_0\,
       DI(2) => '0',
-      DI(1) => \ltOp__2_carry_i_2_n_0\,
-      DI(0) => \ltOp__2_carry_i_3_n_0\,
-      O(3 downto 0) => \NLW_ltOp__2_carry_O_UNCONNECTED\(3 downto 0),
-      S(3) => \^address\(16),
-      S(2) => \ltOp__2_carry_i_4_n_0\,
-      S(1) => \ltOp__2_carry_i_5_n_0\,
-      S(0) => \ltOp__2_carry_i_6_n_0\
+      DI(1) => \ltOp__3_carry_i_2_n_0\,
+      DI(0) => \ltOp__3_carry_i_3_n_0\,
+      O(3 downto 0) => \NLW_ltOp__3_carry_O_UNCONNECTED\(3 downto 0),
+      S(3) => \ltOp__3_carry_i_4_n_0\,
+      S(2) => \ltOp__3_carry_i_5_n_0\,
+      S(1) => \ltOp__3_carry_i_6_n_0\,
+      S(0) => \ltOp__3_carry_i_7_n_0\
     );
-\ltOp__2_carry_i_1\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => \^address\(16),
-      O => \ltOp__2_carry_i_1_n_0\
-    );
-\ltOp__2_carry_i_2\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => \^address\(13),
-      O => \ltOp__2_carry_i_2_n_0\
-    );
-\ltOp__2_carry_i_3\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"7"
-    )
-        port map (
-      I0 => \^address\(10),
-      I1 => \^address\(11),
-      O => \ltOp__2_carry_i_3_n_0\
-    );
-\ltOp__2_carry_i_4\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => \^address\(14),
-      I1 => \^address\(15),
-      O => \ltOp__2_carry_i_4_n_0\
-    );
-\ltOp__2_carry_i_5\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^address\(13),
-      I1 => \^address\(12),
-      O => \ltOp__2_carry_i_5_n_0\
-    );
-\ltOp__2_carry_i_6\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \^address\(10),
-      I1 => \^address\(11),
-      O => \ltOp__2_carry_i_6_n_0\
-    );
-\ltOp__6_carry\: unisim.vcomponents.CARRY4
+\ltOp__3_carry__0\: unisim.vcomponents.CARRY4
      port map (
-      CI => '0',
-      CO(3) => \ltOp__6_carry_n_0\,
-      CO(2) => \ltOp__6_carry_n_1\,
-      CO(1) => \ltOp__6_carry_n_2\,
-      CO(0) => \ltOp__6_carry_n_3\,
-      CYINIT => '0',
-      DI(3) => \ltOp__6_carry_i_1_n_0\,
-      DI(2) => '0',
-      DI(1) => \ltOp__6_carry_i_2_n_0\,
-      DI(0) => \ltOp__6_carry_i_3_n_0\,
-      O(3 downto 0) => \NLW_ltOp__6_carry_O_UNCONNECTED\(3 downto 0),
-      S(3) => \ltOp__6_carry_i_4_n_0\,
-      S(2) => \ltOp__6_carry_i_5_n_0\,
-      S(1) => \ltOp__6_carry_i_6_n_0\,
-      S(0) => \ltOp__6_carry_i_7_n_0\
-    );
-\ltOp__6_carry__0\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \ltOp__6_carry_n_0\,
-      CO(3 downto 1) => \NLW_ltOp__6_carry__0_CO_UNCONNECTED\(3 downto 1),
+      CI => \ltOp__3_carry_n_0\,
+      CO(3 downto 1) => \NLW_ltOp__3_carry__0_CO_UNCONNECTED\(3 downto 1),
       CO(0) => ltOp,
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3 downto 0) => \NLW_ltOp__6_carry__0_O_UNCONNECTED\(3 downto 0),
+      O(3 downto 0) => \NLW_ltOp__3_carry__0_O_UNCONNECTED\(3 downto 0),
       S(3 downto 1) => B"000",
-      S(0) => \ltOp__6_carry__0_i_1_n_0\
+      S(0) => \ltOp__3_carry__0_i_1_n_0\
     );
-\ltOp__6_carry__0_i_1\: unisim.vcomponents.LUT1
+\ltOp__3_carry__0_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => \^address\(16),
-      O => \ltOp__6_carry__0_i_1_n_0\
+      I1 => \^address\(17),
+      O => \ltOp__3_carry__0_i_1_n_0\
     );
-\ltOp__6_carry_i_1\: unisim.vcomponents.LUT2
+\ltOp__3_carry_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => \^address\(14),
       I1 => \^address\(15),
-      O => \ltOp__6_carry_i_1_n_0\
+      O => \ltOp__3_carry_i_1_n_0\
     );
-\ltOp__6_carry_i_2\: unisim.vcomponents.LUT1
+\ltOp__3_carry_i_2\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => \^address\(11),
-      O => \ltOp__6_carry_i_2_n_0\
+      O => \ltOp__3_carry_i_2_n_0\
     );
-\ltOp__6_carry_i_3\: unisim.vcomponents.LUT2
+\ltOp__3_carry_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"7"
     )
         port map (
       I0 => \^address\(8),
       I1 => \^address\(9),
-      O => \ltOp__6_carry_i_3_n_0\
+      O => \ltOp__3_carry_i_3_n_0\
     );
-\ltOp__6_carry_i_4\: unisim.vcomponents.LUT2
+\ltOp__3_carry_i_4\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"2"
     )
         port map (
       I0 => \^address\(14),
       I1 => \^address\(15),
-      O => \ltOp__6_carry_i_4_n_0\
+      O => \ltOp__3_carry_i_4_n_0\
     );
-\ltOp__6_carry_i_5\: unisim.vcomponents.LUT2
+\ltOp__3_carry_i_5\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => \^address\(12),
       I1 => \^address\(13),
-      O => \ltOp__6_carry_i_5_n_0\
+      O => \ltOp__3_carry_i_5_n_0\
     );
-\ltOp__6_carry_i_6\: unisim.vcomponents.LUT2
+\ltOp__3_carry_i_6\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"2"
     )
         port map (
       I0 => \^address\(11),
       I1 => \^address\(10),
-      O => \ltOp__6_carry_i_6_n_0\
+      O => \ltOp__3_carry_i_6_n_0\
     );
-\ltOp__6_carry_i_7\: unisim.vcomponents.LUT2
+\ltOp__3_carry_i_7\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"8"
     )
         port map (
       I0 => \^address\(8),
       I1 => \^address\(9),
-      O => \ltOp__6_carry_i_7_n_0\
+      O => \ltOp__3_carry_i_7_n_0\
     );
 ltOp_carry: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => NLW_ltOp_carry_CO_UNCONNECTED(3),
+      CO(3) => ltOp_carry_n_0,
       CO(2) => ltOp_carry_n_1,
       CO(1) => ltOp_carry_n_2,
       CO(0) => ltOp_carry_n_3,
       CYINIT => '0',
-      DI(3 downto 2) => B"00",
-      DI(1) => ltOp_carry_i_1_n_0,
-      DI(0) => ltOp_carry_i_2_n_0,
+      DI(3) => ltOp_carry_i_1_n_0,
+      DI(2) => '0',
+      DI(1) => ltOp_carry_i_2_n_0,
+      DI(0) => ltOp_carry_i_3_n_0,
       O(3 downto 0) => NLW_ltOp_carry_O_UNCONNECTED(3 downto 0),
-      S(3) => '0',
-      S(2) => ltOp_carry_i_3_n_0,
-      S(1) => ltOp_carry_i_4_n_0,
-      S(0) => ltOp_carry_i_5_n_0
+      S(3) => ltOp_carry_i_4_n_0,
+      S(2) => ltOp_carry_i_5_n_0,
+      S(1) => ltOp_carry_i_6_n_0,
+      S(0) => ltOp_carry_i_7_n_0
     );
-ltOp_carry_i_1: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => \^address\(15),
-      O => ltOp_carry_i_1_n_0
-    );
-ltOp_carry_i_2: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"7"
-    )
-        port map (
-      I0 => \^address\(12),
-      I1 => \^address\(13),
-      O => ltOp_carry_i_2_n_0
-    );
-ltOp_carry_i_3: unisim.vcomponents.LUT1
+ltOp_carry_i_1: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => \^address\(16),
+      I1 => \^address\(17),
+      O => ltOp_carry_i_1_n_0
+    );
+ltOp_carry_i_2: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => \^address\(13),
+      O => ltOp_carry_i_2_n_0
+    );
+ltOp_carry_i_3: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"7"
+    )
+        port map (
+      I0 => \^address\(10),
+      I1 => \^address\(11),
       O => ltOp_carry_i_3_n_0
     );
 ltOp_carry_i_4: unisim.vcomponents.LUT2
@@ -322,20 +248,38 @@ ltOp_carry_i_4: unisim.vcomponents.LUT2
       INIT => X"2"
     )
         port map (
-      I0 => \^address\(15),
-      I1 => \^address\(14),
+      I0 => \^address\(16),
+      I1 => \^address\(17),
       O => ltOp_carry_i_4_n_0
     );
 ltOp_carry_i_5: unisim.vcomponents.LUT2
     generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => \^address\(14),
+      I1 => \^address\(15),
+      O => ltOp_carry_i_5_n_0
+    );
+ltOp_carry_i_6: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => \^address\(13),
+      I1 => \^address\(12),
+      O => ltOp_carry_i_6_n_0
+    );
+ltOp_carry_i_7: unisim.vcomponents.LUT2
+    generic map(
       INIT => X"8"
     )
         port map (
-      I0 => \^address\(12),
-      I1 => \^address\(13),
-      O => ltOp_carry_i_5_n_0
+      I0 => \^address\(10),
+      I1 => \^address\(11),
+      O => ltOp_carry_i_7_n_0
     );
-\val[16]_i_1\: unisim.vcomponents.LUT1
+\val[17]_i_1\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
@@ -343,17 +287,16 @@ ltOp_carry_i_5: unisim.vcomponents.LUT2
       I0 => vsync,
       O => clear
     );
-\val[16]_i_2\: unisim.vcomponents.LUT6
+\val[17]_i_2\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"AAAAA8080000A808"
+      INIT => X"AA800080"
     )
         port map (
       I0 => enable,
-      I1 => ltOp_carry_n_1,
+      I1 => ltOp_carry_n_0,
       I2 => rez_320x240,
-      I3 => \ltOp__2_carry_n_0\,
-      I4 => rez_160x120,
-      I5 => ltOp,
+      I3 => rez_160x120,
+      I4 => ltOp,
       O => val
     );
 \val[3]_i_2\: unisim.vcomponents.LUT1
@@ -478,20 +421,33 @@ ltOp_carry_i_5: unisim.vcomponents.LUT2
         port map (
       C => CLK25,
       CE => val,
-      D => \val_reg[16]_i_3_n_7\,
+      D => \val_reg[17]_i_3_n_7\,
       Q => \^address\(16),
       R => clear
     );
-\val_reg[16]_i_3\: unisim.vcomponents.CARRY4
+\val_reg[17]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK25,
+      CE => val,
+      D => \val_reg[17]_i_3_n_6\,
+      Q => \^address\(17),
+      R => clear
+    );
+\val_reg[17]_i_3\: unisim.vcomponents.CARRY4
      port map (
       CI => \val_reg[15]_i_1_n_0\,
-      CO(3 downto 0) => \NLW_val_reg[16]_i_3_CO_UNCONNECTED\(3 downto 0),
+      CO(3 downto 1) => \NLW_val_reg[17]_i_3_CO_UNCONNECTED\(3 downto 1),
+      CO(0) => \val_reg[17]_i_3_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3 downto 1) => \NLW_val_reg[16]_i_3_O_UNCONNECTED\(3 downto 1),
-      O(0) => \val_reg[16]_i_3_n_7\,
-      S(3 downto 1) => B"000",
-      S(0) => \^address\(16)
+      O(3 downto 2) => \NLW_val_reg[17]_i_3_O_UNCONNECTED\(3 downto 2),
+      O(1) => \val_reg[17]_i_3_n_6\,
+      O(0) => \val_reg[17]_i_3_n_7\,
+      S(3 downto 2) => B"00",
+      S(1 downto 0) => \^address\(17 downto 16)
     );
 \val_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -635,7 +591,7 @@ entity OV7670_QVGA_Address_Generator_0_0 is
     rez_160x120 : in STD_LOGIC;
     rez_320x240 : in STD_LOGIC;
     vsync : in STD_LOGIC;
-    address : out STD_LOGIC_VECTOR ( 16 downto 0 )
+    address : out STD_LOGIC_VECTOR ( 17 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of OV7670_QVGA_Address_Generator_0_0 : entity is true;
@@ -654,7 +610,7 @@ begin
 inst: entity work.OV7670_QVGA_Address_Generator_0_0_Address_Generator
      port map (
       CLK25 => CLK25,
-      address(16 downto 0) => address(16 downto 0),
+      address(17 downto 0) => address(17 downto 0),
       enable => enable,
       rez_160x120 => rez_160x120,
       rez_320x240 => rez_320x240,

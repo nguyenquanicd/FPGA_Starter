@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;standalone_bsp_0_xuartps_hello_world_example_1/src/xuartps_hello_world_example.c&apos; to &apos;Camera_config.c&apos;" description="Rename resource &apos;xuartps_hello_world_example.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/xuartps_hello_world_example.c" name="Camera_config.c" stamp="1622354052778" updateReferences="true"/>
+</session>

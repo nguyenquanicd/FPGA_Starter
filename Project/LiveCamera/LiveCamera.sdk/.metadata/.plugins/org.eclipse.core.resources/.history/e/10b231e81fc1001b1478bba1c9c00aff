@@ -1,0 +1,386 @@
+/******************************************************************************
+*
+* Copyright (C) 2010 - 2014 Xilinx, Inc.  All rights reserved.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+* Except as contained in this notice, the name of the Xilinx shall not be used
+* in advertising or otherwise to promote the sale, use or other dealings in
+* this Software without prior written authorization from Xilinx.
+*
+******************************************************************************/
+/*****************************************************************************/
+/**
+*
+* @file		xuartps_hello_world_example.c
+*
+* This file contains a design example using the XUartPs driver in polled mode
+*
+* The example uses the default setting in the XUartPs driver:
+*	. baud rate 9600
+*	. 8 bit data
+*	. 1 stop bit
+*	. no parity
+*
+* @note
+* This example requires an external SchmartModule connected to the pins for
+* the device to display the 'Hello World' message onto a hyper-terminal.
+*
+* MODIFICATION HISTORY:
+* <pre>
+* Ver   Who    Date     Changes
+* ----- ------ -------- -------------------------------------------------
+* 1.00a drg/jz 01/13/10 First Release
+* 1.04a  hk    22/04/13 Changed the baud rate in the example to 115200.
+*				Fix for CR#707879
+* 3.4    ms    01/23/17 Added xil_printf statement in main function to
+*                       ensure that "Successfully ran" and "Failed" strings
+*                       are available in all examples. This is a fix for
+*                       CR-965028.
+*
+* </pre>
+******************************************************************************/
+
+/***************************** Include Files *********************************/
+
+#include "xparameters.h"
+#include "xuartps.h"
+#include "xil_printf.h"
+#include "xiic.h"
+/************************** Constant Definitions *****************************/
+
+/*
+ * The following constants map to the XPAR parameters created in the
+ * xparameters.h file. They are defined here such that a user can easily
+ * change all the needed parameters in one place.
+ */
+
+#define IIC_BASE_ADDRESS				XPAR_IIC_0_BASEADDR
+// register ov7670 definition
+#define OV7670_SLAVE_BASE_ADDRESS 0x21
+#define OV7670_SLAVE_RESET_REG 0x12
+// sub_register
+#define ProductIdRegMSB 0xA
+#define ProductIdRegLSB 0xB
+#define GainReg 0x0
+
+u8 Ov7670RegCongAddress[227] = {
+		B(0000000000),
+		B(0000000001),
+		B(0000000010),
+		B(0000000011),
+		B(0000000100),
+		B(0000000101),
+		B(0000000110),
+		B(0000000111),
+		B(0000001000),
+		B(0000001001),
+		B(0000001010),
+		B(0000001011),
+		B(0000001100),
+		B(0000001101),
+		B(0000001110),
+		B(0000001111),
+		B(0000010000),
+		B(0000010001),
+		B(0000010010),
+		B(0000010011),
+		B(0000010100),
+		B(0000010101),
+		B(0000010110),
+		B(0000010111),
+		B(0000011000),
+		B(0000011001),
+		B(0000011010),
+		B(0000011011),
+		B(0000011100),
+		B(0000011101),
+		B(0000011110),
+		B(0000011111),
+		B(0000100000),
+		B(0000100001),
+		B(0000100010),
+		B(0000100011),
+		B(0000100100),
+		B(0000100101),
+		B(0000100110),
+		B(0000100111),
+		B(0000101000),
+		B(0000101001),
+		B(0000101010),
+		B(0000101011),
+		B(0000101100),
+		B(0000101101),
+		B(0000101110),
+		B(0000101111),
+		B(0000110000),
+		B(0000110001),
+		B(0000110010),
+		B(0000110011),
+		B(0000110100),
+		B(0000110101),
+		B(0000110110),
+		B(0000110111),
+		B(0000111000),
+		B(0000111001),
+		B(0000111010),
+		B(0000111011),
+		B(0000111100),
+		B(0000111101),
+		B(0000111110),
+		B(0000111111),
+		B(0001000000),
+		B(0001000001),
+		B(0001000010),
+		B(0001000011),
+		B(0001000100),
+		B(0001000101),
+		B(0001000110),
+		B(0001000111),
+		B(0001001000),
+		B(0001001001),
+		B(0001001010),
+		B(0001001011),
+		B(0001001100),
+		B(0001001101),
+		B(0001001110),
+		B(0001001111),
+		B(0001010000),
+		B(0001010001),
+		B(0001010010),
+		B(0001010011),
+		B(0001010100),
+		B(0001010101),
+		B(0001010110),
+		B(0001010111),
+		B(0001011000),
+		B(0001011001),
+		B(0001011010),
+		B(0001011011),
+		B(0001011100),
+		B(0001011101),
+		B(0001011110),
+		B(0001011111),
+		B(0001100000),
+		B(0001100001),
+		B(0001100010),
+		B(0001100011),
+		B(0001100100),
+		B(0001100101),
+		B(0001100110),
+		B(0001100111),
+		B(0001101000),
+		B(0001101001),
+		B(0001101010),
+		B(0001101011),
+		B(0001101100),
+		B(0001101101),
+		B(0001101110),
+		B(0001101111),
+		B(0001110000),
+		B(0001110001),
+		B(0001110010),
+		B(0001110011),
+		B(0001110100),
+		B(0001110101),
+		B(0001110110),
+		B(0001110111),
+		B(0001111000),
+		B(0001111001),
+		B(0001111010),
+		B(0001111011),
+		B(0001111100),
+		B(0001111101),
+		B(0001111110),
+		B(0001111111),
+		B(0010000000),
+		B(0010000001),
+		B(0010000010),
+		B(0010000011),
+		B(0010000100),
+		B(0010000101),
+		B(0010000110),
+		B(0010000111),
+		B(0010001000),
+		B(0010001001),
+		B(0010001010),
+		B(0010001011),
+		B(0010001100),
+		B(0010001101),
+		B(0010001110),
+		B(0010001111),
+		B(0010010000),
+		B(0010010001),
+		B(0010010010),
+		B(0010010011),
+		B(0010010100),
+		B(0010010101),
+		B(0010010110),
+		B(0010010111),
+		B(0010011000),
+		B(0010011001),
+		B(0010011010),
+		B(0010011011),
+		B(0010011100),
+		B(0010011101),
+		B(0010011110),
+		B(0010011111),
+		B(0010100000),
+		B(0010100001),
+		B(0010100010),
+		B(0010100011),
+		B(0010100100),
+		B(0010100101),
+		B(0010100110),
+		B(0010100111),
+		B(0010101000),
+		B(0010101001),
+		B(0010101010),
+		B(0010101011),
+		B(0010101100),
+		B(0010101101),
+		B(0010101110),
+		B(0010101111),
+		B(0010110000),
+		B(0010110001),
+		B(0010110010),
+		B(0010110011),
+		B(0010110100),
+		B(0010110101),
+		B(0010110110),
+		B(0010110111),
+		B(0010111000),
+		B(0010111001),
+		B(0010111010),
+		B(0010111011),
+		B(0010111100),
+		B(0010111101),
+		B(0010111110),
+		B(0010111111),
+		B(0011000000),
+		B(0011000001),
+		B(0011000010),
+		B(0011000011),
+		B(0011000100),
+		B(0011000101),
+		B(0011000110),
+		B(0011000111),
+		B(0011001000),
+		B(0011001001),
+		B(0011001010),
+		B(0011001011),
+		B(0011001100),
+		B(0011001101),
+		B(0011001110),
+		B(0011001111),
+		B(0011010000),
+		B(0011010001),
+		B(0011010010),
+		B(0011010011),
+		B(0011010100),
+		B(0011010101),
+		B(0011010110),
+		B(0011010111),
+		B(0011011000),
+		B(0011011001),
+		B(0011011010),
+		B(0011011011),
+		B(0011011100),
+		B(0011011101),
+		B(0011011110),
+		B(0011011111),
+		B(0011100000),
+		B(0011100001),
+		B(0011100010)
+};
+//
+
+int ByteCount;
+u8 send_byte;
+u8 write_data [256];
+u8 read_data [256];
+
+// iic function read
+
+uint8_t ov7670_ReadReg(u8 Reg, u8 *Bufp, u16 len)
+{
+	write_data[0] = Reg;
+	ByteCount = XIic_Send(IIC_BASE_ADDRESS, OV7670_SLAVE_BASE_ADDRESS, (u8*)&write_data, 1, XIIC_STOP);
+	ByteCount = XIic_Recv(IIC_BASE_ADDRESS, OV7670_SLAVE_BASE_ADDRESS, (u8*)Bufp, len, XIIC_STOP);
+	return(ByteCount);
+}
+
+uint8_t Ov7670_WriteReg(u8 Reg, u8 *BufData, u16 len){
+	write_data[0] = Reg;
+	for (ByteCount = 1;ByteCount <= len; ByteCount++)
+	{
+		write_data[ByteCount] = BufData[ByteCount-1];
+	}
+	ByteCount = XIic_Send(IIC_BASE_ADDRESS, OV7670_SLAVE_BASE_ADDRESS, &write_data[0], (len+1), XIIC_STOP);
+	return(ByteCount);
+}
+
+/*****************************************************************************/
+/**
+*
+* Main function to call the Hello World example.
+*
+* @param	None
+*
+* @return
+*		- XST_FAILURE if the Test Failed .
+*		- A non-negative number indicating the number of characters
+*		  sent.
+*
+* @note		None
+*
+******************************************************************************/
+int main(void)
+{
+	u16 productValue = 0;
+	u8 regInfo = 0;
+	int Status = 0;
+	u8 sendData = 0;
+	// Reset register
+	sendData = 0x1;
+	Ov7670_WriteReg(OV7670_SLAVE_RESET_REG,&sendData,1);
+	xil_printf("Reset register \r\n");
+	// Read
+	regInfo = 0x0;
+	ov7670_ReadReg(ProductIdRegMSB,&regInfo,1);
+	xil_printf("ProductIdRegMSB: 0x%x \r\n",regInfo);
+	productValue = regInfo;
+	regInfo = 0x0;
+	ov7670_ReadReg(ProductIdRegLSB,&regInfo,1);
+	xil_printf("ProductIdRegLSB: 0x%x \r\n",regInfo);
+	productValue = (productValue << 8) | regInfo;
+	//XIic_Recv(IIC_BASE_ADDRESS, OV7670_SLAVE_BASE_ADDRESS, &regInfo, 1, XIIC_STOP);
+	xil_printf("Product reg valuexx: 0x%x \r\n",productValue);
+	if (productValue != 0x7673){
+		xil_printf("[Error] Fail to read/write register of ov76xx camera\r\n");
+	}
+	// test to read/write
+	sendData = 0xA5;
+	regInfo = 0x0;
+	Ov7670_WriteReg(GainReg,&sendData,1);
+	ov7670_ReadReg(GainReg,&regInfo,1);
+	xil_printf("GainReg reg valuexx: 0x%x \r\n",regInfo);
+	return Status;
+}
+

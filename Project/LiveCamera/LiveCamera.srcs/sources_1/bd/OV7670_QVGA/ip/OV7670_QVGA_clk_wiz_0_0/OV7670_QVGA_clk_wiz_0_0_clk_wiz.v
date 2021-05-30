@@ -74,6 +74,7 @@ module OV7670_QVGA_clk_wiz_0_0_clk_wiz
   output        clk_out2,
   // Status and control signals
   input         resetn,
+  output        locked,
   input         clk_in1
  );
   // Input buffering
@@ -183,6 +184,7 @@ wire clk_in2_OV7670_QVGA_clk_wiz_0_0;
     .RST                 (reset_high));
   assign reset_high = ~resetn; 
 
+  assign locked = locked_int;
 // Clock Monitor clock assigning
 //--------------------------------------
  // Output buffering
